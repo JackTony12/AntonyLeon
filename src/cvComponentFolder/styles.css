@@ -1,0 +1,139 @@
+.contenedor-img {
+  width: 60%;
+  & img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.section-img {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.boton-cv-container {
+  position: relative;
+  width: 50%;
+}
+.boton-cv {
+  text-align: center;
+  font-size: calc(1vw + 0.5em);
+  font-weight: 400;
+  color: #d1d1d1;
+  text-decoration: none;
+  padding: 3px 16px;
+  transition: 0.2s ease;
+  border-radius: 3px;
+  border: 1px;
+  border-style: solid;
+  background-color: transparent;
+  &:hover {
+    -webkit-border-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#01f7ff),
+      to(#ff05b4)
+    );
+    border-image: linear-gradient(to bottom right, #03cff3, #f00ed2);
+    border-image-slice: 1;
+
+    box-shadow: 0px 0px 20px rgba(126, 83, 167, 0.493);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    background-color: white;
+    color: black;
+  }
+}
+
+.cv-back-container {
+  position: relative;
+}
+
+.cv-back-component {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 100%;
+}
+
+.cv-back-component.active {
+  opacity: 1;
+}
+.antony-leon {
+  position: absolute;
+  color: white;
+
+  top: calc(1em + 2em);
+  left: 20%;
+  & h2 {
+    font-family: sans-serif;
+    font-size: 7vw;
+  }
+  & p {
+    letter-spacing: 1px;
+    font-size: 2vw;
+  }
+}
+.experience {
+  animation: moveGradient 5s infinite linear;
+  background: linear-gradient(-45deg, #ff6232, #ff2b7c, #fff12f, #27ffcc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  color: transparent;
+  & span {
+    font-size: 3em;
+    & span {
+      font-size: 0.8em;
+    }
+  }
+}
+.capsula-ex-cv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  bottom: 10vw;
+  left: 20%;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media (width > 1000px) {
+  .experience {
+    font-size: calc(1vw + 0.7rem);
+  }
+}
+@media (width < 580px) {
+  .capsula-ex-cv {
+    bottom: 8vw;
+    gap: 10px;
+  }
+  .experience {
+    font-size: calc(0.1vw + 0.5rem);
+  }
+}
+@media (width < 280px) {
+  .capsula-ex-cv {
+    bottom: 10vw;
+    gap: 2px;
+  }
+  .experience,
+  .boton-cv {
+    font-size: calc(0.1em + 0.2rem);
+  }
+}
