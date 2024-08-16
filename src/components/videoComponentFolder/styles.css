@@ -1,0 +1,37 @@
+.video-section {
+  position: relative;
+  padding: 3em;
+  margin: 5em 0;
+}
+
+.video-section-text-slogan {
+  color: white;
+  text-align: center;
+  margin: 1em 0 3em 0;
+}
+
+.ul-text-list {
+  color: var(--white);
+  padding: 1em 1.5em;
+  border: 1px solid var(--gray-low);
+  border-radius: 0.5em;
+  list-style: none;
+  width: 100%;
+}
+
+.digital-experience-contenedor {
+  width: 100%;
+  & img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.ul-text-list-contenedor {
+  width: 90%;
+}
+.ul-digital-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,28 @@
+.section-skills {
+  padding: 3vw 2vw;
+}
+.contenedor-skills {
+  width: 100%;
+  gap: 5px;
+  display: grid;
+}
+
+.icon-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    & span {
+      text-decoration: none;
+      color: var(--gray);
+    }
+  }
+}
+.icon {
+  color: var(--gray);
+}

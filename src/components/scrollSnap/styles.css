@@ -1,0 +1,26 @@
+.snap-contenedor {
+  color: white;
+  scroll-snap-type: x mandatory;
+  max-width: 1080px; /* Resta espacio para los botones */
+  display: flex;
+  scrollbar-width: none;
+  margin: 3em 0 5em 0;
+  box-shadow: inset 10px 0 20px black, inset 0 0 0 transparent,
+    inset -20px 0 20px black, inset 0 0px 0px transparent;
+
+  h1,
+  p {
+    color: var(--white);
+    text-align: left;
+  }
+}
+
+.title-3d-models {
+  margin-left: 3em;
+  h1 {
+    color: var(--white);
+  }
+  p {
+    color: var(--white);
+  }
+}

@@ -1,0 +1,221 @@
+:root {
+  --white: #ffffff;
+  --black: black;
+  --gray: gray;
+  --gray-low: #6b6b6b;
+}
+
+@media (width < 578px) {
+  .section-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-img {
+    min-width: 270px;
+  }
+  .antony-leon {
+    text-align: center;
+
+    & h2 {
+      font-size: 2em;
+    }
+  }
+  .capsula-ex-cv {
+    gap: 0;
+    font-size: small;
+    align-items: center;
+  }
+  .name-button-group {
+    position: absolute;
+    gap: 20em;
+    min-width: 350px;
+  }
+  .boton-cv {
+    width: 100%;
+    font-size: medium;
+  }
+  /* perfil section end----------------------- */
+
+  .icon {
+    width: 3em;
+    height: 3em;
+  }
+  .icon-skill {
+    height: 5em;
+  }
+  /* skill section end -------------------------*/
+  .section-three-escena {
+    flex-direction: column;
+  }
+  .section-three-escena-texto {
+    margin-left: 2em;
+  }
+
+  .carousel-container {
+    margin: 0 auto;
+    & img {
+      width: 70vw;
+    }
+  }
+
+  .ul-text-list {
+    font-size: 3vw;
+  }
+
+  .ul-digital-contenedor {
+    flex-direction: column-reverse;
+    gap: 5em;
+  }
+  .digital-experience-contenedor {
+    & img {
+      width: 50%;
+    }
+  }
+  .contenedor-skills {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .proyectos-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+  .snap-contenedor {
+    overflow: scroll;
+  }
+  .child {
+    scroll-snap-align: center;
+    width: 400px;
+    flex-shrink: 0;
+    padding: 1em 0;
+    border: 1px solid gray;
+    margin: 0 1em;
+    border-radius: 1em;
+    overflow: hidden;
+    & img {
+      object-fit: cover;
+      width: 100%;
+      transition: 0.3s ease;
+      &:hover {
+        filter: drop-shadow(0 0 5rem #fffbc1);
+        transform: scale(1.1);
+      }
+    }
+  }
+  .text-models-contenedor {
+    padding: 1em 1em;
+    background-color: rgb(20, 20, 20);
+    height: 100%;
+  }
+}
+
+@media (width > 577px) {
+  .antony-leon {
+    & h2 {
+      font-size: 2.5em;
+    }
+  }
+  .icon-skill {
+    height: 7em;
+  }
+  .icon {
+    width: 3em;
+    height: 3em;
+  }
+  .skill-text-contenedor {
+    font-size: 1.5em;
+  }
+  .section-three-escena {
+    & h1 {
+      font-size: 1em;
+    }
+    & p {
+      font-size: 1em;
+    }
+    & a {
+      font-size: 1em;
+    }
+  }
+  .carousel-container {
+    & img {
+      width: 350px;
+    }
+  }
+  .section-three-escena-texto {
+    & h1 {
+      font-size: 2em;
+    }
+  }
+  .contenedor-skills {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+  .ul-text-list {
+    font-size: 2vw;
+  }
+  .video-section-text-slogan {
+    font-size: 2em;
+  }
+  .snap-contenedor {
+    width: 100%;
+    padding: 0 3em;
+    gap: 1em;
+  }
+  .child {
+    width: 50%;
+    border: 1px solid var(--gray);
+    border-radius: 1em;
+    padding: 1em 0;
+    transition: all 0.3s;
+    & img {
+      object-fit: cover;
+      width: 100%;
+      transition: 0.2s ease-in;
+    }
+    &:hover:nth-child(1) {
+      box-shadow: inset 0 -10px 15px orangered;
+    }
+    &:hover:nth-child(2) {
+      box-shadow: inset 0 -10px 15px white;
+    }
+    &:hover:nth-child(3) {
+      box-shadow: inset 0 -10px 15px #f0e970;
+    }
+    &:hover img {
+      transform: translateY(-40px) scale(1.1);
+    }
+  }
+  .text-models-contenedor {
+    padding: 0 10px;
+  }
+}
+
+@media (width> 800px) {
+  .antony-leon {
+    & h2 {
+      font-size: 3em;
+    }
+  }
+  .carousel-container {
+    & img {
+      width: 450px;
+    }
+  }
+  .video-section {
+    margin: 10em 0;
+  }
+  .video-section-text-slogan {
+    font-size: 2.4em;
+  }
+  .ul-text-list {
+    font-size: 1.3em;
+    text-wrap: nowrap;
+  }
+  .section-three-escena {
+    margin: 10em 0;
+  }
+}
+
+/* 320px — 480px: Dispositivos móviles
+481px — 768px: iPads, tablets
+769px — 1024px: Pantallas pequeñas, ordenadores portátiles
+1025px — 1200px: Pantallas grandes, ordenadores de escritorio
+1201px y más — Pantallas extra-grandes, televisores */

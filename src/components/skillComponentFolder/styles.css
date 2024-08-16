@@ -1,0 +1,21 @@
+.skill-text-contenedor {
+  text-align: center;
+
+  & h2 {
+    color: var(--white);
+  }
+}
+.contenedor-skills {
+  margin-top: 5em;
+}
+.contenedor-flecha-bajar {
+  color: white;
+  display: flex;
+  justify-content: center;
+  & a {
+    right: 10%;
+    text-align: center;
+    color: white;
+    width: 40px;
+  }
+}

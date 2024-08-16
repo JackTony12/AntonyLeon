@@ -1,0 +1,78 @@
+.habanerox-section {
+  max-width: 1080px;
+  margin: 0 3em;
+  display: grid;
+  place-items: center;
+  & img {
+    object-fit: cover;
+  }
+  & h2 {
+    color: var(--white);
+    margin: 2em 0;
+    font-size: 2em;
+  }
+  p {
+    color: var(--white);
+  }
+}
+.right-modal {
+  color: var(--white);
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  transition: 1s ease;
+  transition-delay: 0.2s;
+  padding: 0 1em;
+  opacity: 0;
+  & a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px 10px;
+    background-color: #9c0000;
+    &:hover {
+      background-color: #c00505;
+    }
+  }
+}
+.habanerox-card {
+  border: 1px solid orangered;
+  border-radius: 1em;
+  width: 380px;
+  height: 500px;
+  padding: 1em;
+  transition: 1s ease;
+  position: relative;
+  background: black;
+  &:hover {
+    transform: translateX(-200px);
+  }
+  &:hover .right-modal {
+    transform: translateX(200px);
+    opacity: 1;
+  }
+  &:hover .chile-img img {
+    filter: drop-shadow(0 0 20px orangered);
+  }
+}
+.chile-img {
+  text-align: center;
+  & img {
+    transition: 0.4s ease;
+    width: 90%;
+  }
+}
+.habanerox-img {
+  text-align: center;
+  & img {
+    width: 300px;
+  }
+}
+.habanerox-bottle-contenedor {
+  & img {
+    object-fit: cover;
+    width: 80%;
+    filter: drop-shadow(0 0 20px #9c0000);
+  }
+}

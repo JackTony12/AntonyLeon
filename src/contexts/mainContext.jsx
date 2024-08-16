@@ -1,20 +1,20 @@
-import React from 'react'
-import { createContext, useState } from 'react'
-const MyContext = createContext();
+import React from "react"
+import { createContext, useState } from "react"
+const MyContext = createContext()
 
-const MyContextFunction = ({children}) => {
-    const [interruptor, setInterruptor] = useState(false);
-    console.log('rendered')
+const MyContextFunction = ({ children }) => {
+  const [interruptor, setInterruptor] = useState(false)
 
   return (
-    <MyContext.Provider value={{
+    <MyContext.Provider
+      value={{
         setInterruptor,
-        interruptor
-
-    }}>
-        {children}
+        interruptor,
+      }}
+    >
+      {children}
     </MyContext.Provider>
   )
 }
 
-export  {MyContext,MyContextFunction}
+export { MyContext, MyContextFunction }

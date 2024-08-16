@@ -1,0 +1,38 @@
+.main-footer {
+  position: relative;
+  padding: 3vw;
+  color: var(--white);
+}
+.footer-text-contenedor {
+  margin-bottom: 2em;
+  padding: 0 2em;
+}
+
+.form-contact-contenedor {
+  display: flex;
+}
+.logoAl-contenedor {
+  width: 50%;
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  & img {
+    object-fit: cover;
+    width: 30%;
+    aspect-ratio: 1/1;
+  }
+}
+@media (width < 766px) {
+  .form-contact-contenedor {
+    flex-direction: column;
+  }
+  .logoAl-contenedor {
+    width: 100%;
+  }
+}
+.about-me {
+  padding: 0 1em;
+}
