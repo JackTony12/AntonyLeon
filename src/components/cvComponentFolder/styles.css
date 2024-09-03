@@ -4,7 +4,7 @@
   & img {
     object-fit: cover;
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 8/9;
   }
 }
 .section-profile {
@@ -21,34 +21,21 @@
   padding: 0 0 0 3em;
 }
 .boton-cv {
-  text-align: center;
   color: var(--white);
   text-decoration: none;
+  text-wrap: nowrap;
   transition: 0.2s ease;
-  padding: 0.3em 1em;
-  border-radius: 3px;
-  border: 1px;
-  border-style: solid;
-  background-color: transparent;
-  width: 70%;
   &:hover {
-    -webkit-border-image: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      from(#01f7ff),
-      to(#ff05b4)
-    );
-    border-image: linear-gradient(to bottom right, #03cff3, #f00ed2);
-    border-image-slice: 1;
-
-    box-shadow: 0px 0px 10px rgba(126, 83, 167, 0.493);
     transform: scale(1.02);
+    color: gray;
   }
 
   &:active {
     background-color: white;
     color: black;
+  }
+  svg {
+    margin: 0 10px;
   }
 }
 .capsula-ex-cv {

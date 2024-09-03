@@ -16,6 +16,10 @@
   }
 }
 .right-modal {
+  border-right: 1px solid orangered;
+  border-top: 1px solid orangered;
+  border-bottom: 1px solid orangered;
+  border-radius: 0 10px 10px 0;
   color: var(--white);
   position: absolute;
   right: 0;
@@ -24,7 +28,7 @@
   width: 200px;
   transition: 1s ease;
   transition-delay: 0.2s;
-  padding: 0 1em;
+  padding: 0 1em 0 1.9em;
   opacity: 0;
   & a {
     text-decoration: none;
@@ -49,7 +53,7 @@
     transform: translateX(-200px);
   }
   &:hover .right-modal {
-    transform: translateX(200px);
+    transform: translateX(190px);
     opacity: 1;
   }
   &:hover .chile-img img {

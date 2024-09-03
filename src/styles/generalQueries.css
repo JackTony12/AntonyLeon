@@ -32,8 +32,8 @@
     min-width: 350px;
   }
   .boton-cv {
-    width: 100%;
     font-size: medium;
+    text-align: center;
   }
   /* perfil section end----------------------- */
 
@@ -114,6 +114,11 @@
       font-size: 2.5em;
     }
   }
+  .boton-cv {
+    width: 0%;
+    text-align: left;
+  }
+
   .icon-skill {
     height: 7em;
   }
@@ -191,7 +196,7 @@
 @media (width> 800px) {
   .antony-leon {
     & h2 {
-      font-size: 3em;
+      font-size: 4em;
     }
   }
   .carousel-container {

@@ -1,6 +1,6 @@
 import React from "react"
 import AL_Background from "../../assets/images/perfil-antonyleon-website.webp"
-import cv from "../../assets/Cv/ANTONYLEONCV.pdf"
+import cv from "../../assets/Cv/AntonyCv.pdf"
 import "./styles.css"
 
 const CvBackComponent = () => {
@@ -21,6 +21,7 @@ const CvBackComponent = () => {
             </span>
             Years of experience
           </p>
+
           <a download='AntonyLeonCV.pdf' className='boton-cv' href={cv}>
             <svg
               stroke='currentColor'

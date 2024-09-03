@@ -60,7 +60,7 @@ const FormContact = () => {
           ></input>
         </div>
         <div className='form-group'>
-          <label htmlFor='textArea'>Mensaje</label>
+          <label htmlFor='textArea'>Message</label>
           <textarea
             className='textArea'
             value={userData.mensaje}

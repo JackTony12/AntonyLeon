@@ -5,14 +5,12 @@ import "./styles.css"
 const SkilsTarjetasComponent = () => {
   return (
     <>
-      <section>
+      <section className='main-article'>
         <div className='skill-text-contenedor'>
           <h2>
             <span>Skills and technologies</span>
           </h2>
         </div>
-      </section>
-      <section className='main-article'>
         <section id='section-skills' className='section-skills'>
           <div className='contenedor-skills'>
             <Iconos />

@@ -14,8 +14,8 @@ export function MainComponent() {
     <>
       <Header />
       <CvBackComponent />
-      <SkilsTarjetasComponent />
       <Proyects />
+      <SkilsTarjetasComponent />
       <Snap />
       <Habanerox />
       <VideoComponent />
