@@ -1,7 +1,7 @@
 import React from "react"
 import FormContact from "../ContactComponentFolder/formcontact"
 import "./styles.css"
-import logoAl from "../../assets/images/LogoAL.webp"
+import logoAl from "../../assets/images/logoSinFondoAl.webp"
 
 const FooterComponent = () => {
   return (

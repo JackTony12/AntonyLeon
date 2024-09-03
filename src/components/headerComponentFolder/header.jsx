@@ -1,6 +1,5 @@
 import { MyContext } from "../../contexts/mainContext"
 import { useContext, useState } from "react"
-import { toast } from "sonner"
 import "./styles.css"
 function Header() {
   const { setInterruptor, interruptor } = useContext(MyContext)
