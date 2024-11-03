@@ -11,7 +11,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  & a {
+  border: 1px solid var(--gray-low-100);
+  transition: 0.5s;
+  & span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +24,21 @@
       color: var(--gray);
     }
   }
+  &:hover {
+    transform: translateZ(50px);
+    background-color: rgb(215, 223, 230);
+    color: var(--gray-high);
+    box-shadow: 0 0 10px #ffffff98;
+  }
+}
+
+.icon-skill:hover + .icon-skill {
+  transform: translateZ(50px) rotateY(10deg);
+  background-color: var(--gray-high);
+}
+.icon-skill:has(+ *:hover) {
+  transform: translateZ(50px) rotateY(-10deg);
+  background-color: var(--gray-high);
 }
 .icon {
   color: var(--gray);

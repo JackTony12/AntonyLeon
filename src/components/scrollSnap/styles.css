@@ -1,9 +1,9 @@
 .snap-contenedor {
   color: white;
   scroll-snap-type: x mandatory;
+  scrollbar-width: none;
   max-width: 1080px; /* Resta espacio para los botones */
   display: flex;
-  scrollbar-width: none;
   margin: 3em 0 5em 0;
   box-shadow: inset 10px 0 20px black, inset 0 0 0 transparent,
     inset -20px 0 20px black, inset 0 0px 0px transparent;

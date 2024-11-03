@@ -7,10 +7,10 @@ const Iconos = () => {
       {svgIcons.map((item, index) => {
         return (
           <div className='icon-skill' key={index}>
-            <a href='#'>
+            <span>
               {item.icon}
               <span>{item.name}</span>
-            </a>
+            </span>
           </div>
         )
       })}

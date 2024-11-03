@@ -1,6 +1,6 @@
 import React from "react"
 import "./styles.css"
-import digital from "../../assets/images/digitalExperience.webp"
+import digital from "../../assets/images/ologram.gif"
 
 const VideoComponent = () => {
   const cheksvg = (

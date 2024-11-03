@@ -83,6 +83,10 @@
     background-color: #000000;
     color: white;
     border: 1px solid white;
+    & img {
+      width: 100px;
+      object-fit: cover;
+    }
   }
   .menu-active {
     right: 0;
