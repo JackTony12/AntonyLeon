@@ -1,82 +1,166 @@
-.habanerox-section {
-  max-width: 1080px;
-  margin: 0 3em;
-  display: grid;
-  place-items: center;
-  & img {
-    object-fit: cover;
-  }
-  & h2 {
-    color: var(--white);
+.card-section {
+  color: var(--white);
+  width: 100%;
+  margin-bottom: 10em;
+  h2 {
+    text-align: center;
     margin: 2em 0;
     font-size: 2em;
   }
-  p {
-    color: var(--white);
-  }
 }
-.right-modal {
-  border-right: 1px solid orangered;
-  border-top: 1px solid orangered;
-  border-bottom: 1px solid orangered;
-  border-radius: 0 10px 10px 0;
-  color: var(--white);
-  position: absolute;
-  right: 0;
-  top: 0;
+.card-container {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 350px;
+  height: 550px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
   height: 100%;
-  width: 200px;
-  transition: 1s ease;
-  transition-delay: 0.2s;
-  padding: 0 1em 0 1.9em;
-  opacity: 0;
-  & a {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card-front {
+  border: 2px solid white;
+}
+
+.card-back {
+  background: var(--black100);
+  transform: rotateY(180deg);
+  p {
+    font-size: 0.8em;
+  }
+  a {
     text-decoration: none;
-    color: var(--white);
-    padding: 5px 10px;
-    background-color: #9c0000;
+    font-size: 0.9em;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0.3em 0.6em;
+    margin-top: 1em;
+    transition: 0.4s;
     &:hover {
-      background-color: #c00505;
+      color: var(--white);
+      background-color: var(--gray-high);
     }
   }
-}
-.habanerox-card {
-  border: 1px solid orangered;
-  border-radius: 1em;
-  width: 380px;
-  height: 500px;
-  padding: 1em;
-  transition: 1s ease;
-  position: relative;
-  background: black;
-  &:hover {
-    transform: translateX(-200px);
+  big {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1em;
   }
-  &:hover .right-modal {
-    transform: translateX(190px);
-    opacity: 1;
-  }
-  &:hover .chile-img img {
-    filter: drop-shadow(0 0 20px orangered);
+  h3 {
+    font-weight: 600;
+    font-size: medium;
   }
 }
-.chile-img {
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 8/2;
+  object-fit: cover;
+}
+
+.card-description {
+  margin-top: 10px;
   text-align: center;
-  & img {
-    transition: 0.4s ease;
-    width: 90%;
-  }
 }
-.habanerox-img {
-  text-align: center;
+.salsa-picante {
+  display: flex;
   & img {
-    width: 300px;
-  }
-}
-.habanerox-bottle-contenedor {
-  & img {
+    width: 30%;
+    aspect-ratio: 2/6;
     object-fit: cover;
-    width: 80%;
-    filter: drop-shadow(0 0 20px #9c0000);
   }
+  > div {
+    padding: 0 1em;
+  }
+}
+.chile {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.local-only {
+  font-size: 0.7em;
+  color: var(--gray);
+}
+.tray-section {
+  display: flex;
+  width: 100%;
+}
+.tray-opened {
+  display: none;
+}
+.tray-images {
+  width: 100%;
+  height: 200px;
+  & img {
+    width: 45%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: absolute;
+    bottom: 30px;
+  }
+  &:hover .tray-closed {
+    display: none;
+  }
+  &:hover .tray-opened {
+    display: block;
+  }
+}
+.tray-info {
+  width: 90%;
+}
+.out,
+.avalible {
+  position: relative;
+  &::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 69, 69);
+    display: inline-block;
+    margin-right: 5px;
+    box-shadow: 0 0 8px rgb(255, 0, 0);
+  }
+}
+.avalible {
+  &::before {
+    background-color: #3eff3e;
+    box-shadow: 0 0 10px #00c700;
+  }
+}
+.price {
+  color: lightgreen;
+}
+.salsa-description {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 0.3em;
+  background: rgba(27, 27, 27, 0.74);
 }

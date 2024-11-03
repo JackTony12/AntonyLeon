@@ -1,5 +1,6 @@
 import { MyContext } from "../../contexts/mainContext"
 import { useContext, useState } from "react"
+import logo from "../../assets/images/ALv20.webp"
 import "./styles.css"
 function Header() {
   const { setInterruptor, interruptor } = useContext(MyContext)
@@ -38,6 +39,7 @@ function Header() {
         <div
           className={`btn-padre-contenedor${menuSwich ? " menu-active" : ""}`}
         >
+          <img src={logo} alt='logoAL' />
           <div className='btn-contenedor'>
             <a
               className='Btn'

@@ -7,16 +7,19 @@ const Snap = () => {
   const models = [
     {
       name: "Abandoned shack",
+      nameclass: "abandoned-shack",
       img: shack,
       description: "Every abandoned place has a story",
     },
     {
       name: "Small kitchen",
+      nameclass: "small-kitchen",
       img: kitchen,
       description: "A scale model of my home kitchen",
     },
     {
       name: "Tiny car",
+      nameclass: "tiny-car",
       img: car,
       description: "No, it is not mr bean's car.",
     },
@@ -30,16 +33,18 @@ const Snap = () => {
           I put into practice my knowledge of 3d to create some works like
           these,
         </p>
-        <p>
-          soon to be presented in three.js and downloadable gltf and .blend
-          files
-        </p>
+        <p>soon to be presented with three.js</p>
       </div>
       <section className='snap-contenedor'>
         {models.map((e, index) => {
           return (
             <div className='child' key={index}>
-              <img loading='lazy' src={e.img} alt={e.name} />
+              <img
+                loading='lazy'
+                src={e.img}
+                alt={e.name}
+                className={e.nameclass}
+              />
               <div className='text-models-contenedor'>
                 <h2>{e.name}</h2>
                 <p>{e.description}</p>

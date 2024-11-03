@@ -7,6 +7,8 @@
 }
 .contenedor-skills {
   margin-bottom: 5em;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 .contenedor-flecha-bajar {
   color: white;

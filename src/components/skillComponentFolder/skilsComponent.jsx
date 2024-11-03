@@ -1,7 +1,6 @@
 import React from "react"
 import Iconos from "../iconosComponentFolder/iconos"
 import "./styles.css"
-
 const SkilsTarjetasComponent = () => {
   return (
     <>

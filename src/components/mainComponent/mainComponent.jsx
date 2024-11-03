@@ -6,18 +6,20 @@ import CvBackComponent from "../cvComponentFolder/Cv_backComponent"
 import SkilsTarjetasComponent from "../skillComponentFolder/skilsComponent"
 import FooterComponent from "../footerComponentFolder/footerComponent"
 import VideoComponent from "../videoComponentFolder/videoComponent"
-import Proyects from "../proyectsComponent/proyects"
 import Snap from "../scrollSnap/snap"
-import Habanerox from "../habanerox/habanerox"
+import CardHabanerox from "../habanerox/cardHabanerox"
+import ProyectsNew from "../newProyects/proyectsNew"
+import Blog from "../../components/blogCodigo/blog"
 export function MainComponent() {
   return (
     <>
       <Header />
       <CvBackComponent />
-      <Proyects />
+      <ProyectsNew />
       <SkilsTarjetasComponent />
       <Snap />
-      <Habanerox />
+      <CardHabanerox />
+      <Blog />
       <VideoComponent />
       <FooterComponent />
     </>
