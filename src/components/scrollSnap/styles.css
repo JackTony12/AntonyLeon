@@ -2,7 +2,7 @@
   color: white;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  max-width: 1080px; /* Resta espacio para los botones */
+  max-width: 1200px; /* Resta espacio para los botones */
   display: flex;
   margin: 3em 0 5em 0;
   box-shadow: inset 10px 0 20px black, inset 0 0 0 transparent,
@@ -14,7 +14,11 @@
     text-align: left;
   }
 }
-
+.child {
+  & img {
+    aspect-ratio: 4/3;
+  }
+}
 .title-3d-models {
   margin-left: 3em;
   h1 {

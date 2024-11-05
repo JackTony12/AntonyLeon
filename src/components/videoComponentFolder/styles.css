@@ -13,7 +13,7 @@
 .ul-text-list {
   color: var(--white);
   padding: 1em 1.5em;
-  border: 1px solid var(--gray-low);
+  border: 1px solid var(--gray-low-100);
   border-radius: 0.5em;
   list-style: none;
   width: 100%;

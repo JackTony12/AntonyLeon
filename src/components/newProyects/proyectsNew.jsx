@@ -114,13 +114,13 @@ const ProyectsNew = () => {
       ),
       description: "Simple and fast to-do list application",
       date: "© 2023",
-      tecnologyes: ["Next", "JavaScript", "HTML", "CSS", "React-toastify"],
+      tecnologyes: ["Next.js", "JavaScript", "HTML", "CSS", "React-toastify"],
       url: "https://todo-list-sigma-one-35.vercel.app/",
     },
   ]
   return (
     <section className='proyects-section'>
-      <h2>Proyects</h2>
+      <h2 id='proyects'>Proyects</h2>
       <div className='p-container'>
         {proyects.map((proyect, index) => (
           <div className='p-card' key={index}>
