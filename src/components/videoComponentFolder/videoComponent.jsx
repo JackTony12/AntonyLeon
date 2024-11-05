@@ -1,6 +1,6 @@
 import React from "react"
 import "./styles.css"
-import digital from "../../assets/images/ologram.gif"
+import digital from "../../assets/images/ologram3.gif"
 
 const VideoComponent = () => {
   const cheksvg = (
@@ -28,6 +28,7 @@ const VideoComponent = () => {
             <li>{cheksvg} Clean and structured code</li>
             <li>{cheksvg} Optimization and performance</li>
             <li>{cheksvg} Responsive and user-friendly design</li>
+            <li>{cheksvg} SEO optimization</li>
           </ul>
         </div>
         <div className='digital-experience-contenedor'>

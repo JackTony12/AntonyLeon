@@ -38,14 +38,14 @@ const CardHabanerox = () => {
                 <div>
                   <h3>HOT SUACE</h3>
                   <span className='out'>Not available</span>
-                  <p className='price'>Precio</p>
+                  <p className='price'>Price</p>
                   <p>
                     <big>45</big>HNL
                   </p>
                   <p>$1.80 USD</p>
                   <p className='salsa-description'>
                     A sauce with an incomparable flavor and the fury of the
-                    habanero inside. inside. Do you dare to try it?
+                    habanero inside. Do you dare to try it?
                   </p>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React from "react"
-import AL_Background from "../../assets/images/perfil-antonyleon-website2.webp"
+import AL_Background from "../../assets/images/posteryo.webp"
 import cvEs from "../../assets/Cv/AntonyCv.pdf"
 import cvEn from "../../assets/Cv/AntonyNewCvEnglish.pdf"
 import "./styles.css"
