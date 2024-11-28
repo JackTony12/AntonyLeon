@@ -3,37 +3,37 @@ import shack from "../../assets/images/choza2.webp"
 import kitchen from "../../assets/images/cocina.webp"
 import car from "../../assets/images/carrito.webp"
 import "./styles.css"
-const Snap = () => {
+const Models3d = () => {
   const models = [
     {
-      name: "Abandoned shack",
+      name: "Choza",
       nameclass: "abandoned-shack",
       img: shack,
-      description: "Every abandoned place has a story",
+      description: "Todo lugar abandonado tiene una historia",
     },
     {
-      name: "Small kitchen",
+      name: "Cocina",
       nameclass: "small-kitchen",
       img: kitchen,
-      description: "A scale model of my home kitchen",
+      description: "Un modelo sencillo de una cocina",
     },
     {
-      name: "Tiny car",
+      name: "Mini auto",
       nameclass: "tiny-car",
       img: car,
-      description: "No, it is not mr bean's car.",
+      description: "No, no es el auto de Mr Bean",
     },
   ]
 
   return (
     <>
       <div className='title-3d-models'>
-        <h1 id='blender'>3D models</h1>
+        <h2 id='blender'>Modelos 3D</h2>
         <p>
-          I put into practice my knowledge of 3d to create some works like
-          these,
+          También he aprendido sobre el mundo del diseño 3D, estos son algunos
+          de mis modelos
         </p>
-        <p>soon to be presented with three.js</p>
+        <p>Pronto seran presentados con Three.js</p>
       </div>
       <section className='snap-contenedor'>
         {models.map((e, index) => {
@@ -46,7 +46,7 @@ const Snap = () => {
                 className={e.nameclass}
               />
               <div className='text-models-contenedor'>
-                <h2>{e.name}</h2>
+                <h3>{e.name}</h3>
                 <p>{e.description}</p>
               </div>
             </div>
@@ -57,4 +57,4 @@ const Snap = () => {
   )
 }
 
-export default Snap
+export default Models3d

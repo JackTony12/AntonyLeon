@@ -4,15 +4,14 @@ import blogImg from "../../assets/images/blog.webp"
 const Blog = () => {
   return (
     <>
-      <h2 className='blog-title'>Personal proyect</h2>
       <section className='blog-section'>
         <div className='blog-text'>
           <div>
-            <h2>Code-Blog </h2>
-            <p>Learn web development like nowhere else</p>
+            <h3>Mi blog de codigo</h3>
+            <p>Aprende desarrollo web como en ningún otro lugar</p>
           </div>
           <div>
-            <button>Building...</button>
+            <button>Construyendo...</button>
           </div>
         </div>
         <div className='blog-img-container'>

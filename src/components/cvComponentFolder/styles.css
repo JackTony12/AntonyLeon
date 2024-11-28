@@ -10,55 +10,11 @@
   display: flex;
   width: 100%;
   margin-bottom: 5em;
-  background-image: url("../../assets/images/fondo poligonal.webp");
+  background-image: url("../../assets/images/logotrazo.webp");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   box-shadow: 30px 0 50px black inset;
-}
-.float-point {
-  position: absolute;
-  top: 0;
-  width: 11em;
-  height: 15em;
-  border-radius: 1px;
-  filter: blur(60px);
-
-  animation: moveX 100s linear infinite, moveY 90s ease-in-out infinite,
-    changeColor 20s ease-in-out infinite;
-  transition: 0.5s ease;
-}
-@keyframes moveX {
-  0% {
-    left: 0;
-  }
-  50% {
-    left: calc(400px - 50px);
-  }
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes moveY {
-  0%,
-  100% {
-    top: 0;
-  }
-  50% {
-    top: calc(200px - 50px);
-  }
-}
-@keyframes changeColor {
-  0% {
-    background-color: #38f3e359;
-  }
-  50% {
-    background-color: #ff32c154;
-  }
-  100% {
-    background-color: #38f3e35d;
-  }
 }
 
 .name-button-group {
@@ -194,7 +150,7 @@ button:hover {
 .antony-leon {
   color: var(--white);
 
-  & h2 {
+  & h1 {
     font-family: sans-serif;
     & p {
       letter-spacing: 1px;

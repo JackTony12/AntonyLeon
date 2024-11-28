@@ -7,8 +7,7 @@ const FooterComponent = () => {
   return (
     <footer id='footer' className='main-footer'>
       <div className='footer-text-contenedor'>
-        <h2>Area of contact</h2>
-        <p>Send me a messaje to talk about something</p>
+        <h2>Area de contacto</h2>
       </div>
       <div className='form-contact-contenedor'>
         <FormContact />
@@ -19,10 +18,11 @@ const FooterComponent = () => {
           </div>
           <div className='about-me'>
             <p id='about'>
-              I was born in honduras city of Tegucigalpa, I'm 24 years old and
-              my love for web design came since I was 18 years old, I'm not
-              dedicated to this but I know enough to create something nice for
-              you.
+              Nací en honduras ciudad de Tegucigalpa, tengo 24 años siempre me
+              ha encantado la tecnología pero mi amor por el desarrollo web
+              viene desde los 19, desde ese momento mi pasión y mis ganas de
+              aprender no han parado, no me dedico a esto pero se lo suficiente
+              para crear algo bonito para ti.
             </p>
           </div>
         </div>

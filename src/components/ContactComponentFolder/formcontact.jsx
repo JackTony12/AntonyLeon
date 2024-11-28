@@ -47,20 +47,20 @@ const FormContact = () => {
     <div className='form-container'>
       <form className='form' onSubmit={handleSubmit}>
         <div className='form-group'>
-          <label htmlFor='email'>Email</label>
+          <label htmlFor='email'>Correo</label>
           <input
             type='text'
             name='email'
             value={userData.email}
             onChange={handleChange}
-            placeholder='example@gmail.com'
+            placeholder='ejemplo@gmail.com'
             required
             autoComplete='true'
             id='email'
           ></input>
         </div>
         <div className='form-group'>
-          <label htmlFor='textArea'>Message</label>
+          <label htmlFor='textArea'>Mensaje</label>
           <textarea
             className='textArea'
             value={userData.mensaje}
@@ -68,12 +68,12 @@ const FormContact = () => {
             onChange={handleChange}
             required
             id='textArea'
-            placeholder='What can i do for you?'
+            placeholder='¡Habla conmigo!'
             maxLength={50}
           ></textarea>
         </div>
         <button className='form-submit-btn' type='submit'>
-          Send
+          Enviar
         </button>
       </form>
       <Toaster />
