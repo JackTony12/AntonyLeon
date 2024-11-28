@@ -1,0 +1,62 @@
+.services-section {
+  position: relative;
+  margin: 5em 0;
+  width: 100%;
+}
+
+.services-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
+  place-items: center;
+}
+
+.card-services {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(rgb(0, 0, 0), rgb(19, 19, 19));
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  color: var(--white100);
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 5px 5px 1px rgb(255, 255, 255);
+  }
+}
+.user-icon {
+  font-size: 2em;
+}
+.left-side {
+  padding: 20px 35px 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.l-text {
+  padding: 10px 0 0 0;
+  font-size: 12px;
+}
+.r-number,
+.r-space {
+  width: 15%;
+  position: absolute;
+  right: 0;
+}
+.service-title {
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.r-number {
+  /* background-color: var(--gray-low-100); */
+  height: 30%;
+  border: 1px solid white;
+  border-radius: 0 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}

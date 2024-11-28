@@ -1,23 +1,46 @@
-.skill-text-contenedor {
-  text-align: center;
-
-  & h2 {
-    color: var(--white);
-  }
-}
 .contenedor-skills {
   margin-bottom: 5em;
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
-.contenedor-flecha-bajar {
-  color: white;
+
+.section-skills {
+  padding: 3vw 2vw;
+}
+.contenedor-skills {
+  width: 100%;
+  gap: 5px;
+  display: grid;
+}
+
+.icon-skill {
   display: flex;
+  align-items: center;
   justify-content: center;
-  & a {
-    right: 10%;
-    text-align: center;
-    color: white;
-    width: 40px;
+  border: 1px solid var(--gray-low-100);
+  transition: 0.5s;
+  & span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    & span {
+      text-decoration: none;
+      color: var(--gray);
+    }
   }
+  &:hover {
+    transform: translateZ(50px);
+  }
+}
+
+.icon-skill:hover + .icon-skill {
+  transform: translateZ(50px) rotateY(10deg);
+}
+.icon-skill:has(+ * + *:hover) {
+  transform: translateZ(50px) rotateY(-10deg);
+}
+.icon {
+  color: var(--gray);
 }

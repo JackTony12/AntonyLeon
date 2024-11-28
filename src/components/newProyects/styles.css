@@ -1,10 +1,6 @@
 .proyects-section {
   margin: 8em 0;
-  & h2 {
-    text-align: center;
-    font-size: 2em;
-    color: var(--white);
-  }
+
   & a {
     text-decoration: none;
     color: var(--gray);
@@ -28,16 +24,43 @@
   display: flex;
   gap: 10px;
   margin: 2em 0;
-  padding: 2em 0;
+  padding: 3em 0;
+}
+.p-container .p-card:nth-child(1)::after {
+  background: #fa2626;
+  box-shadow: 0 0 10px #ff0303;
+}
+.p-container .p-card:nth-child(2)::after {
+  background: #ff711f;
+  box-shadow: 0 0 10px #ff6a06;
+}
+.p-container .p-card:nth-child(3)::after {
+  background: #3d70fc;
+  box-shadow: 0 0 10px #008cff;
+}
+.p-container .p-card:nth-child(4)::after {
+  background: #73fc3d;
+  box-shadow: 0 0 10px #00d412;
 }
 .p-card {
   width: 300px;
-  color: var(--gray-thin);
+  color: var(--white);
+  /* background: var(--gray-target); */
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(49, 49, 49));
   position: relative;
   padding: 1em;
   transition: 0.5s ease;
   border: 1px solid var(--gray-low-100);
   border-radius: 1em;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 10%;
+    width: 3px;
+    height: 80%;
+    border-radius: 5px;
+  }
 
   & img {
     width: 100%;
@@ -49,8 +72,8 @@
     text-wrap: balance;
   }
   h3 {
-    font-size: 1.6em;
-    font-weight: 100;
+    font-size: 1.2em;
+    font-weight: 800;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -64,13 +87,16 @@
   right: 10px;
 }
 .p-icon {
-  background-color: var(--white);
-  color: var(--gray-low-100);
+  background: linear-gradient(45deg, rgb(0, 84, 90), rgb(0, 198, 212));
+  color: white;
   padding: 0.2em;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0.2em;
+}
+.p-date {
+  color: var(--gray-low);
 }
 .tecnology-container {
   display: flex;
@@ -82,6 +108,18 @@
 .t-tecnology {
   padding: 0.1em 0.6em;
   transition: 0.3s ease;
-  background-color: var(--gray-low-100);
+  background-color: var(--gray-target-100);
   border-radius: 0.4em;
+  box-shadow: 2px 3px 4px var(--almostblack);
+}
+.p-svg-icon {
+  position: absolute;
+  right: 10%;
+  top: -10%;
+  font-size: 2.5em;
+  transition: 0.4s ease;
+  /* filter: drop-shadow(0 0 25px #49e600); */
+}
+.p-card:hover .p-svg-icon {
+  transform: scale(1.2);
 }

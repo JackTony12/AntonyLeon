@@ -49,7 +49,7 @@ function Header() {
               }}
               href='#about'
             >
-              About
+              Sobre
             </a>
           </div>
 
@@ -60,7 +60,7 @@ function Header() {
               href='#proyects'
               data-text='Proyectos'
             >
-              Proyects
+              Proyectos
             </a>
           </div>
           <div className='btn-contenedor'>
@@ -80,7 +80,7 @@ function Header() {
               href='#footer'
               data-text='Contacto'
             >
-              Contact
+              Contacto
             </a>
           </div>
           <div className='btn-contenedor'>
@@ -89,7 +89,7 @@ function Header() {
               href='#'
               className='Btn btn-cerrar-menu'
             >
-              Close
+              Cerrar
             </a>
           </div>
         </div>

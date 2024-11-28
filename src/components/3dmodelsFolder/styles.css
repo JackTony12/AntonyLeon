@@ -4,26 +4,20 @@
   scrollbar-width: none;
   max-width: 1200px; /* Resta espacio para los botones */
   display: flex;
-  margin: 3em 0 5em 0;
+  margin: 3em 0;
   box-shadow: inset 10px 0 20px black, inset 0 0 0 transparent,
     inset -20px 0 20px black, inset 0 0px 0px transparent;
-
-  h1,
-  p {
-    color: var(--white);
-    text-align: left;
-  }
+  padding: 0;
 }
 .child {
+  & h3 {
+    font-size: 1.5em;
+  }
   & img {
     aspect-ratio: 4/3;
   }
 }
 .title-3d-models {
-  margin-left: 3em;
-  h1 {
-    color: var(--white);
-  }
   p {
     color: var(--white);
   }
