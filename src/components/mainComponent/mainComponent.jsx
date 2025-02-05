@@ -10,6 +10,7 @@ import DelAcosta from "../delAcosta/delAcosta"
 import ProyectsNew from "../newProyects/proyectsNew"
 import Blog from "../../components/blogCodigo/blog"
 import Skills from "../skillComponentFolder/iconos"
+import Visualizer from "../musicVisualizer/visualizer"
 export function MainComponent() {
   return (
     <>
@@ -17,6 +18,7 @@ export function MainComponent() {
       <CvBackComponent />
       <ProyectsNew />
       <Skills />
+      <Visualizer />
       <Models3d />
       <DelAcosta />
       <Blog />

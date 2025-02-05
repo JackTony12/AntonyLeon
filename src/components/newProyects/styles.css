@@ -1,6 +1,7 @@
 .proyects-section {
   margin: 8em 0;
-
+  position: relative;
+  width: 100%;
   & a {
     text-decoration: none;
     color: var(--gray);
@@ -10,6 +11,7 @@
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
+
     &:hover {
       border: 1px solid var(--gray);
       background-color: var(--white);
@@ -19,13 +21,33 @@
 }
 .p-container {
   scroll-snap-type: x mandatory;
-  width: 100%;
+  overflow: scroll;
   scrollbar-width: none;
+  width: 100%;
   display: flex;
   gap: 10px;
-  margin: 2em 0;
+  margin: 2em 0 0 0;
   padding: 3em 0;
 }
+.proyects-section::after,
+.proyects-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+.proyects-section::before {
+  left: 0;
+  background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+}
+.proyects-section::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.979), transparent);
+}
+
 .p-container .p-card:nth-child(1)::after {
   background: #fa2626;
   box-shadow: 0 0 10px #ff0303;
@@ -44,9 +66,11 @@
 }
 .p-card {
   width: 300px;
+
   color: var(--white);
-  /* background: var(--gray-target); */
-  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(49, 49, 49));
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  background: linear-gradient(20deg, rgb(0, 0, 0), rgb(27, 27, 27));
   position: relative;
   padding: 1em;
   transition: 0.5s ease;
@@ -122,4 +146,23 @@
 }
 .p-card:hover .p-svg-icon {
   transform: scale(1.2);
+}
+.scroll-buttons {
+  display: flex;
+  justify-content: center;
+}
+.scroll-button {
+  padding: 0.8em;
+  border: none;
+  background-color: transparent;
+  border: 1px solid var(--gray-low-100);
+  border-radius: 5px;
+  margin: 0 0.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: var(--gray-low-100);
+  }
 }

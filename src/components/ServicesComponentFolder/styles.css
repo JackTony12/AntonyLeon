@@ -6,15 +6,16 @@
 
 .services-contenedor {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
   place-items: center;
 }
 
 .card-services {
   width: 200px;
   height: 200px;
-  background: linear-gradient(rgb(0, 0, 0), rgb(19, 19, 19));
+  border: 1px solid gray;
+  /* background: linear-gradient(rgb(0, 0, 0), rgb(19, 19, 19)); */
   border-radius: 20px;
   display: flex;
   position: relative;
@@ -26,9 +27,12 @@
 }
 .user-icon {
   font-size: 2em;
+  & svg {
+    filter: drop-shadow(5px 10px 10px rgb(0, 166, 216));
+  }
 }
 .left-side {
-  padding: 20px 35px 15px 15px;
+  padding: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -49,8 +53,7 @@
   align-items: center;
   gap: 0 10px;
 }
-.r-number {
-  /* background-color: var(--gray-low-100); */
+/* .r-number {
   height: 30%;
   border: 1px solid white;
   border-radius: 0 20px 0 0;
@@ -59,4 +62,4 @@
   justify-content: center;
   font-weight: bold;
   font-size: 20px;
-}
+} */

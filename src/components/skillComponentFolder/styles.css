@@ -38,7 +38,7 @@
 .icon-skill:hover + .icon-skill {
   transform: translateZ(50px) rotateY(10deg);
 }
-.icon-skill:has(+ * + *:hover) {
+.icon-skill:has(+ *:hover) {
   transform: translateZ(50px) rotateY(-10deg);
 }
 .icon {

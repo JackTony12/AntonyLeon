@@ -8,7 +8,7 @@ const Services = () => {
       svg: (
         <svg
           stroke='currentColor'
-          fill='currentColor'
+          fill='white'
           strokeWidth='0'
           viewBox='0 0 16 16'
           height='1em'
@@ -33,7 +33,7 @@ const Services = () => {
       svg: (
         <svg
           stroke='currentColor'
-          fill='currentColor'
+          fill='white'
           strokeWidth='0'
           viewBox='0 0 24 24'
           height='1em'
@@ -54,13 +54,12 @@ const Services = () => {
 
       svg: (
         <svg
-          stroke='currentColor'
-          fill='none'
+          stroke='red'
+          fill='white'
           strokeWidth='0'
           viewBox='0 0 24 24'
           height='1em'
           width='1em'
-          xmlns='http://www.w3.org/2000/svg'
         >
           <path
             fillRule='evenodd'
@@ -91,18 +90,16 @@ const Services = () => {
       svg: (
         <svg
           stroke='currentColor'
-          fill='none'
-          strokeWidth='2'
+          fill='white'
+          strokeWidth='0'
           viewBox='0 0 24 24'
-          strokeLinecap='round'
-          strokeLinejoin='round'
           height='1em'
           width='1em'
           xmlns='http://www.w3.org/2000/svg'
         >
-          <path d='M11.5 21h-3.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v6'></path>
-          <path d='M11 4h2'></path>
-          <path d='M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z'></path>
+          <path fill='none' d='M0 0h24v24H0z'></path>
+          <path d='M17 18H7V6h10v1h2V3c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-4h-2v1zM7 3h10v1H7V3zm10 18H7v-1h10v1zM20.38 9.62 21 11l.62-1.38L23 9l-1.38-.62L21 7l-.62 1.38L19 9z'></path>
+          <path d='m16 8-1.25 2.75L12 12l2.75 1.25L16 16l1.25-2.75L20 12l-2.75-1.25zM21 13l-.62 1.38L19 15l1.38.62L21 17l.62-1.38L23 15l-1.38-.62z'></path>
         </svg>
       ),
     },
@@ -115,7 +112,7 @@ const Services = () => {
       svg: (
         <svg
           stroke='currentColor'
-          fill='currentColor'
+          fill='white'
           strokeWidth='0'
           viewBox='0 0 512 512'
           height='1em'
@@ -140,11 +137,7 @@ const Services = () => {
               <hr />
               <p className='l-text'>{item.description}</p>
             </div>
-            <div className='right-side'>
-              <p style={{ color: `${item.color}` }} className='r-number'>
-                {index}
-              </p>
-            </div>
+            <div className='right-side'></div>
           </div>
         )
       })}
