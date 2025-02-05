@@ -12,7 +12,7 @@ const CvBackComponent = () => {
           name-button-group'
       >
         <div className='antony-leon'>
-          <h1>Antony Leon</h1>
+          <h1>Antony Leonel</h1>
           <p>Desarrollador frontend</p>
         </div>
         <div className='capsula-ex-cv'>

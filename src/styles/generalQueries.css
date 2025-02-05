@@ -16,13 +16,14 @@
   --blurblue200: #21aeff;
 }
 h2 {
-  text-align: center;
+  text-align: left;
+  margin-left: 0.5em;
   font-size: 36px;
   background: linear-gradient(#ffffff, #ffffffd8, #000000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 3em 0 1em 0;
+  margin: 3em 0 1em 0.5em;
 }
 
 @media (width < 578px) {
@@ -144,7 +145,7 @@ h2 {
     }
   }
   .services-section {
-    padding: 0 3em;
+    padding: 0 1em;
   }
 }
 
@@ -155,7 +156,7 @@ h2 {
   }
   .antony-leon {
     & h1 {
-      font-size: 2.5em;
+      font-size: clamp(2em, 5vw, 3em);
     }
   }
   .boton-cv {
@@ -229,8 +230,11 @@ h2 {
     padding: 0 10px;
   }
   .contenedor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & img {
-      width: 90%;
+      width: 70%;
     }
   }
 
@@ -251,7 +255,7 @@ h2 {
   }
 }
 @media (width < 900px) {
-  .p-container {
+  /* .p-container {
     overflow: scroll;
   }
   .p-card {
@@ -259,7 +263,7 @@ h2 {
     flex-shrink: 0;
     padding: 1em 0;
     width: 400px;
-  }
+  } */
   .delacosta-section {
     flex-direction: column;
     gap: 3em;
@@ -281,11 +285,11 @@ h2 {
 }
 
 @media (width> 800px) {
-  .antony-leon {
+  /* .antony-leon {
     & h1 {
       font-size: 4em;
     }
-  }
+  } */
   .carousel-container {
     & img {
       width: 450px;

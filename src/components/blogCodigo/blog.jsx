@@ -7,8 +7,8 @@ const Blog = () => {
       <section className='blog-section'>
         <div className='blog-text'>
           <div>
-            <h3>Mi blog de codigo</h3>
-            <p>Aprende desarrollo web como en ningún otro lugar</p>
+            <h3>Blog de codigo</h3>
+            <p>Aprende desarrollo web de la forma mas sencilla</p>
           </div>
           <div>
             <button>Construyendo...</button>

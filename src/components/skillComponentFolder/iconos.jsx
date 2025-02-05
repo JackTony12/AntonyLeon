@@ -11,12 +11,26 @@ const Skills = () => {
 
     return color
   }
+  const icon = (
+    <svg
+      stroke='currentColor'
+      fill='white'
+      strokeWidth='0'
+      viewBox='0 0 24 24'
+      height='30px'
+      width='30px'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path d='M9 3h-4a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z'></path>
+      <path d='M9 13h-4a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z'></path>
+      <path d='M19 13h-4a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z'></path>
+      <path d='M17 3a1 1 0 0 1 .993 .883l.007 .117v2h2a1 1 0 0 1 .117 1.993l-.117 .007h-2v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2v-2a1 1 0 0 1 1 -1z'></path>
+    </svg>
+  )
 
   return (
     <section className='main-article'>
-      <div className='skill-text-contenedor'>
-        <h2>Habilidades y tecnologías</h2>
-      </div>
+      <h2>{icon} Habilidades y tecnologías</h2>
       <section id='section-skills' className='section-skills'>
         <div className='contenedor-skills'>
           {svgIcons.map((item, index) => {

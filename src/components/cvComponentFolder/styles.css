@@ -1,5 +1,6 @@
 .contenedor-img {
   width: 50%;
+
   margin: 5em 0;
   & img {
     object-fit: cover;
@@ -144,8 +145,8 @@ button:hover {
 }
 .capsula-ex-cv {
   display: flex;
+  margin-top: 2em;
   flex-direction: column;
-  gap: 1em;
 }
 .antony-leon {
   color: var(--white);
@@ -168,7 +169,7 @@ button:hover {
   background-size: 300%;
   color: transparent;
   & span {
-    font-size: 2.5em;
+    font-size: 2.3em;
     & span {
       font-size: 0.7em;
     }
