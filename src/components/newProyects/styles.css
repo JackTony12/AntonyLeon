@@ -64,6 +64,10 @@
   background: #73fc3d;
   box-shadow: 0 0 10px #00d412;
 }
+.p-container .p-card:nth-child(5)::after {
+  background: #e75123;
+  box-shadow: 0 0 10px #ff5100;
+}
 .p-card {
   width: 300px;
 

@@ -2,11 +2,29 @@
   font-family: "Poppins";
   src: url(../assets/font/Poppins-Regular.ttf);
 }
+@font-face {
+  font-family: "hallsan";
+  src: url(../assets/font/JejuHallasan-Regular.ttf);
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+header,
+.section-profile,
+.proyects-section,
+.main-article,
+.dubstep-title-container,
+.audio-container,
+.blog-section,
+.services-section,
+.models-section,
+footer {
   font-family: "Poppins", sans-serif;
+}
+.d-section {
+  font-family: "hallsan", sans-serif;
 }
 html {
   background-color: rgb(0, 0, 0);

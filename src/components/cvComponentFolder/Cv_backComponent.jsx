@@ -3,10 +3,21 @@ import AL_Background from "../../assets/images/posteryo.webp"
 import cvEs from "../../assets/Cv/AntonyCv.pdf"
 import cvEn from "../../assets/Cv/AntonyNewCvEnglish.pdf"
 import "./styles.css"
-
+import { useState, useEffect, useContext } from "react"
+import { MyContext } from "../../contexts/mainContext"
 const CvBackComponent = () => {
+  const { about, setAbout } = useContext(MyContext)
+  useEffect(() => {
+    if (about) {
+      const timer = setTimeout(() => {
+        setAbout(false)
+      }, 500)
+
+      return () => clearTimeout(timer) // Limpia el timeout si `about` cambia antes de que termine
+    }
+  }, [about])
   return (
-    <section className='section-profile'>
+    <section id='sobre' className='section-profile'>
       <div
         className='
           name-button-group'
@@ -23,7 +34,7 @@ const CvBackComponent = () => {
             <strong>Años de experiencia</strong>
           </p>
 
-          <div className='btn-cv'>
+          <div className={`btn-cv ${about ? "flash" : "noflash"}`}>
             <div className='download-text'>
               <svg
                 stroke='currentColor'

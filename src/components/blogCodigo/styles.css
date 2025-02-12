@@ -9,6 +9,7 @@
   }
   & p {
     font-size: 1.2em;
+    margin: 0.4em 0;
   }
 }
 .blog-title {
@@ -26,11 +27,39 @@
     color: var(--black);
     padding: 0.5em 1em;
   }
+  & li {
+    display: flex;
+    list-style: none;
+    & span {
+      font-size: 0.4em;
+      margin-right: 0.5em;
+    }
+  }
 }
 .blog-img-container {
   & img {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 4/3;
+  }
+}
+.animated-text {
+  animation: gradientMove 5s infinite linear;
+  background: linear-gradient(-45deg, #ff6232, #ff2b7c, #fff12f, #27ffcc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  color: transparent;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

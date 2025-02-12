@@ -1,9 +1,9 @@
 import { MyContext } from "../../contexts/mainContext"
-import { useContext, useState } from "react"
+import { useContext, useState, useEffect } from "react"
 import logo from "../../assets/images/ALv20.webp"
 import "./styles.css"
 function Header() {
-  const { setInterruptor, interruptor } = useContext(MyContext)
+  const { setInterruptor, interruptor, setAbout } = useContext(MyContext)
   const [menuSwich, setMenuSwich] = useState(false)
   const handleMenu = () => {
     setMenuSwich(!menuSwich)
@@ -13,8 +13,6 @@ function Header() {
   } else {
     document.body.style.overflow = "auto"
   }
-
-  const handleMenuSwich = () => handleMenu()
 
   return (
     <header className='main-header'>
@@ -30,7 +28,6 @@ function Header() {
           height='1em'
           width='1em'
           className='menu-icon'
-          xmlns='http://www.w3.org/2000/svg'
         >
           <path d='M96 448H32c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32zm896 32H320c-17.664 0-32 14.336-32 32s14.336 32 32 32h672c17.664 0 32-14.336 32-32s-14.336-32-32-32zM96 704H32c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32zm896 32H320c-17.664 0-32 14.336-32 32s14.336 32 32 32h672c17.664 0 32-14.336 32-32s-14.336-32-32-32zM96 192H32c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32zm224 96h672c17.664 0 32-14.336 32-32s-14.336-32-32-32H320c-17.664 0-32 14.336-32 32s14.336 32 32 32z'></path>
         </svg>
@@ -46,6 +43,7 @@ function Header() {
               onClick={() => {
                 setInterruptor(!interruptor)
                 setMenuSwich(!menuSwich)
+                setAbout(true)
               }}
               href='#about'
             >
@@ -55,7 +53,7 @@ function Header() {
 
           <div className='btn-contenedor'>
             <a
-              onClick={handleMenuSwich}
+              onClick={handleMenu}
               className='Btn'
               href='#proyects'
               data-text='Proyectos'
@@ -65,7 +63,7 @@ function Header() {
           </div>
           <div className='btn-contenedor'>
             <a
-              onClick={handleMenuSwich}
+              onClick={handleMenu}
               className='Btn'
               href='#blender'
               data-text='blender'
@@ -75,7 +73,7 @@ function Header() {
           </div>
           <div className='btn-contenedor'>
             <a
-              onClick={handleMenuSwich}
+              onClick={handleMenu}
               className='Btn'
               href='#footer'
               data-text='Contacto'
@@ -84,11 +82,7 @@ function Header() {
             </a>
           </div>
           <div className='btn-contenedor'>
-            <a
-              onClick={handleMenuSwich}
-              href='#'
-              className='Btn btn-cerrar-menu'
-            >
+            <a onClick={handleMenu} href='#' className='Btn btn-cerrar-menu'>
               Cerrar
             </a>
           </div>

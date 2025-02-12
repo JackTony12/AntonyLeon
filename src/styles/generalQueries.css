@@ -1,5 +1,6 @@
 :root {
   --white: #ffffff;
+  --black: black;
   --almostblack: #1a1a1a;
   --white100: #cccccc;
   --black: black;
@@ -13,17 +14,18 @@
   --gray-high: #1e1e1e;
   --gray-high100: #0a0a0ae7;
   --blurblue: #47daff69;
+  --red: red;
   --blurblue200: #21aeff;
 }
-h2 {
+.h-title {
   text-align: left;
   margin-left: 0.5em;
-  font-size: 36px;
+  font-size: clamp(1.5em, 2.5vw, 36px);
   background: linear-gradient(#ffffff, #ffffffd8, #000000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 3em 0 1em 0.5em;
+  margin: 3em 0 1em 0;
 }
 
 @media (width < 578px) {
@@ -255,15 +257,6 @@ h2 {
   }
 }
 @media (width < 900px) {
-  /* .p-container {
-    overflow: scroll;
-  }
-  .p-card {
-    scroll-snap-align: center;
-    flex-shrink: 0;
-    padding: 1em 0;
-    width: 400px;
-  } */
   .delacosta-section {
     flex-direction: column;
     gap: 3em;
@@ -275,6 +268,9 @@ h2 {
   .bottle-info-container {
     width: 70%;
   }
+  .logoAl-contenedor {
+    padding: 0 1em;
+  }
 }
 
 @media (width >= 900px) {
@@ -285,11 +281,6 @@ h2 {
 }
 
 @media (width> 800px) {
-  /* .antony-leon {
-    & h1 {
-      font-size: 4em;
-    }
-  } */
   .carousel-container {
     & img {
       width: 450px;

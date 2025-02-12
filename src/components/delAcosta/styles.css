@@ -53,6 +53,9 @@
     background-color: var(--white);
     text-decoration: none;
   }
+  & button {
+    padding: 1em;
+  }
 }
 /* right==================== */
 .bottle-container {

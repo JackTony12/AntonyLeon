@@ -6,7 +6,7 @@ import CvBackComponent from "../cvComponentFolder/Cv_backComponent"
 import FooterComponent from "../footerComponentFolder/footerComponent"
 import ServicesComponent from "../ServicesComponentFolder/videoComponent"
 import Models3d from "../3dmodelsFolder/models"
-import DelAcosta from "../delAcosta/delAcosta"
+import DelAcosta from "../delAcosta/delAcostaComponent"
 import ProyectsNew from "../newProyects/proyectsNew"
 import Blog from "../../components/blogCodigo/blog"
 import Skills from "../skillComponentFolder/iconos"
@@ -21,6 +21,7 @@ export function MainComponent() {
       <Visualizer />
       <Models3d />
       <DelAcosta />
+      {/* <DelAcosta /> */}
       <Blog />
       <ServicesComponent />
       <FooterComponent />

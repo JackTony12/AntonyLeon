@@ -1,11 +1,10 @@
 .main-footer {
   position: relative;
-  padding: 3vw;
+  padding: 0 1em;
   color: var(--white);
 }
 .footer-text-contenedor {
   margin-bottom: 2em;
-  padding: 0 2em;
 }
 
 .form-contact-contenedor {
@@ -21,7 +20,7 @@
   }
   & img {
     object-fit: cover;
-    width: 30%;
+    width: 17%;
     aspect-ratio: 1/1;
   }
 }
@@ -34,5 +33,35 @@
   }
 }
 .about-me {
-  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+  > div {
+    display: flex;
+    gap: 1em;
+  }
+  & span {
+    padding: 0.5em;
+    border: 1px solid var(--gray-low);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--gray-low-100);
+    }
+  }
+}
+.about-me a {
+  color: rgb(21, 255, 0);
+  text-decoration: none;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  &:hover {
+    background-color: var(--gray-low-100);
+  }
 }

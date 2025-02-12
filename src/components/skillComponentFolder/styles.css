@@ -3,10 +3,10 @@
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
-
-.section-skills {
-  padding: 3vw 2vw;
+.main-article {
+  padding: 0 1em;
 }
+
 .contenedor-skills {
   width: 100%;
   gap: 5px;
