@@ -50,7 +50,10 @@ const ProyectsNew = () => {
 
   return (
     <section className='proyects-section'>
-      <h2 id='proyects'> {icon[0]} Proyectos</h2>
+      <h2 className='h-title' id='proyects'>
+        {" "}
+        {icon[0]} Proyectos
+      </h2>
       <div ref={containerRef} className='p-container'>
         {proyects.map((proyect, index) => (
           <div className='p-card' key={index}>

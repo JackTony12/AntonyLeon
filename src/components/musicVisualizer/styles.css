@@ -229,6 +229,7 @@ canvas {
 .slider:hover .level {
   height: calc(var(--slider-height) * 2);
 }
+
 .m-i-volume-section {
   display: flex;
   align-items: center;
@@ -246,7 +247,7 @@ canvas {
     justify-content: space-between;
     align-items: center;
     padding: 0 1em;
-    margin: 1.5em 0;
+    margin: 0.5em 0;
     > div {
       display: flex;
       gap: 5px;
@@ -317,4 +318,7 @@ canvas {
   > div p {
     margin: 0.5em 0;
   }
+}
+.duration-input {
+  width: 100%;
 }

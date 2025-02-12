@@ -53,7 +53,7 @@ const FormContact = () => {
             name='email'
             value={userData.email}
             onChange={handleChange}
-            placeholder='ejemplo@gmail.com'
+            placeholder='correo@gmail.com'
             required
             autoComplete='true'
             id='email'
@@ -68,7 +68,7 @@ const FormContact = () => {
             onChange={handleChange}
             required
             id='textArea'
-            placeholder='¡Habla conmigo!'
+            placeholder='Escribe tu mensaje'
             maxLength={50}
           ></textarea>
         </div>

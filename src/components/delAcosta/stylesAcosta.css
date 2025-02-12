@@ -1,0 +1,132 @@
+.d-section,
+.d-content-container,
+.d-product-img-container,
+.d-product-info-container,
+.d-product-counter {
+  display: flex;
+}
+.d-section {
+  color: var(--white);
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 10px;
+  margin: 10em 0;
+}
+.d-content-container {
+  gap: 1em;
+}
+.d-title-container {
+  margin: 0 0 2em 0;
+  & h2 {
+    font-size: clamp(2em, 5vw, 3em);
+  }
+}
+.d-product-img-container {
+  width: 35%;
+  border: 1px solid var(--gray);
+  border-radius: 1em;
+  padding: 1em;
+  position: relative;
+  height: 500px;
+  flex-direction: column;
+
+  & button {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8em;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+
+    cursor: pointer;
+    &:hover {
+      background-color: var(--gray-high100);
+    }
+    &:active {
+      background-color: var(--gray-low-100);
+    }
+  }
+}
+.d-product-info-container {
+  padding: 1em;
+  width: 65%;
+  border-radius: 1em;
+  flex-direction: column;
+  background-color: var(--gray-high100);
+  justify-content: space-between;
+}
+.d-product-subtitle {
+  color: orangered;
+}
+.d-product-counter {
+  justify-content: space-between;
+}
+
+.d-section h2 {
+  padding: 0;
+  margin: 0;
+  color: var(--red);
+}
+.d-info {
+  h3 {
+    color: var(--red);
+    font-size: clamp(2em, 2vw, 3em);
+  }
+  & p {
+    padding: 0.3em 0;
+    font-size: clamp(1.4em, 1vw, 3em);
+  }
+}
+.d-product-img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    object-fit: contain;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+.price-span {
+  font-size: 2.5em;
+}
+.d-button {
+  display: flex;
+  justify-content: space-between;
+  & a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--black);
+    text-wrap: balance;
+  }
+  & p {
+    color: var(--gray);
+  }
+}
+.available-product {
+  color: greenyellow;
+}
+@media (width < 568px) {
+  .d-section {
+    margin: 0 1em;
+    padding: 1em;
+  }
+  .d-content-container {
+    flex-direction: column;
+  }
+  .d-product-img-container,
+  .d-product-info-container {
+    width: 100%;
+  }
+}

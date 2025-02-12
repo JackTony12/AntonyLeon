@@ -18,7 +18,7 @@ const AudioVisualizer = () => {
   const [isMute, setIsMute] = useState(false)
   const [volumeMode, setVolumeMode] = useState(false)
   const [uploadSong, setUploadSong] = useState(null)
-
+  const [seekTime, setSeekTime] = useState(0)
   const handleVolumeScrollControl = () => {
     if (!volumeMode) return
     const section = sectionRef.current
@@ -129,10 +129,12 @@ const AudioVisualizer = () => {
     if (action == "next") {
       setSongIndex((prevIndex) => (prevIndex + 1) % musicData.length)
       setPlaying(false)
+      setSeekTime(0)
     } else if (action == "prev") {
       setSongIndex(
         (prevIndex) => (prevIndex - 1 + musicData.length) % musicData.length
       )
+      setSeekTime(0)
       setPlaying(false)
     }
   }
@@ -149,16 +151,24 @@ const AudioVisualizer = () => {
     const file = event.target.files[0]
     setUploadSong(file)
     setPlaying(false)
+    setSeekTime(0)
   }
   const handleDeleteFile = () => {
+    if (!uploadSong) return
     setUploadSong(null)
     URL.revokeObjectURL(uploadSong)
     setPlaying(false)
+    setSeekTime(0)
+  }
+  const handleDuration = (e) => {
+    const time = e.target.value
+    setSeekTime(time)
+    if (audioRef.current) audioRef.current.currentTime = time
   }
   return (
     <>
       <div className='dubstep-title-container'>
-        <h2 className='dubstep-zone-title'>Dubstep zone</h2>
+        <h2 className='dubstep-zone-title h-title'>Dubstep zone</h2>
         <div className='wrapper'>
           <p>Música</p>
           <div className='words'>
@@ -173,9 +183,7 @@ const AudioVisualizer = () => {
           <div className='m-control-separator'>
             <div className='m-title'>
               <h3 style={{ fontSize: "1.7em" }}>
-                {uploadSong
-                  ? "Cancion personalizada"
-                  : musicData[songIndex].songName}{" "}
+                {uploadSong ? uploadSong.name : musicData[songIndex].songName}{" "}
               </h3>
               <span>
                 {uploadSong ? "Desconocido" : musicData[songIndex].artist}
@@ -243,6 +251,7 @@ const AudioVisualizer = () => {
                       className='level'
                     />
                   </label>
+
                   <button
                     onClick={() => handleMute(isMute ? "unmute" : "mute")}
                     className='m-button'
@@ -270,6 +279,21 @@ const AudioVisualizer = () => {
                   </button>
                 </div>
               </div>
+              <div>
+                <input
+                  style={{ width: "100%", cursor: "pointer" }}
+                  className='duration-input'
+                  type='range'
+                  step='1'
+                  value={audioRef.current ? audioRef.current.currentTime : 0}
+                  max={
+                    audioRef.current && !isNaN(audioRef.current.duration)
+                      ? audioRef.current.duration
+                      : 0
+                  }
+                  onChange={handleDuration}
+                />
+              </div>
             </div>
           </div>
           <div className='music-info-section'>
@@ -277,7 +301,8 @@ const AudioVisualizer = () => {
             <div>
               <ul>
                 <li>
-                  Nombre: {uploadSong ? "?" : musicData[songIndex].songName}
+                  Nombre:{" "}
+                  {uploadSong ? uploadSong.name : musicData[songIndex].songName}
                 </li>
               </ul>
               <ul>

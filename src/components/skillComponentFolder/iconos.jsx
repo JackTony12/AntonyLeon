@@ -30,7 +30,7 @@ const Skills = () => {
 
   return (
     <section className='main-article'>
-      <h2>{icon} Habilidades y tecnologías</h2>
+      <h2 className='h-title'>{icon} Habilidades y tecnologías</h2>
       <section id='section-skills' className='section-skills'>
         <div className='contenedor-skills'>
           {svgIcons.map((item, index) => {

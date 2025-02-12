@@ -48,9 +48,12 @@ const Models3d = () => {
 
   return (
     <>
-      <section>
+      <section className='models-section'>
         <div className='title-3d-models'>
-          <h2 id='blender'> {icon}Modelos 3D</h2>
+          <h2 className='h-title' id='blender'>
+            {" "}
+            {icon}Modelos 3D
+          </h2>
           <p>
             He trabajado con programas como maya y blender para crear este tipo
             de modelos sencillos y avanzados
