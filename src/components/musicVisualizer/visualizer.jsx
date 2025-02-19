@@ -3,7 +3,6 @@ import AudioMotionAnalyzer from "audiomotion-analyzer"
 import musicData from "./musicArray.js"
 import userSongImg from "../../assets/images/logotrazo.webp"
 import "./styles.css"
-import Loader from "./loader.jsx"
 import ControlIcons from "./controlicons.jsx"
 const AudioVisualizer = () => {
   const controlIcons = ControlIcons()
@@ -168,12 +167,14 @@ const AudioVisualizer = () => {
   return (
     <>
       <div className='dubstep-title-container'>
-        <h2 className='dubstep-zone-title h-title'>Dubstep zone</h2>
+        <div>
+          <h2 className='dubstep-zone-title h-title '>Dubstep zone</h2>
+        </div>
         <div className='wrapper'>
           <p>Música</p>
           <div className='words'>
             <span className='w-span'>libre</span>
-            <span className='w-span'>sin copyrigth</span>
+            <span className='w-span'>sin copyright</span>
             <span className='w-span'>free</span>
           </div>
         </div>
@@ -190,7 +191,7 @@ const AudioVisualizer = () => {
               </span>
             </div>
 
-            <span className='music-counter'>
+            <span className='music-counter '>
               {songIndex + 1}/{musicData.length}
             </span>
           </div>
@@ -218,31 +219,38 @@ const AudioVisualizer = () => {
           <div className='m-i-volume-section'>
             <div className='m-i-volumeBar-container'>
               <div>
+                <span>Controles</span>
                 <div className='b-controls-container'>
                   <button
+                    aria-label='PrevSong'
                     className='m-button'
                     onClick={() => handleNextSong("prev")}
                   >
                     {controlIcons[3].prev}
                   </button>
 
-                  <button className='m-button' onClick={handlePlay}>
+                  <button
+                    aria-label='PlaySong'
+                    className='m-button'
+                    onClick={handlePlay}
+                  >
                     {isPlaying ? controlIcons[1].pause : controlIcons[0].play}
                   </button>
                   <button
+                    aria-label='NextSong'
                     className='m-button'
                     onClick={() => handleNextSong("next")}
                   >
                     {controlIcons[2].next}
                   </button>
                 </div>
-                <span>Smart controls</span>
               </div>
               <div>
                 <div>
                   <span className='m-button'>{generalVolume * 10}% </span>
                   <label className='slider'>
                     <input
+                      aria-label='volRange'
                       type='range'
                       step='0.1'
                       min={0}
@@ -253,6 +261,7 @@ const AudioVisualizer = () => {
                   </label>
 
                   <button
+                    aria-label='MuteSong'
                     onClick={() => handleMute(isMute ? "unmute" : "mute")}
                     className='m-button'
                   >
@@ -262,6 +271,7 @@ const AudioVisualizer = () => {
                 <div>
                   <div className='tooltip-container'>
                     <a
+                      aria-label='DowloadCurrentSong'
                       className='m-button'
                       href={musicData[songIndex].downloadUrl}
                       download={`${musicData[songIndex].songName}.mp3`}
@@ -270,17 +280,21 @@ const AudioVisualizer = () => {
                     </a>
                     <span className='tooltip'>Descargar</span>
                   </div>
-                  <button
-                    className='m-button volume-mode tooltip-container'
-                    onClick={() => setVolumeMode((prev) => !prev)}
-                  >
-                    {volumeMode ? "Scroll" : "Manual"}
+                  <div className='tooltip-container'>
+                    <button
+                      aria-label='VolSong'
+                      className='m-button volume-mode '
+                      onClick={() => setVolumeMode((prev) => !prev)}
+                    >
+                      {volumeMode ? "Scroll" : "Manual"}
+                    </button>
                     <span className='tooltip'>Volumen</span>
-                  </button>
+                  </div>
                 </div>
               </div>
               <div>
                 <input
+                  aria-label='DurationSong'
                   style={{ width: "100%", cursor: "pointer" }}
                   className='duration-input'
                   type='range'
@@ -301,29 +315,41 @@ const AudioVisualizer = () => {
             <div>
               <ul>
                 <li>
-                  Nombre:{" "}
-                  {uploadSong ? uploadSong.name : musicData[songIndex].songName}
+                  Nombre:
+                  <span>
+                    {uploadSong
+                      ? uploadSong.name
+                      : musicData[songIndex].songName}
+                  </span>
                 </li>
               </ul>
               <ul>
                 <li>
-                  Artista: {uploadSong ? "?" : musicData[songIndex].artist}
+                  Artista:
+                  <span>{uploadSong ? "?" : musicData[songIndex].artist}</span>
                 </li>
               </ul>
               <ul>
                 <li>
-                  Lanzamiento: {uploadSong ? "?" : musicData[songIndex].date}
+                  Lanzamiento:
+                  <span>{uploadSong ? "?" : musicData[songIndex].date}</span>
                 </li>
               </ul>
               <ul>
                 <li>
-                  Duracion: {uploadSong ? "?" : musicData[songIndex].duration}{" "}
+                  Duración:
+                  <span>
+                    {uploadSong ? "?" : musicData[songIndex].duration}
+                  </span>
                   min
                 </li>
               </ul>
               <ul>
                 <li>
-                  CopyRight: {uploadSong ? "?" : musicData[songIndex].copyRight}
+                  CopyRight:
+                  <span>
+                    {uploadSong ? "?" : musicData[songIndex].copyRight}
+                  </span>
                 </li>
               </ul>
             </div>
@@ -331,7 +357,7 @@ const AudioVisualizer = () => {
               <h3>Sube tu musica</h3>
               <div>
                 <p>
-                  Sube tu cancion favorita y disfruta del visualizador al ritmo
+                  Sube tu canción favorita y disfruta del visualizador al ritmo
                   perfecto
                 </p>
                 <p>FORMATO SOPORTADO</p>
@@ -351,6 +377,7 @@ const AudioVisualizer = () => {
                     Subir&nbsp;{controlIcons[8].upload}
                   </label>
                   <button
+                    aria-label='DeleteSong'
                     className='m-button delete-upload'
                     onClick={handleDeleteFile}
                   >
@@ -361,7 +388,7 @@ const AudioVisualizer = () => {
                   <p>
                     {uploadSong
                       ? "CANCION PERSONALIZADA LISTA PARA REPRODUCIR"
-                      : "NO SE HA CARGADO NINGUNA CANCION"}
+                      : "NO SE HA CARGADO NINGUNA CANCIÓN"}
                   </p>
                 </div>
               </div>

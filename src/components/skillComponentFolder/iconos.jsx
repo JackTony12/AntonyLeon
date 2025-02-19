@@ -9,7 +9,7 @@ const Skills = () => {
       color += letras[Math.floor(Math.random() * 16)]
     }
 
-    return color
+    return color + "90"
   }
   const icon = (
     <svg

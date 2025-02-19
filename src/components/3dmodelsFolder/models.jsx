@@ -24,7 +24,7 @@ const Models3d = () => {
       nameclass: "tiny-car",
       date: "2024",
       img: car,
-      description: "No, no es el auto de Mr Bean",
+      description: "No, no es el auto de Mr. Bean",
     },
   ]
   const icon = (
@@ -55,10 +55,9 @@ const Models3d = () => {
             {icon}Modelos 3D
           </h2>
           <p>
-            He trabajado con programas como maya y blender para crear este tipo
-            de modelos sencillos y avanzados
+            He trabajado con programas como Maya y Blender para crear este tipo
+            de modelos sencillos y avanzados.
           </p>
-          <p>Pronto los presentare con Three.js</p>
         </div>
         <div className='snap-contenedor'>
           {models.map((e, index) => {

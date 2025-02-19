@@ -13,8 +13,8 @@ const DelAcosta = () => {
       <div className='d-title-container'>
         <h2>DEL ACOSTA</h2>
         <p>
-          Micro Empresa distribuidora de Chile Habanero y Salsa Picante de
-          excelente calidad
+          Microempresa distribuidora de Chile habanero y salsa picante de
+          excelente calidad.
         </p>
       </div>
 
@@ -27,7 +27,7 @@ const DelAcosta = () => {
           <div className='d-product-img'>
             <img src={products[index].img} alt='product-img' />
           </div>
-          <button onClick={handleNext}>
+          <button aria-label='NextProduct' onClick={handleNext}>
             <svg
               stroke='currentColor'
               fill='white'
@@ -56,7 +56,7 @@ const DelAcosta = () => {
                 <p>{products[index].ingredients}</p>
                 <p>Picor🔥: {products[index].spicy && products[index].spicy}</p>
                 {products[index].subTitle ? (
-                  <p className='available-product'>Disponible ahora</p>
+                  <p className='available-product'>¡Disponible ahora!</p>
                 ) : (
                   ""
                 )}
@@ -75,7 +75,11 @@ const DelAcosta = () => {
 
           <div className='d-button'>
             <p>Productos disponibles solo en venta local</p>
-            <a href='' rel='where to buy product' target='_blank'>
+            <a
+              href='https://www.google.com/maps/place/Pulperia+Maria+y+Jose/@14.3120064,-87.6876843,894m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8f65835a0d3b75b5:0xb751535423e40617!8m2!3d14.3120012!4d-87.6851094!16s%2Fg%2F11y1l4dr9m?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D'
+              rel='where to buy product'
+              target='_blank'
+            >
               ¿Dónde comprar?
             </a>
           </div>

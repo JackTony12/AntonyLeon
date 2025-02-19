@@ -8,7 +8,6 @@
     text-align: left;
   }
   & p {
-    font-size: 1.2em;
     margin: 0.4em 0;
   }
 }
@@ -30,11 +29,17 @@
   & li {
     display: flex;
     list-style: none;
+    font-size: 0.9em;
+    text-wrap: pretty;
+    margin: 0.4em 0;
     & span {
-      font-size: 0.4em;
+      font-size: 1em;
       margin-right: 0.5em;
     }
   }
+}
+.p-title {
+  font-size: 1.2em;
 }
 .blog-img-container {
   & img {
@@ -50,6 +55,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300%;
+  font-weight: bolder;
   color: transparent;
 }
 @keyframes gradientMove {
@@ -61,5 +67,17 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@media (width<768px) {
+  .blog-section {
+    flex-direction: column;
+  }
+  .blog-img-container {
+    width: 100%;
+  }
+  .blog-text {
+    width: 100%;
+    gap: 2em;
   }
 }

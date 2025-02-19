@@ -81,7 +81,7 @@
   }
   & p {
     padding: 0.3em 0;
-    font-size: clamp(1.4em, 1vw, 3em);
+    font-size: clamp(1.4em, 1vw, 1em);
   }
 }
 .d-product-img {
@@ -96,7 +96,7 @@
   }
 }
 .price-span {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 .d-button {
   display: flex;

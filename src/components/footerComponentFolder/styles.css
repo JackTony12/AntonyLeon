@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
   }
   & img {
     object-fit: cover;
@@ -36,32 +35,34 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
+  font-size: 0.9em;
   margin-bottom: 2em;
-  > div {
+  & ul {
     display: flex;
-    gap: 1em;
+    flex-direction: column;
+    align-items: center;
   }
-  & span {
-    padding: 0.5em;
-    border: 1px solid var(--gray-low);
-    border-radius: 5px;
+  & li {
+    list-style: none;
     display: flex;
     align-items: center;
-    cursor: pointer;
-    &:hover {
-      background-color: var(--gray-low-100);
-    }
   }
 }
 .about-me a {
-  color: rgb(21, 255, 0);
+  color: white;
   text-decoration: none;
-  padding: 0.4em 0.8em;
+  display: block;
   border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: 0.6s ease;
+
   &:hover {
-    background-color: var(--gray-low-100);
+    color: greenyellow;
+    text-decoration: underline;
   }
+}
+.midu-color {
+  color: #027ed3;
 }

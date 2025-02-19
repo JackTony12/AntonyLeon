@@ -131,16 +131,6 @@
     left: 0;
   }
 
-  .blog-section {
-    flex-direction: column;
-  }
-  .blog-img-container {
-    width: 100%;
-  }
-  .blog-text {
-    width: 100%;
-    gap: 2em;
-  }
   .title-3d-models {
     & p {
       padding: 0 2em;

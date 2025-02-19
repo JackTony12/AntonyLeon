@@ -1,12 +1,12 @@
-import suace from "../../assets/images/bote2.png"
-import peppers from "../../assets/images/tazon2.png"
-import carolina from "../../assets/images/carolinaReaper.png"
+import suace from "../../assets/images/bote2.webp"
+import peppers from "../../assets/images/tazon2.webp"
+import carolina from "../../assets/images/carolinaReaper.webp"
 const Products = () => {
   return [
     {
       name: "Salsa picante",
 
-      desc: "Salsa de chile habanero extra picante solo para verdaderos amantes del dolor, ¿Te atreves a probarla?",
+      desc: "Salsa de chile habanero extra picante solo para verdaderos amantes del dolor. ¿Te atreves a probarla?",
       subTitle: "Ingredientes",
       subInfo:
         "Chile habanero, agua, sal yodada, vinagre, especias, benzoato de sodio, azucar, cebolla y ajo.",
@@ -18,7 +18,7 @@ const Products = () => {
     },
     {
       name: "Chiles habaneros",
-      desc: "Chiles habaneros de alta calidad producidos y cosechados en La Paz Honduras.",
+      desc: "Chiles habaneros de alta calidad producidos y cosechados en La Paz, Honduras.",
       subTitle: "Nutrientes",
       subInfo:
         "Vitamina A, C, y E, Capsaicina, Antioxidantes, Hierro, Fosforo, Magnesio, Potasio",
@@ -29,7 +29,7 @@ const Products = () => {
     },
     {
       name: "CAROLINA REAPER",
-      desc: "El segundo chile mas picante del mundo despues del Pepper X",
+      desc: "El segundo chile más picante del mundo después del Pepper X.",
       subTitle: "",
       subInfo: "",
       spicy: "1,627,000-2,200,000 SHU",
