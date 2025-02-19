@@ -1,11 +1,9 @@
-import valentineImg from "../../assets/images/astronauta.jpg"
-import valentineSong from "../../../public/music/valentineKotori.mp3"
-import aikaImg from "../../assets/images/aikaimage2.jpg"
-import aikaKotoriSong from "../../../public/music/AikaKotoriStarscream.mp3"
-import sickboyImg from "../../assets/images/sickboy.webp"
-import sickboySong from "../../../public/music/sickboy.mp3"
+import valentineImg from "../../assets/images/astronauta.webp"
+import valentineSong from "../../assets/music/valentineKotori.mp3"
+import aikaImg from "../../assets/images/aikaimage2.webp"
+import aikaKotoriSong from "../../assets/music/AikaKotoriStarscream.mp3"
 import kotoriImg from "../../assets/images/kotori.webp"
-import kotoriSong from "../../../public/music/kotori.mp3"
+import kotoriSong from "../../assets/music/kotori.mp3"
 const musicData = [
   {
     songName: "VALENTINE & 4AM",
@@ -13,7 +11,7 @@ const musicData = [
     duration: "4,07",
     date: "2017",
     type: "Dubstep",
-    color: "#00ffbfe1",
+    color: "#E5EFF940",
     downloadUrl: "/public/music/valentineKotori.mp3",
     copyRight: "No",
     image: valentineImg,
@@ -42,18 +40,6 @@ const musicData = [
     downloadUrl: "/public/music/kotori.mp3",
     image: kotoriImg,
     song: kotoriSong,
-  },
-  {
-    songName: "Sick Boy",
-    artist: "The chainsmokers-(Ray Volpe Remix)",
-    duration: "4,29",
-    date: "2019",
-    type: "Dubstep",
-    color: "#acacac59",
-    copyRight: "No",
-    downloadUrl: "/public/music/sickboy.mp3",
-    image: sickboyImg,
-    song: sickboySong,
   },
 ]
 

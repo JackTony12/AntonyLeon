@@ -1,5 +1,5 @@
 .proyects-section {
-  margin: 8em 0;
+  margin: 8em 0 12em 0;
   position: relative;
   width: 100%;
   & a {
@@ -27,7 +27,7 @@
   display: flex;
   gap: 10px;
   margin: 2em 0 0 0;
-  padding: 3em 0;
+  padding: 1em 0 3em 0;
 }
 .proyects-section::after,
 .proyects-section::before {
@@ -35,7 +35,7 @@
   position: absolute;
   top: 0;
   width: 50px;
-  height: 100%;
+  height: 110%;
   pointer-events: none;
   z-index: 10;
 }
@@ -70,7 +70,6 @@
 }
 .p-card {
   width: 300px;
-
   color: var(--white);
   scroll-snap-align: center;
   flex-shrink: 0;
@@ -80,6 +79,8 @@
   transition: 0.5s ease;
   border: 1px solid var(--gray-low-100);
   border-radius: 1em;
+  transition: 1s ease;
+
   &::after {
     content: "";
     position: absolute;
@@ -93,7 +94,8 @@
   & img {
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 4/3;
+    border-radius: 0.8em;
+    aspect-ratio: 3/2;
   }
   & p {
     font-size: 0.9em;
@@ -141,12 +143,8 @@
   box-shadow: 2px 3px 4px var(--almostblack);
 }
 .p-svg-icon {
-  position: absolute;
-  right: 10%;
-  top: -10%;
-  font-size: 2.5em;
+  font-size: 1em;
   transition: 0.4s ease;
-  /* filter: drop-shadow(0 0 25px #49e600); */
 }
 .p-card:hover .p-svg-icon {
   transform: scale(1.2);

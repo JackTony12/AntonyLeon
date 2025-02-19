@@ -1,10 +1,16 @@
 import React from "react"
+import pixabay from "../../assets/pimges/pixabay.webp"
+import tres from "../../assets/pimges/tresenraya.webp"
+import todo from "../../assets/pimges/todolist.webp"
+import ecomerce from "../../assets/pimges/ecommerce.webp"
+import color from "../../assets/pimges/color.webp"
 
 const ProyectIcons = () => {
   return [
     {
       name: "Tic Tac Toe",
       color: "red",
+      image: tres,
       icon: (
         <svg
           height='1em'
@@ -43,6 +49,7 @@ const ProyectIcons = () => {
     {
       name: "Free images",
       color: "#e63d00",
+      image: pixabay,
       icon: (
         <svg
           stroke='currentColor'
@@ -66,12 +73,13 @@ const ProyectIcons = () => {
       ),
       description:
         "Sitio para buscar imágenes de alta calidad libres de derechos de autor.",
-      date: "25-04-2023",
+      date: "2023",
       tecnologyes: ["React", "JavaScript", "HTML", "CSS", "Sonner"],
       url: "https://jacktony12.github.io/pixabay_imagenes/",
     },
     {
       name: "Todo-list",
+      image: todo,
       icon: (
         <svg
           stroke='currentColor'
@@ -109,6 +117,7 @@ const ProyectIcons = () => {
     {
       name: "E-commerce",
       color: "#49e600",
+      image: ecomerce,
       icon: (
         <svg
           stroke='currentColor'
@@ -164,6 +173,7 @@ const ProyectIcons = () => {
     {
       name: "Color palette",
       color: "#e63d00",
+      image: color,
       icon: (
         <svg
           stroke='currentColor'

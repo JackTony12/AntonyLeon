@@ -73,16 +73,17 @@
       display: block;
       text-align: center;
     }
-    & h4 {
-      animation: gradientMove 15s infinite linear;
-      background: linear-gradient(-45deg, #3251ff, #ff2b7c, #2fff8d, #27ffcc);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 300%;
-      color: transparent;
-    }
   }
+}
+.s-title {
+  animation: gradientMove 15s infinite linear;
+  background: linear-gradient(-45deg, #3251ff, #ff2b7c, #2fff8d, #27ffcc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  color: transparent;
+  font-weight: bolder;
 }
 .div1 {
   grid-area: 1 / 1 / 3 / 3;

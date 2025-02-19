@@ -57,13 +57,18 @@ const ProyectsNew = () => {
       <div ref={containerRef} className='p-container'>
         {proyects.map((proyect, index) => (
           <div className='p-card' key={index}>
-            <h3>{proyect.name}</h3>
-            <span
-              style={{ filter: `drop-shadow(0 0 25px ${proyect.color})` }}
-              className='p-svg-icon'
-            >
-              {proyect.icon}
-            </span>
+            <div>
+              <img src={proyect.image} alt='proyect-image' />
+            </div>
+            <h3>
+              <span
+                style={{ filter: `drop-shadow(0 0 25px ${proyect.color})` }}
+                className='p-svg-icon'
+              >
+                {proyect.icon}
+              </span>
+              {proyect.name}
+            </h3>
             <p>{proyect.description}</p>
             <p className='p-date'>{proyect.date}</p>
             <div className='tecnology-container'>
@@ -90,7 +95,11 @@ const ProyectsNew = () => {
         ))}
       </div>
       <div className='scroll-buttons'>
-        <button className='scroll-button' onClick={handleScrollLeft}>
+        <button
+          aria-label='LeftCard'
+          className='scroll-button'
+          onClick={handleScrollLeft}
+        >
           <svg
             stroke='currentColor'
             fill='white'
@@ -102,7 +111,11 @@ const ProyectsNew = () => {
             <path d='M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z'></path>
           </svg>
         </button>
-        <button className='scroll-button' onClick={handleScrollright}>
+        <button
+          aria-label='RightCard'
+          className='scroll-button'
+          onClick={handleScrollright}
+        >
           <svg
             stroke='currentColor'
             fill='white'
