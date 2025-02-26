@@ -51,7 +51,7 @@ const Blog = () => {
       <section className='blog-section'>
         <div className='blog-text'>
           <div>
-            <h3>Blog de codigo</h3>
+            <h3>Blog de código</h3>
             <p className='p-title'>
               Aprende desarrollo frontend de la mejor manera
             </p>

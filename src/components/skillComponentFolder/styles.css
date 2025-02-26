@@ -3,7 +3,7 @@
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
-.main-article {
+.skills-section {
   padding: 0 1em;
 }
 
@@ -30,17 +30,14 @@
       color: var(--gray);
     }
   }
-  &:hover {
-    transform: translateZ(50px);
-  }
 }
 
-.icon-skill:hover + .icon-skill {
+/* .icon-skill:hover + .icon-skill {
   transform: translateZ(50px) rotateY(10deg);
 }
 .icon-skill:has(+ *:hover) {
   transform: translateZ(50px) rotateY(-10deg);
-}
+} */
 .icon {
   color: var(--gray);
 }

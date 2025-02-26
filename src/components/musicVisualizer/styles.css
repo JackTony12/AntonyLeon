@@ -15,6 +15,9 @@
 }
 .flex-separator {
   display: flex;
+  & label {
+    font-size: 0.9em;
+  }
 }
 canvas {
   width: 100%;
@@ -43,7 +46,6 @@ canvas {
     & li {
       list-style: none;
       margin: 0.5em 0;
-      border-bottom: 1px solid gray;
     }
   }
 }
@@ -295,6 +297,11 @@ canvas {
 }
 .music-info-section {
   color: var(--white);
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
 }
 .m-button.label-upload,
 .m-button.delete-upload {
@@ -306,6 +313,9 @@ canvas {
   align-items: center;
 }
 .upload-music-container {
+  background-color: var(--gray-high100);
+  border-radius: 1em;
+  padding: 0.2em 1em;
   > *,
   > div p {
     margin: 0.5em 0;
@@ -313,4 +323,14 @@ canvas {
 }
 .duration-input {
   width: 100%;
+}
+.upload-status {
+  font-size: 0.6em;
+}
+.uploadtrue {
+  color: green;
+}
+
+.uploadfalse {
+  color: rgb(167, 0, 0);
 }

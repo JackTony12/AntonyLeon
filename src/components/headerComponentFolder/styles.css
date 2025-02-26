@@ -2,23 +2,23 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: var(--black);
 }
 .menu-icon-contenedor {
   display: none;
-  color: white;
+  color: var(--white);
 }
 .menu-icon {
   font-size: 2em;
   margin: 0 0.2em;
   cursor: pointer;
-  background-color: rgb(24, 24, 24);
+  background-color: var(--almostblack);
   padding: 0.5vw 1.5vw;
   border-radius: 3px;
   transition: 0.4s;
   &:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: var(--white);
+    color: var(--black);
   }
 }
 .contenedor-logo {
@@ -45,12 +45,12 @@
   position: relative;
   font-weight: 400;
   padding: 0.5vw 1vw;
-  color: rgb(146, 146, 146);
+  color: var(--gray);
   background-color: transparent;
   transition: 0.5s;
   &:hover {
-    background-color: rgb(241, 241, 241);
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
   }
 }
 .btn-cerrar-menu {
@@ -64,7 +64,7 @@
   }
   .menu-icon-contenedor {
     display: block;
-    color: white;
+    color: var(--white);
   }
   .main-nav {
     position: fixed;
@@ -80,9 +80,9 @@
     gap: 40px;
     flex-direction: column;
     transition: 0.6s ease-out;
-    background-color: #000000;
+    background-color: var(--black);
     color: white;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     & img {
       width: 100px;
       object-fit: cover;

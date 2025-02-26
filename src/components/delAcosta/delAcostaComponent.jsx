@@ -2,6 +2,7 @@ import React from "react"
 import "./stylesAcosta.css"
 import Products from "./products"
 import { useState } from "react"
+import delacosta from "../../assets/images/logoDelacosta.webp"
 const DelAcosta = () => {
   const products = Products()
   const [index, setIndex] = useState(0)
@@ -11,7 +12,8 @@ const DelAcosta = () => {
   return (
     <section className='d-section'>
       <div className='d-title-container'>
-        <h2>DEL ACOSTA</h2>
+        {/* <h2>DEL ACOSTA</h2> */}
+        <img src={delacosta} alt='delacosta' />
         <p>
           Microempresa distribuidora de Chile habanero y salsa picante de
           excelente calidad.
@@ -60,14 +62,14 @@ const DelAcosta = () => {
                 ) : (
                   ""
                 )}
-                {products[index].ingredients && (
-                  <p className='available-product'>Disponible ahora</p>
-                )}
-
+                {products[index].subTitle ? <p>Precio</p> : ""}
                 <p>
                   <span className='price-span'>{products[index].price}</span>
                   {products[index].dollar &&
                     ` HNL/${products[index].dollar} USD`}
+                </p>
+                <p className='p-history'>
+                  {products[index].history ? products[index].history : ""}
                 </p>
               </>
             )}
