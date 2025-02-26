@@ -1,6 +1,6 @@
-import suace from "../../assets/images/bote2.webp"
-import peppers from "../../assets/images/tazon2.webp"
-import carolina from "../../assets/images/carolinaReaper.webp"
+import suace from "../../assets/images/bottle.webp"
+import peppers from "../../assets/images/habaneros.webp"
+import carolina from "../../assets/images/carolinareaper.webp"
 const Products = () => {
   return [
     {
@@ -35,6 +35,8 @@ const Products = () => {
       spicy: "1,627,000-2,200,000 SHU",
       price: "Proximamente",
       dollar: "",
+      history:
+        "El carolina reaper fue creado por Ed. Currie en Carolina del Sur en el 2011 y fue certificado como el chile más picante del mundo por Guinness World Records el 11 de Agosto de 2017; fue superado por Pepper X el 23 de Agosto de 2023 por el mismo Ed. Currie.",
       img: carolina,
     },
   ]

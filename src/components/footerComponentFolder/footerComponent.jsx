@@ -27,7 +27,7 @@ const FooterComponent = () => {
         <div className='logoAl-contenedor'>
           <div>
             <img loading='lazy' src={logoAl} alt='logoAl' />
-            <span>© 2023 Antony Leonel Website</span>
+            <span>2023 Antony Leonel Website</span>
           </div>
           <div className='about-me'>
             <ul>
@@ -66,9 +66,12 @@ const FooterComponent = () => {
               </li>
               <li>
                 Mentor profesional: Miguel Ángel Durán
-                <span className='midu-color'> (Midudev)</span>
+                <span className='midu-color'> (Midudev).</span>
               </li>
               <li>Hecho con dedicación, pasión y amor. ❤️</li>
+              <li>
+                ''Si puedes imaginarlo, puedes programarlo''-Alejandro Taboada
+              </li>
             </ul>
           </div>
         </div>

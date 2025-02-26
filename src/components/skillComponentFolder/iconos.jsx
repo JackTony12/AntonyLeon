@@ -29,7 +29,7 @@ const Skills = () => {
   )
 
   return (
-    <section className='main-article'>
+    <section className='skills-section'>
       <h2 className='h-title'>{icon} Habilidades y tecnologías</h2>
       <section id='section-skills' className='section-skills'>
         <div className='contenedor-skills'>

@@ -118,7 +118,7 @@
 }
 .p-icon {
   background: linear-gradient(45deg, rgb(0, 84, 90), rgb(0, 198, 212));
-  color: white;
+  color: var(--white);
   padding: 0.2em;
   display: flex;
   align-items: center;
@@ -140,7 +140,7 @@
   transition: 0.3s ease;
   background-color: var(--gray-target-100);
   border-radius: 0.4em;
-  box-shadow: 2px 3px 4px var(--almostblack);
+  box-shadow: 2px 3px 4px var(--black);
 }
 .p-svg-icon {
   font-size: 1em;

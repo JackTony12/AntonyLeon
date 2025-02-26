@@ -5,7 +5,7 @@ const ServicesComponent = () => {
   return (
     <section className='services-section'>
       <h2 className='services-section-text-slogan h-title'>
-        Transformando ideas en experiencias digitales
+        Programando sueños, compilando realidades
       </h2>
       <div className='services-contenedor'>
         <div className='grid-container'>

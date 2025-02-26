@@ -3,7 +3,7 @@
   src: url(../assets/font/Poppins-Regular.ttf);
 }
 @font-face {
-  font-family: "hallsan";
+  font-family: "Acosta";
   src: url(../assets/font/JejuHallasan-Regular.ttf);
 }
 * {
@@ -14,7 +14,7 @@
 header,
 .section-profile,
 .proyects-section,
-.main-article,
+.skills-section,
 .dubstep-title-container,
 .audio-container,
 .blog-section,
@@ -24,7 +24,7 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 .d-section {
-  font-family: "hallsan", sans-serif;
+  font-family: "Acosta", sans-serif;
 }
 html {
   background-color: rgb(0, 0, 0);
