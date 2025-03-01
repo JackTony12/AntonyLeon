@@ -3,6 +3,7 @@ import AudioMotionAnalyzer from "audiomotion-analyzer"
 import musicData from "./musicArray.js"
 import userSongImg from "../../assets/images/logotrazo.webp"
 import "./styles.css"
+import ModalVisualizer from "./modalVisualizer.jsx"
 import ControlIcons from "./controlicons.jsx"
 const AudioVisualizer = () => {
   const controlIcons = ControlIcons()
@@ -11,10 +12,11 @@ const AudioVisualizer = () => {
   const sectionRef = useRef(null)
   const audioMotionRef = useRef(null)
   const [isPlaying, setPlaying] = useState(false)
+  const [isMute, setIsMute] = useState(false)
   const [songIndex, setSongIndex] = useState(0)
+  const [aboutSection, setAboutSection] = useState(false)
   const [energy, setEnergy] = useState(0)
   const [generalVolume, setGeneralVolume] = useState(1)
-  const [isMute, setIsMute] = useState(false)
   const [volumeMode, setVolumeMode] = useState(false)
   const [uploadSong, setUploadSong] = useState(null)
   const [seekTime, setSeekTime] = useState(0)
@@ -160,6 +162,11 @@ const AudioVisualizer = () => {
     const time = e.target.value
     setSeekTime(time)
     if (audioRef.current) audioRef.current.currentTime = time
+  }
+
+  const aboutInfo = []
+  const handelAboutSection = () => {
+    setAboutSection((prevIndex) => (prevIndex + 1) % aboutInfo.length)
   }
   return (
     <>
@@ -413,44 +420,68 @@ const AudioVisualizer = () => {
               </ul>
             </div>
             <div className='upload-music-container'>
-              <h3>Sube tu música</h3>
-              <div>
-                <p>
-                  Sube tu canción favorita y disfruta del visualizador al ritmo
-                  perfecto
-                </p>
-                <p>FORMATOS SOPORTADOS</p>
-                <p>MP3, M4a</p>
-                <div className='flex-separator'>
-                  <input
-                    style={{ display: "none" }}
-                    type='file'
-                    id='file-upload'
-                    accept='audio/*'
-                    onChange={handleFileUpload}
-                  />
-                  <label
-                    className='m-button label-upload'
-                    htmlFor='file-upload'
+              <div className='upload-music-title'>
+                <h3>Sube tu música</h3>
+                <button
+                  type='button'
+                  className='m-button'
+                  aria-label='aboutSection'
+                  onClick={() => setAboutSection(!aboutSection)}
+                >
+                  <svg
+                    stroke='currentColor'
+                    fill='white'
+                    strokeWidth='0'
+                    viewBox='0 0 512 512'
+                    height='1.2em'
+                    width='1.2em'
                   >
-                    Subir&nbsp;{controlIcons[8].upload}
-                  </label>
-                  <button
-                    aria-label='DeleteSong'
-                    className='m-button delete-upload'
-                    onClick={handleDeleteFile}
-                  >
-                    Eliminar&nbsp;{controlIcons[7].delete}
-                  </button>
-                </div>
-                <div className='upload-status'>
-                  <p className={uploadSong ? "uploadtrue" : "uploadfalse"}>
-                    {uploadSong
-                      ? "CANCiÓN PERSONALIZADA LISTA PARA REPRODUCIR"
-                      : "NO SE HA CARGADO NINGUNA CANCIÓN"}
-                  </p>
-                </div>
+                    <path d='M235.4 172.2c0-11.4 9.3-19.9 20.5-19.9 11.4 0 20.7 8.5 20.7 19.9s-9.3 20-20.7 20c-11.2 0-20.5-8.6-20.5-20zm1.4 35.7H275V352h-38.2V207.9z'></path>
+                    <path d='M256 76c48.1 0 93.3 18.7 127.3 52.7S436 207.9 436 256s-18.7 93.3-52.7 127.3S304.1 436 256 436c-48.1 0-93.3-18.7-127.3-52.7S76 304.1 76 256s18.7-93.3 52.7-127.3S207.9 76 256 76m0-28C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48z'></path>
+                  </svg>
+                </button>
               </div>
+              {aboutSection ? (
+                <ModalVisualizer />
+              ) : (
+                <div>
+                  <p>
+                    Sube tu canción favorita y disfruta del visualizador al
+                    ritmo perfecto
+                  </p>
+                  <p>FORMATOS SOPORTADOS</p>
+                  <p>MP3, M4a</p>
+                  <div className='flex-separator'>
+                    <input
+                      style={{ display: "none" }}
+                      type='file'
+                      id='file-upload'
+                      accept='audio/*'
+                      onChange={handleFileUpload}
+                    />
+                    <label
+                      className='m-button label-upload'
+                      htmlFor='file-upload'
+                    >
+                      Subir&nbsp;{controlIcons[8].upload}
+                    </label>
+                    <button
+                      aria-label='DeleteSong'
+                      className='m-button delete-upload'
+                      onClick={handleDeleteFile}
+                    >
+                      Eliminar&nbsp;{controlIcons[7].delete}
+                    </button>
+                  </div>
+                  <div className='upload-status'>
+                    <p className={uploadSong ? "uploadtrue" : "uploadfalse"}>
+                      {uploadSong
+                        ? "CANCiÓN PERSONALIZADA LISTA PARA REPRODUCIR"
+                        : "NO SE HA CARGADO NINGUNA CANCIÓN"}
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

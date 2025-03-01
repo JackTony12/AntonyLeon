@@ -1,9 +1,9 @@
 import valentineImg from "../../assets/images/astronauta.webp"
-import valentineSong from "../../assets/music/valentineKotori.mp3"
+import valentineSong from "../../../public/music/valentineKotori.mp3"
 import aikaImg from "../../assets/images/aikaimage2.webp"
 import aikaKotoriSong from "../../../public/music/AikaKotoriStarscream.mp3"
 import kotoriImg from "../../assets/images/kotori.webp"
-import kotoriSong from "../../assets/music/kotori.mp3"
+import kotoriSong from "../../../public/music/kotori.mp3"
 const musicData = [
   {
     songName: "VALENTINE & 4AM",
@@ -12,7 +12,7 @@ const musicData = [
     date: "2017",
     type: "Dubstep",
     color: "#E5EFF940",
-    downloadUrl: "/src/assets/music/valentineKotori.mp3",
+    downloadUrl: "/music/valentineKotori.mp3",
     copyRight: "Libre",
     image: valentineImg,
     song: valentineSong,
@@ -37,7 +37,7 @@ const musicData = [
     type: "Dubstep",
     color: "#d606ff59",
     copyRight: "Libre",
-    downloadUrl: "/src/assets/music/kotori.mp3",
+    downloadUrl: "/music/kotori.mp3",
     image: kotoriImg,
     song: kotoriSong,
   },

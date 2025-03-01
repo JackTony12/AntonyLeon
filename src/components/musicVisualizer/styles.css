@@ -321,6 +321,11 @@ canvas {
     margin: 0.5em 0;
   }
 }
+.upload-music-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .duration-input {
   width: 100%;
 }
