@@ -9,6 +9,7 @@ const Models3d = () => {
       name: "Choza",
       nameclass: "abandoned-shack",
       date: "2023",
+      software: "Blender",
       img: shack,
       description: "Todo lugar abandonado tiene una historia",
     },
@@ -16,6 +17,7 @@ const Models3d = () => {
       name: "Cocina",
       nameclass: "small-kitchen",
       date: "2023",
+      software: "Blender",
       img: kitchen,
       description: "Un modelo sencillo de una cocina",
     },
@@ -23,6 +25,7 @@ const Models3d = () => {
       name: "Mini auto",
       nameclass: "tiny-car",
       date: "2024",
+      software: "Maya",
       img: car,
       description: "No, no es el auto de Mr. Bean",
     },
@@ -31,18 +34,13 @@ const Models3d = () => {
     <svg
       stroke='currentColor'
       fill='white'
-      strokeWidth='2'
-      viewBox='0 0 24 24'
-      height='45px'
-      width='45px'
+      strokeWidth='0'
+      version='1.1'
+      viewBox='0 0 32 32'
+      height='1em'
+      width='1em'
     >
-      <path d='M19 6.844a2.007 2.007 0 0 1 1 1.752v6.555c0 .728 -.394 1.399 -1.03 1.753l-6 3.844a2 2 0 0 1 -1.942 0l-6 -3.844a2.007 2.007 0 0 1 -1.029 -1.752v-6.556c0 -.729 .394 -1.4 1.029 -1.753l6 -3.583a2.05 2.05 0 0 1 2 0l6 3.584h-.03z'></path>
-      <path d='M12 16.5v4.5'></path>
-      <path d='M4.5 7.5l3.5 2.5'></path>
-      <path d='M16 10l4 -2.5'></path>
-      <path d='M12 7.5v4.5l-4 2'></path>
-      <path d='M12 12l4 2'></path>
-      <path d='M12 16.5l4 -2.5v-4l-4 -2.5l-4 2.5v4z'></path>
+      <path d='M16.957 6.062l-5.808 1.88 12.58 4.070v8.027l-8.383 2.711-7.074-2.287v-7.863l6.836 2.213 5.808-1.879-12.598-4.077-3.622 1.172v13.036l10.649 3.445 11.958-3.869v-13.23z'></path>
     </svg>
   )
 
@@ -50,13 +48,13 @@ const Models3d = () => {
     <>
       <section className='models-section'>
         <div className='title-3d-models'>
-          <h2 className='h-title' id='blender'>
-            {" "}
-            {icon}Modelos 3D
+          <h2 className='h-title h-title-3d' id='blender'>
+            {icon} &nbsp; Modelos 3D
           </h2>
           <p>
-            He trabajado con programas como Maya y Blender para crear este tipo
-            de modelos sencillos y avanzados.
+            He trabajado durante un año con herramientas como Maya y Blender,
+            creando modelos tanto sencillos como avanzados, lo que me ha
+            permitido desarrollar una sólida experiencia en modelado 3D.
           </p>
         </div>
         <div className='snap-contenedor'>
@@ -71,7 +69,10 @@ const Models3d = () => {
                 />
                 <div className='text-models-contenedor'>
                   <h3>{e.name}</h3>
-                  <small style={{ color: "gray" }}>{e.date}</small>
+                  <span className='p-software'>
+                    {e.date}&nbsp;
+                    {e.software}
+                  </span>
                   <p>{e.description}</p>
                 </div>
               </div>
