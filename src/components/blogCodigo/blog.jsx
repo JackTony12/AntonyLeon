@@ -70,7 +70,7 @@ const Blog = () => {
               </li>
               <li>
                 <span>{icons[3]}</span>
-                Un chat que lo sabe todo, resuelve tus dudas al instante.
+                Chat con IA, resuelve tus dudas al instante.
               </li>
             </ul>
             <span className='animated-text'> Especial para principiantes</span>

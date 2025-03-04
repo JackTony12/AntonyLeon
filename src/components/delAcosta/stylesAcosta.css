@@ -144,3 +144,10 @@
     }
   }
 }
+@media (width < 480px) {
+  .d-product-img {
+    & img {
+      width: 100%;
+    }
+  }
+}

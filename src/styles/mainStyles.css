@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Poppins";
-  src: url(../assets/font/Poppins-Regular.ttf);
+  src: url(../assets/font/Poppins-Regular.woff) format("woff");
 }
 @font-face {
   font-family: "Acosta";
-  src: url(../assets/font/JejuHallasan-Regular.ttf);
+  src: url(../assets/font/JejuHallasan-Regular.woff) format("woff");
 }
 * {
   box-sizing: border-box;

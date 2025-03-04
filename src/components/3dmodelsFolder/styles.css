@@ -9,6 +9,9 @@
     inset -20px 0 20px black, inset 0 0px 0px transparent;
   padding: 0;
 }
+.h-title-3d {
+  margin-bottom: 0;
+}
 .child {
   & h3 {
     font-size: 1.5em;
@@ -25,4 +28,8 @@
 #blender {
   display: flex;
   align-items: center;
+}
+.p-software {
+  color: var(--gray);
+  font-size: 0.8em;
 }

@@ -94,10 +94,10 @@
   }
   .child {
     scroll-snap-align: center;
-    width: 400px;
+    width: 350px;
     flex-shrink: 0;
     padding: 1em 0;
-    border: 1px solid gray;
+    border: 1px solid var(--gray);
     margin: 0 1em;
     border-radius: 1em;
     overflow: hidden;
@@ -124,7 +124,7 @@
   }
   .text-models-contenedor {
     padding: 1em 1em;
-    background-color: rgb(20, 20, 20);
+    background-color: var(--black100);
     height: 100%;
   }
   .float-point {
