@@ -1,9 +1,8 @@
 import React from "react"
-import "./modal.css"
 const ModalVisualizer = () => {
   return (
     <article className='modal-visualizer-container'>
-      <p>
+      <p style={{ fontSize: ".8em" }}>
         Esta sección es un sueño hecho realidad. Desde hace mucho tiempo quería
         juntar dos cosas que significan mucho para mí: la música electrónica y
         la programación. Ambas me han marcado y ahora, poder unirlas en un solo

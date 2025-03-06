@@ -57,7 +57,7 @@ canvas {
 
   & img {
     width: 95%;
-    height: 55%;
+    height: 65%;
     object-fit: cover;
     position: absolute;
     bottom: 15px;
@@ -338,4 +338,9 @@ canvas {
 
 .uploadfalse {
   color: rgb(167, 0, 0);
+}
+.headphones {
+  display: block;
+  font-size: 0.6em;
+  font-weight: 100;
 }

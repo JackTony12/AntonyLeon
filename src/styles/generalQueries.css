@@ -46,6 +46,9 @@
     & h1 {
       font-size: 2em;
     }
+    &p {
+      font-size: 0.8em;
+    }
   }
   .capsula-ex-cv {
     gap: 0;

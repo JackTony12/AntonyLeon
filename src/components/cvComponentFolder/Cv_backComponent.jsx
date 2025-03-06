@@ -13,7 +13,7 @@ const CvBackComponent = () => {
         setAbout(false)
       }, 500)
 
-      return () => clearTimeout(timer) // Limpia el timeout si `about` cambia antes de que termine
+      return () => clearTimeout(timer)
     }
   }, [about])
   return (

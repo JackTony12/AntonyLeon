@@ -1,6 +1,6 @@
 import React from "react"
 
-const ControlIcons = () => {
+const VisualizerlIcons = () => {
   return [
     {
       play: (
@@ -130,7 +130,36 @@ const ControlIcons = () => {
         </svg>
       ),
     },
+    {
+      info: (
+        <svg
+          stroke='currentColor'
+          fill='white'
+          strokeWidth='0'
+          viewBox='0 0 512 512'
+          height='1.2em'
+          width='1.2em'
+        >
+          <path d='M235.4 172.2c0-11.4 9.3-19.9 20.5-19.9 11.4 0 20.7 8.5 20.7 19.9s-9.3 20-20.7 20c-11.2 0-20.5-8.6-20.5-20zm1.4 35.7H275V352h-38.2V207.9z'></path>
+          <path d='M256 76c48.1 0 93.3 18.7 127.3 52.7S436 207.9 436 256s-18.7 93.3-52.7 127.3S304.1 436 256 436c-48.1 0-93.3-18.7-127.3-52.7S76 304.1 76 256s18.7-93.3 52.7-127.3S207.9 76 256 76m0-28C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48z'></path>
+        </svg>
+      ),
+    },
+    {
+      headPhones: (
+        <svg
+          stroke='currentColor'
+          fill='white'
+          strokeWidth='0'
+          viewBox='0 0 512 512'
+          height='1em'
+          width='1em'
+        >
+          <path d='M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48l0 128c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80l0-16 0-48 0-48C0 146.6 114.6 32 256 32s256 114.6 256 256l0 48 0 48 0 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48l0-128c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z'></path>
+        </svg>
+      ),
+    },
   ]
 }
 
-export default ControlIcons
+export default VisualizerlIcons

@@ -12,7 +12,6 @@ const DelAcosta = () => {
   return (
     <section className='d-section'>
       <div className='d-title-container'>
-        {/* <h2>DEL ACOSTA</h2> */}
         <img src={delacosta} alt='delacosta' />
         <p>
           Microempresa distribuidora de Chile habanero y salsa picante de

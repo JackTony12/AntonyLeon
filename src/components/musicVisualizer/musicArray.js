@@ -6,18 +6,6 @@ import kotoriImg from "../../assets/images/kotori.webp"
 import kotoriSong from "../../../public/music/kotori.mp3"
 const musicData = [
   {
-    songName: "VALENTINE & 4AM",
-    artist: "Kotori (Remix)",
-    duration: "4:07",
-    date: "2017",
-    type: "Dubstep",
-    color: "#E5EFF940",
-    downloadUrl: "/music/valentineKotori.mp3",
-    copyRight: "Libre",
-    image: valentineImg,
-    song: valentineSong,
-  },
-  {
     songName: "Starscream",
     artist: "Kotori & Aika",
     duration: "4:08",
@@ -28,6 +16,18 @@ const musicData = [
     downloadUrl: "/music/AikaKotoriStarscream.mp3",
     image: aikaImg,
     song: aikaKotoriSong,
+  },
+  {
+    songName: "VALENTINE & 4AM",
+    artist: "Kotori (Remix)",
+    duration: "4:07",
+    date: "2017",
+    type: "Dubstep",
+    color: "#0059ff67",
+    downloadUrl: "/music/valentineKotori.mp3",
+    copyRight: "Libre",
+    image: valentineImg,
+    song: valentineSong,
   },
   {
     songName: "Kudere",

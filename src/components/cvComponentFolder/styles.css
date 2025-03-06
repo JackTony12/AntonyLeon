@@ -152,10 +152,9 @@ button:hover {
 
   & h1 {
     font-family: sans-serif;
-    & p {
-      letter-spacing: 1px;
-      font-size: clamp(20px, 2em, 3vw);
-    }
+  }
+  & p {
+    font-size: clamp(12px, 0.9em, 3vw);
   }
 }
 

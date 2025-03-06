@@ -21,7 +21,6 @@ export function MainComponent() {
       <Visualizer />
       <Models3d />
       <DelAcosta />
-      {/* <DelAcosta /> */}
       <Blog />
       <ServicesComponent />
       <FooterComponent />
