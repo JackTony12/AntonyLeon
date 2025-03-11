@@ -1,6 +1,8 @@
 import React from "react"
+import { lazy, Suspense } from "react"
 import "../../styles/mainStyles.css"
 import "../../styles/generalQueries.css"
+//componentes
 import Header from "../headerComponentFolder/header"
 import CvBackComponent from "../cvComponentFolder/Cv_backComponent"
 import FooterComponent from "../footerComponentFolder/footerComponent"
@@ -10,7 +12,7 @@ import DelAcosta from "../delAcosta/delAcostaComponent"
 import ProyectsNew from "../newProyects/proyectsNew"
 import Blog from "../../components/blogCodigo/blog"
 import Skills from "../skillComponentFolder/iconos"
-import Visualizer from "../musicVisualizer/visualizer"
+const Visualizer = lazy(() => import("../musicVisualizer/visualizer"))
 export function MainComponent() {
   return (
     <>
@@ -18,7 +20,9 @@ export function MainComponent() {
       <CvBackComponent />
       <ProyectsNew />
       <Skills />
-      <Visualizer />
+      <Suspense fallback={<div>Loading visualizer...</div>}>
+        <Visualizer />
+      </Suspense>
       <Models3d />
       <DelAcosta />
       <Blog />
