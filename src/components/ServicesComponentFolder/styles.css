@@ -60,6 +60,7 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 5px;
   color: var(--white100);
+
   > div {
     border: 1px solid var(--gray-low-100);
     border-radius: 1em;
