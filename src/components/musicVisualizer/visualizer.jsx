@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState,useContext } from "react"
 import AudioMotionAnalyzer from "audiomotion-analyzer"
 import musicData from "./musicArray.js"
 import userSongImg from "../../assets/images/logotrazo.webp"
@@ -14,7 +14,7 @@ const AudioVisualizer = () => {
   const sectionRef = useRef(null)
   const audioMotionRef = useRef(null)
   const [songIndex, setSongIndex] = useState(0)
-  const [energy, setEnergy] = useState(0)
+  const [energy, setEnergy] = useState(0) //energia del audio
   const [generalVolume, setGeneralVolume] = useState(1)
   const [uploadSong, setUploadSong] = useState(null)
   const [seekTime, setSeekTime] = useState(0)
@@ -24,6 +24,8 @@ const AudioVisualizer = () => {
     aboutSection: false,
     volumeMode: false,
   })
+ 
+
   const handleChangeStates = (key) => {
     setBooleanState((prevState) => ({
       ...prevState,
@@ -366,7 +368,7 @@ const AudioVisualizer = () => {
                   className='m-button'
                   aria-label='aboutSection'
                   onClick={() => handleChangeStates("aboutSection")}
-                >
+                  >
                   {visualizerIcons[9].info}
                 </button>
               </div>
@@ -378,7 +380,7 @@ const AudioVisualizer = () => {
                     Sube tu canción favorita y disfruta del visualizador al
                     ritmo perfecto
                   </p>
-                  <p>FORMATOS SOPORTADOS</p>
+                  <p>Soporta formatos: </p>
                   <p>MP3, M4a</p>
                   <div className='flex-separator'>
                     <input

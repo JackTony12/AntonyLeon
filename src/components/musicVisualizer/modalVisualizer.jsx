@@ -3,12 +3,7 @@ const ModalVisualizer = () => {
   return (
     <article className='modal-visualizer-container'>
       <p style={{ fontSize: ".8em" }}>
-        Esta sección es un sueño hecho realidad. Desde hace mucho tiempo quería
-        juntar dos cosas que significan mucho para mí: la música electrónica y
-        la programación. Ambas me han marcado y ahora, poder unirlas en un solo
-        proyecto es algo que simplemente me llena de felicidad. No es solo una
-        función más en la página, es una parte de mí, algo que siempre quise
-        compartir. Espero que la disfrutes tanto como yo disfruté crearla.
+      Esta sección es algo muy especial para mí. Siempre quise juntar la música electrónica y la programación, dos cosas que me fascinan. Poder hacerlo en este proyecto me hace mucha ilusion. No es solo una función más, es algo que me representa. Espero la disfrutes tanto como yo disfrute crearla.
       </p>
     </article>
   )

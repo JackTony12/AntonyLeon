@@ -1,17 +1,17 @@
-import suace from "../../assets/images/bottle.webp"
+import suace from "../../assets/images/delacostabottle.png"
 import peppers from "../../assets/images/habaneros.webp"
 import carolina from "../../assets/images/carolinareaper.webp"
 const Products = () => {
   return [
     {
-      name: "Salsa picante",
+      name: "FUEGO",
 
       desc: "Salsa de chile habanero extra picante solo para verdaderos amantes del dolor. ¿Te atreves a probarla?",
       subTitle: "Ingredientes",
       subInfo:
         "Chile habanero, agua, sal yodada, vinagre, especias, benzoato de sodio, azucar, cebolla y ajo.",
       price: "40",
-      spicy: "70,000-100,000 SHU",
+      spicy: "50,000-70,000 SHU",
 
       dollar: "1.56",
       img: suace,
@@ -22,7 +22,7 @@ const Products = () => {
       subTitle: "Nutrientes",
       subInfo:
         "Vitamina A, C, y E, Capsaicina, Antioxidantes, Hierro, Fosforo, Magnesio, Potasio",
-      spicy: "250,000-300,000 SHU",
+      spicy: "100,000-300,000 SHU",
       price: "42",
       dollar: "1.64",
       img: peppers,

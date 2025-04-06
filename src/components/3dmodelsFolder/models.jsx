@@ -1,10 +1,19 @@
 import React from "react"
-import shack from "../../assets/images/choza2.webp"
-import kitchen from "../../assets/images/cocina.webp"
-import car from "../../assets/images/carrito.webp"
+import shack from "../../assets/images/3d_images/choza2.webp"
+import kitchen from "../../assets/images/3d_images/cocina.webp"
+import car from "../../assets/images/3d_images/carrito.webp"
+
 import "./styles.css"
 const Models3d = () => {
   const models = [
+    {
+      name: "Mini auto",
+      nameclass: "tiny-car",
+      date: "2024",
+      software: "Maya",
+      img: car,
+      description: "No, no es el auto de Mr. Bean",
+    },
     {
       name: "Choza",
       nameclass: "abandoned-shack",
@@ -21,14 +30,7 @@ const Models3d = () => {
       img: kitchen,
       description: "Un modelo sencillo de una cocina",
     },
-    {
-      name: "Mini auto",
-      nameclass: "tiny-car",
-      date: "2024",
-      software: "Maya",
-      img: car,
-      description: "No, no es el auto de Mr. Bean",
-    },
+  
   ]
   const icon = (
     <svg
