@@ -31,6 +31,7 @@ html {
   background:black;
   scroll-behavior: smooth;
   height: 100%;
+ 
 }
 html::-webkit-scrollbar:vertical {
   width: 5px;

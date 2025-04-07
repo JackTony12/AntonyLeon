@@ -67,8 +67,17 @@
     padding: 1em;
     position: relative;
     overflow: hidden;
-    transition: background-color 0.5s ease-in-out;
-
+    background:var(--black);
+    transition: 0.5s ease-in-out;
+    &:hover{
+      border-color:#27ffcc;
+      background: linear-gradient(
+    45deg,
+    rgb(95, 17, 43),
+    rgb(5, 34, 37),
+    rgb(1, 2, 1)
+  );
+    }
     & span {
       font-size: 3em;
       display: block;
@@ -88,12 +97,7 @@
 }
 .div1 {
   grid-area: 1 / 1 / 3 / 3;
-  background: linear-gradient(
-    45deg,
-    rgb(99, 12, 65),
-    rgb(5, 34, 37),
-    rgb(1, 2, 1)
-  );
+ 
 }
 .div2 {
   grid-area: 1 / 3 / 3 / 5;
@@ -106,12 +110,7 @@
 }
 .div5 {
   grid-area: 3 / 4 / 4 / 7;
-  background: linear-gradient(
-    45deg,
-    rgb(49, 16, 42),
-    rgb(5, 34, 37),
-    rgb(1, 2, 1)
-  );
+
 }
 
 @media (width<768px) {
