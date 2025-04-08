@@ -408,7 +408,7 @@ const AudioVisualizer = () => {
                     <p className={uploadSong ? "uploadtrue" : "uploadfalse"}>
                       {uploadSong
                         ? "CANCiÓN PERSONALIZADA LISTA PARA REPRODUCIR"
-                        : "NO SE HA CARGADO NINGUNA CANCIÓN"}
+                        : ""}
                     </p>
                   </div>
                 </div>
