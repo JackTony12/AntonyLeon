@@ -4,7 +4,7 @@ import tres from "../../assets/pimges/tresenraya.webp"
 import todo from "../../assets/pimges/todolist.webp"
 import ecomerce from "../../assets/pimges/ecommerce.webp"
 import color from "../../assets/pimges/color.webp"
-import catweb from '../../assets/images/catsweblanding.png'
+import catweb from '../../assets/images/catsweblanding.webp'
 
 const ProyectIcons = () => {
   return [

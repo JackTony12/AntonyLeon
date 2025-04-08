@@ -1,4 +1,4 @@
-import suace from "../../assets/images/delacostabottle.png"
+import suace from "../../assets/images/delacostabottle.webp"
 import peppers from "../../assets/images/habaneros.webp"
 import carolina from "../../assets/images/carolinareaper.webp"
 const Products = () => {
