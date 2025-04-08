@@ -18,7 +18,7 @@ const ProyectIcons = () => {
       description: "Una landing page sobre gatos, con un diseño atractivo y moderno.",
       date: "2025",
       tecnologyes: ["Astro", "JavaScript ", "HTML", "CSS" , "Typescript"],
-      url: "https://color-palette-app-three.vercel.app/",
+      url: "https://cat-web-nu.vercel.app/",
     },
     {
       name: "Color palette",
