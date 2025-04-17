@@ -1,4 +1,4 @@
-.contenedor-img {
+.al-profile-img-container{
   width: 50%;
 
   margin: 5em 0;
@@ -185,7 +185,7 @@ button:hover {
     background-position: 0 50%;
   }
 }
-@media (width < 578px) {
+@media (width < 700px) {
   .name-button-group {
     padding: 0;
   }

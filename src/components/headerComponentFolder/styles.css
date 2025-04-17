@@ -57,7 +57,7 @@
   display: none;
 }
 
-@media (width < 668px) {
+@media (width < 700px) {
   .main-header {
     height: 50px;
     justify-content: end;

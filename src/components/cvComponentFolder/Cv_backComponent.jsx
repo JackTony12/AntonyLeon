@@ -24,7 +24,7 @@ const CvBackComponent = () => {
       >
         <div className='antony-leon'>
           <h1>Antony Leonel</h1>
-          <p>Desarrollador Frontend de Honduras</p>
+          <p>Desarrollador Frontend hondureño enfocado en diseño UI/UX y experiencias responsive que se adaptan a cualquier dispositivo</p>
         </div>
         <div className='capsula-ex-cv'>
           <p className='experience'>
@@ -61,7 +61,7 @@ const CvBackComponent = () => {
           </div>
         </div>
       </div>
-      <div className='contenedor-img'>
+      <div className='al-profile-img-container'>
         <img loading='lazy' src={AL_Background} alt='AntonyLeon' />
       </div>
     </section>

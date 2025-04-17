@@ -1,4 +1,4 @@
-.contenedor-skills {
+.skills-container {
   margin-bottom: 5em;
   transform-style: preserve-3d;
   transform: perspective(1000px);
@@ -7,7 +7,7 @@
   padding: 0 1em;
 }
 
-.contenedor-skills {
+.skills-container {
   width: 100%;
   gap: 5px;
   display: grid;
@@ -32,12 +32,7 @@
   }
 }
 
-/* .icon-skill:hover + .icon-skill {
-  transform: translateZ(50px) rotateY(10deg);
-}
-.icon-skill:has(+ *:hover) {
-  transform: translateZ(50px) rotateY(-10deg);
-} */
+
 .icon {
   color: var(--gray);
 }
