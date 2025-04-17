@@ -24,7 +24,7 @@ const CvBackComponent = () => {
       >
         <div className='antony-leon'>
           <h1>Antony Leonel</h1>
-          <p>Desarrollador Frontend hondureño enfocado en diseño UI/UX y experiencias responsive que se adaptan a cualquier dispositivo</p>
+          <p>Desarrollador Frontend hondureño enfocado en diseño UI/UX, funcionalidad, velocidad y experiencias responsive que se adaptan a cualquier dispositivo</p>
         </div>
         <div className='capsula-ex-cv'>
           <p className='experience'>
@@ -36,17 +36,7 @@ const CvBackComponent = () => {
 
           <div className={`btn-cv ${about ? "flash" : "noflash"}`}>
             <div className='download-text'>
-              <svg
-                stroke='currentColor'
-                fill='currentColor'
-                strokeWidth='0'
-                viewBox='0 0 512 512'
-                height='1em'
-                width='1em'
-                xmlns='http://www.w3.org/2000/svg'
-              >
-                <path d='M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z'></path>
-              </svg>
+            <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4"></path><path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6"></path><path d="M17 18h2"></path><path d="M20 15h-3v6"></path><path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z"></path></svg>
               &nbsp; Ver currículum
             </div>
 
