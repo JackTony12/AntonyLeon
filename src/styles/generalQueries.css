@@ -135,7 +135,9 @@
 }
 
 @media (width > 700px) {
-  
+  .section-profile{
+    border-left:4px solid gray;
+  }
   .antony-leon {
     & h1 {
       font-size: clamp(2em, 5vw, 3em);

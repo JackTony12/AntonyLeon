@@ -1,7 +1,7 @@
 import React from "react"
 import "./styles.css"
 import svgIcons from "./iconsSvg"
-const Skills = () => {
+const Skills = ({power,musicData,songIndex}) => {
   const colores = () => {
     const letras = "0123456789ABCDEF"
     let color = "#"
@@ -34,8 +34,11 @@ const Skills = () => {
       <section id='section-skills' className='section-skills'>
         <div className='skills-container'>
           {svgIcons.map((item, index) => {
+    const maxPower = Math.min(Math.max(power,0),1)
+
             return (
               <div
+                style={{boxShadow: `0px 0px ${maxPower * index-1}px ${musicData[songIndex].color}`,transform:`rotateX(${maxPower*index*3}deg)`}}
                 data-swapy-item='icon'
                 onMouseEnter={(e) => {
                   if (e.target === e.currentTarget) {

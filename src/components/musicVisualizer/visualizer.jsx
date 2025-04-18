@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState,useContext } from "react"
 import AudioMotionAnalyzer from "audiomotion-analyzer"
 import musicData from "./musicArray.js"
 import userSongImg from "../../assets/images/logotrazo.webp"
+import Skills from "../skillComponentFolder/iconos"
+
 import "./styles.css"
 import ModalVisualizer from "./modalVisualizer.jsx"
 import InfoSong from "./infoSong.jsx"
@@ -196,6 +198,7 @@ const AudioVisualizer = () => {
 
   return (
     <>
+    <Skills power={energy} musicData={musicData} songIndex={songIndex}/>
       <div className='dubstep-title-container'>
         <div>
           <h2 className='dubstep-zone-title h-title '>Dubstep zone</h2>

@@ -140,22 +140,43 @@ canvas {
   display: block;
   height: 100%;
   padding-left: 10px;
-  color: rgb(0, 255, 0);
-  animation: spin 7s ease infinite;
+  color: rgb(0, 247, 255);
+  animation: spin 9s ease infinite;
 }
 .music-counter {
   color: white;
 }
 @keyframes spin {
+  0% {
+    transform: translateY(0%);
+  }
   25% {
+    transform: translateY(0%);
+  }
+
+  30% {
     transform: translateY(-100%);
   }
-  50% {
+  40% {
+    transform: translateY(-100%);
+  }
+
+  45% {
+    transform: translateY(-200%);
+  }
+  55% {
     transform: translateY(-200%);
   }
 
-  75% {
+  60% {
     transform: translateY(-100%);
+  }
+  70% {
+    transform: translateY(-100%);
+  }
+
+  75% {
+    transform: translateY(0%);
   }
   100% {
     transform: translateY(0%);

@@ -62,7 +62,7 @@ const Models3d = () => {
         <div className='snap-contenedor'>
           {models.map((e, index) => {
             return (
-              <div className='child' key={index}>
+              <div  className='child' key={index}>
                 <img
                   loading='lazy'
                   src={e.img}

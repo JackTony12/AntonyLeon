@@ -19,7 +19,7 @@ export function MainComponent() {
       <Header />
       <CvBackComponent />
       <ProyectsNew />
-      <Skills />
+      {/* <Skills /> */}
       <Suspense fallback={<div>Loading visualizer...</div>}>
         <Visualizer />
       </Suspense>

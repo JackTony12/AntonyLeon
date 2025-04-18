@@ -18,7 +18,6 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--gray-low-100);
-  transition: 0.5s;
   & span {
     display: flex;
     justify-content: center;
