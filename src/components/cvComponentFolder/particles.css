@@ -1,0 +1,27 @@
+.particula {
+    position: absolute;
+    left: -10%;
+    width: calc(10px + 40px * var(--rand, 1)); /* entre 10px y 50px */
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.247);
+    box-shadow: 0 0 10px hsla(177, 100%, 49%, 0.281);
+    opacity: 0.8;
+    animation: disparo 30s linear infinite;
+  }
+  
+  @keyframes disparo {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+  }
+  @media(width < 700px){
+   
+    .section-profile{
+      overflow: visible;
+    }
+  }

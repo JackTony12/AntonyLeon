@@ -33,6 +33,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+
   }
   .al-profile-img-container {
     min-width: 270px;
@@ -136,7 +138,8 @@
 
 @media (width > 700px) {
   .section-profile{
-    border-left:4px solid gray;
+    border-left:1px solid gray;
+
   }
   .antony-leon {
     & h1 {

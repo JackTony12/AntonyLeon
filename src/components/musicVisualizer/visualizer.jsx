@@ -420,6 +420,7 @@ const AudioVisualizer = () => {
           </div>
         </div>
       </section>
+
     </>
   )
 }

@@ -3,7 +3,8 @@ import AL_Background from "../../assets/images/posteryo.webp"
 import cvEs from "../../assets/Cv/AntonyCv.pdf"
 import cvEn from "../../assets/Cv/AntonyNewCvEnglish.pdf"
 import "./styles.css"
-import { useState, useEffect, useContext } from "react"
+import Particles from "./particles"
+import { useEffect, useContext } from "react"
 import { MyContext } from "../../contexts/mainContext"
 const CvBackComponent = () => {
   const { about, setAbout } = useContext(MyContext)
@@ -18,6 +19,7 @@ const CvBackComponent = () => {
   }, [about])
   return (
     <section id='sobre' className='section-profile'>
+      <Particles/>
       <div
         className='
           name-button-group'

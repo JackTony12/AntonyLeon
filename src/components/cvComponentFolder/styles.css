@@ -5,10 +5,14 @@
   & img {
     object-fit: cover;
     aspect-ratio: 7/8;
+    position:relative;
+    z-index: 2;
   }
 }
 .section-profile {
+  position:relative;
   display: flex;
+  overflow: hidden;
   width: 100%;
   margin-bottom: 5em;
   background-image: url("../../assets/images/logotrazo.webp");
@@ -17,6 +21,9 @@
   background-repeat: no-repeat;
   box-shadow: 30px 0 50px black inset;
   margin-top:3em;
+  border-color: white;
+  border-radius:40px 0 0 40px;
+
 }
 
 .name-button-group {
