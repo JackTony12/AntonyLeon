@@ -58,7 +58,7 @@ const ProyectsNew = () => {
         {proyects.map((proyect, index) => (
           <div className='p-card' key={index}>
             <div>
-              <img src={proyect.image} alt='proyect-image' />
+              <img loading="lazy" src={proyect.image} alt='proyect-image' />
             </div>
             <h3>
               <span

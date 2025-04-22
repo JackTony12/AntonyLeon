@@ -71,7 +71,7 @@
     transition: 0.6s ease-in-out;
     &:hover{
       border-color:#2fff8d;
-      animation:gradientMove 5s ease;/* por si quieres una transición rápida al soltar */
+      animation:gradientMove 5s ease infinite;
       background: linear-gradient(-45deg, #d3009e65, #002f4ecb, #03c56a93);
   background-size: 400% 400%;
   transition: background-position 0.3s ease; 
