@@ -68,6 +68,10 @@
   background: #e75123;
   box-shadow: 0 0 10px #ff5100;
 }
+.p-container .p-card:nth-child(6)::after {
+  background: #800d5d;
+  box-shadow: 0 0 10px #ff00ff;
+}
 .p-card {
   width: 300px;
   color: var(--white);
@@ -79,7 +83,13 @@
   transition: 0.5s ease;
   border: 1px solid var(--gray-low-100);
   border-radius: 1em;
-  transition: 1s ease;
+  transition: .2s ease;
+  &:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px var(--blurblue200);
+    background: linear-gradient(20deg, rgb(0, 0, 0), rgba(30, 104, 104, 0.541));
+    border:2px solid white;
+  }
 
   &::after {
     content: "";
@@ -94,7 +104,7 @@
   & img {
     width: 100%;
     object-fit: cover;
-    border-radius: 0.8em;
+    border-radius: 0.4em;
     aspect-ratio: 3/2;
   }
   & p {
