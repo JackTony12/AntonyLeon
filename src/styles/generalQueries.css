@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    overflow:visible;
 
   }
   .al-profile-img-container {
@@ -137,10 +137,7 @@
 }
 
 @media (width > 700px) {
-  .section-profile{
-    border-left:1px solid gray;
-
-  }
+ 
   .antony-leon {
     & h1 {
       font-size: clamp(2em, 5vw, 3em);
@@ -157,6 +154,9 @@
   .icon {
     width: 3em;
     height: 3em;
+  }
+  .section-profile{
+    overflow:hidden;
   }
 
 

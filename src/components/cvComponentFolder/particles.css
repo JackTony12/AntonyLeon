@@ -1,10 +1,10 @@
 .particula {
     position: absolute;
     left: -10%;
-    width: calc(10px + 40px * var(--rand, 1)); /* entre 10px y 50px */
+    width: calc(10px + 40px * var(--rand, 1)); 
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.247);
-    box-shadow: 0 0 10px hsla(177, 100%, 49%, 0.281);
+    background-color: rgba(134, 176, 211, 0.192);
+    box-shadow: 0 0 10px hsla(177, 100%, 49%, 0.199);
     opacity: 0.8;
     animation: disparo 30s linear infinite;
   }
@@ -17,11 +17,5 @@
     100% {
       transform: translateX(100vw);
       opacity: 0;
-    }
-  }
-  @media(width < 700px){
-   
-    .section-profile{
-      overflow: visible;
     }
   }

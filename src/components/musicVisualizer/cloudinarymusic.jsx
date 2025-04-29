@@ -13,7 +13,7 @@ function Reproductor() {
     audioref.current = song
 
     return () => {
-      if (audioref.current) audioref.current.pause() // Pausar el audio al desmontar el componente
+      if (audioref.current) audioref.current.pause() 
     }
   }, [indexA])
 

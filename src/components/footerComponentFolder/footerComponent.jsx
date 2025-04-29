@@ -66,7 +66,7 @@ const FooterComponent = () => {
               </li>
               <li>
                 Mentor profesional: Miguel Ángel Durán
-                <span className='midu-color'> (Midudev).</span>
+                <span className='midu-color'> <a target='_blank' href="https://midu.dev/">(Midudev)</a></span>
               </li>
               <li>Hecho con dedicación, pasión y amor. ❤️</li>
               <li>

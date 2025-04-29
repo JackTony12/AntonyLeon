@@ -52,6 +52,10 @@
     display: flex;
     align-items: center;
   }
+  li a{
+    color: var(--blue);
+    display:inline;
+  }
 }
 .about-me a {
   text-decoration: none;
