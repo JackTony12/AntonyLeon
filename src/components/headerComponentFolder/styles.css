@@ -59,10 +59,13 @@
       content:'';
       position: absolute;
       width:50%;
-      bottom:-5%;
+      bottom:-8px;
       left: 30%;
-      height: 2px;
-      box-shadow:-5px -5px 20px var(--white);
+      height: 10px;
+      background:linear-gradient(45deg,#ff6232,#ff2b7c,#fff12f,#27ffcc);
+    z-index:1;
+    filter:blur(7px);
+    transform:scale(1.1);
     }
   }
 }

@@ -76,7 +76,8 @@ const Blog = () => {
             <span className='animated-text'> Especial para principiantes</span>
           </div>
           <div>
-            <button>Construyendo...</button>
+            <small>36%</small>
+            <button className="blog-button">Construyendo...</button>
           </div>
         </div>
         <div className='blog-img-container'>

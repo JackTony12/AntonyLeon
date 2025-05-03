@@ -21,10 +21,15 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2em;
+  & small{
+    display:block;
+    font-size:0.7em;
+  }
   & button {
+    border:none;
     border: 1px solid var(--white);
-    color: var(--black);
     padding: 0.5em 1em;
+    
   }
   & li {
     display: flex;
@@ -58,9 +63,41 @@
   font-weight: bolder;
   color: transparent;
 }
+.blog-button{
+  position:relative;
+  background:transparent;
+  color:var(--white);
+  &::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:30%;
+    height:100%;
+    background:linear-gradient(45deg,#ff6232,#ff2b7c,#fff12f,#27ffcc);
+    z-index:-1;
+    filter:blur(3px);
+    transform:scale(1.1);
+    animation: gradientMove2 5s infinite linear;
+  }
+}
+
+@keyframes gradientMove2 {
+  0% {
+opacity: 0.5;
+
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
+
   }
   50% {
     background-position: 100% 50%;
