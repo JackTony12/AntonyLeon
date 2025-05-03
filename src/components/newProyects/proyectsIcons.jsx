@@ -5,9 +5,23 @@ import todo from "../../assets/pimges/todolist.webp"
 import ecomerce from "../../assets/pimges/ecommerce.webp"
 import color from "../../assets/pimges/color.webp"
 import catweb from '../../assets/images/catsweblanding.webp'
+import frontends from '../../assets/images/frontends.webp'
 
 const ProyectIcons = () => {
   return [
+    {
+      name: "Frontends",
+      color: "#e63d00",
+      image: frontends,
+      icon: (
+        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 3H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h4v2h8v-2h4c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2zm0 14H4V5h16v12z"></path><path d="M6.5 7.5H9V6H5v4h1.5zM19 12h-1.5v2.5H15V16h4z"></path></svg>
+      ),
+      description: "Landing sobre devs frontends, humor, memes, recursos para devs, hacks y más.",
+      date: "2025",
+      ready: false,
+      tecnologyes: ["Astro", "JavaScript ", "HTML", "CSS" , "Typescript"],
+      url: "#",
+    },
     {
       name: "Landing de gatos",
       color: "#e63d00",
@@ -17,6 +31,7 @@ const ProyectIcons = () => {
       ),
       description: "Una landing page sobre gatos, con un diseño atractivo y moderno.",
       date: "2025",
+      ready: true,
       tecnologyes: ["Astro", "JavaScript ", "HTML", "CSS" , "Typescript"],
       url: "https://cat-web-nu.vercel.app/",
     },
@@ -38,6 +53,7 @@ const ProyectIcons = () => {
       ),
       description: "App de paleta de colores.",
       date: "2024",
+      ready: true,
       tecnologyes: ["Next.js", "JavaScript ", "HTML", "CSS"],
       url: "https://color-palette-app-three.vercel.app/",
     },
@@ -86,6 +102,7 @@ const ProyectIcons = () => {
       description:
         "Ejemplo simple de un e-commerce con inicio de sesión con Google.",
       date: "2023",
+      ready: true,
       tecnologyes: [
         "React ",
         "JavaScript ",
@@ -125,6 +142,7 @@ const ProyectIcons = () => {
       description:
         "Sitio para buscar imágenes de alta calidad libres de derechos de autor.",
       date: "2023",
+      ready: true,
       tecnologyes: ["React", "JavaScript", "HTML", "CSS", "Sonner"],
       url: "https://jacktony12.github.io/pixabay_imagenes/",
     },
@@ -162,6 +180,7 @@ const ProyectIcons = () => {
       color: "#0044ff",
       description: "App de lista de tareas simple y fácil de usar.",
       date: "2023",
+      ready: true,
       tecnologyes: ["Next.js", "JavaScript", "HTML", "CSS", "React-toastify"],
       url: "https://todo-list-sigma-one-35.vercel.app/",
     },
@@ -201,6 +220,7 @@ const ProyectIcons = () => {
       ),
       description: "Un juego de 3 en raya ",
       date: "2022",
+      ready: true,
       tecnologyes: ["React", "JavaScript", "HTML", "CSS", "Sweetalert"],
       url: "https://jacktony12.github.io/tictac-toe/",
     },

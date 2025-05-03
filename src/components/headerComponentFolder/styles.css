@@ -48,9 +48,22 @@
   color: var(--gray);
   background-color: transparent;
   transition: 0.5s;
+  border-radius:5px;
+  overflow: hidden;
   &:hover {
-    background-color: var(--white);
-    color: var(--black);
+    color: var(--white);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: var(--gray);
+    &::after{
+      content:'';
+      position: absolute;
+      width:50%;
+      bottom:-5%;
+      left: 30%;
+      height: 2px;
+      box-shadow:-5px -5px 20px var(--white);
+    }
   }
 }
 .btn-cerrar-menu {

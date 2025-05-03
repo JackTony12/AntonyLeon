@@ -31,6 +31,26 @@ const ProyectsNew = () => {
       <path fill='none' d='M0 0h24v24H0V0z'></path>
       <path d='M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z'></path>
     </svg>,
+    <svg
+    stroke='currentColor'
+    fill='white'
+    strokeWidth='0'
+    viewBox='0 0 320 512'
+    height='1em'
+    width='1em'
+  >
+    <path d='M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z'></path>
+  </svg>,
+   <svg
+   stroke='currentColor'
+   fill='white'
+   strokeWidth='0'
+   viewBox='0 0 320 512'
+   height='1em'
+   width='1em'
+ >
+   <path d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'></path>
+ </svg>
   ]
 
   const handleClick = (e) => {
@@ -65,7 +85,7 @@ const ProyectsNew = () => {
                 style={{ filter: `drop-shadow(0 0 25px ${proyect.color})` }}
                 className='p-svg-icon'
               >
-                {proyect.icon}
+                {proyect.icon ? proyect.icon : ''}
               </span>
               {proyect.name}
             </h3>
@@ -87,8 +107,18 @@ const ProyectsNew = () => {
                 target='_blank'
                 aria-label='Visita el proyecto en cuestión'
                 rel='noopener noreferrer'
+                style={
+                  proyect.ready
+                    ? {}
+                    : {
+                        pointerEvents: "none",
+                        background: "transparent",
+                        color: "inherit",
+                        cursor: "default",
+                      }
+                }
               >
-                {icon[1]}
+                {proyect.ready?icon[1]:<small style={{userSelect:'none'}}>Programando...</small>}
               </a>
             </div>
           </div>
@@ -100,32 +130,15 @@ const ProyectsNew = () => {
           className='scroll-button'
           onClick={handleScrollLeft}
         >
-          <svg
-            stroke='currentColor'
-            fill='white'
-            strokeWidth='0'
-            viewBox='0 0 320 512'
-            height='1em'
-            width='1em'
-          >
-            <path d='M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z'></path>
-          </svg>
+          {icon[2]}
         </button>
         <button
           aria-label='RightCard'
           className='scroll-button'
           onClick={handleScrollright}
         >
-          <svg
-            stroke='currentColor'
-            fill='white'
-            strokeWidth='0'
-            viewBox='0 0 320 512'
-            height='1em'
-            width='1em'
-          >
-            <path d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'></path>
-          </svg>
+          {icon[3]}
+         
         </button>
       </div>
     </section>
