@@ -11,7 +11,6 @@ import Models3d from "../3dmodelsFolder/models"
 import DelAcosta from "../delAcosta/delAcostaComponent"
 import ProyectsNew from "../newProyects/proyectsNew"
 import Blog from "../../components/blogCodigo/blog"
-import Skills from "../skillComponentFolder/iconos"
 const Visualizer = lazy(() => import("../musicVisualizer/visualizer"))
 export function MainComponent() {
   return (
@@ -19,7 +18,6 @@ export function MainComponent() {
       <Header />
       <CvBackComponent />
       <ProyectsNew />
-      {/* <Skills /> */}
       <Suspense fallback={<div>Loading visualizer...</div>}>
         <Visualizer />
       </Suspense>

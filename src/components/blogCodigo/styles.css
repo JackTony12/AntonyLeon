@@ -67,6 +67,7 @@
   position:relative;
   background:transparent;
   color:var(--white);
+  overflow: hidden;
   &::after{
     content:"";
     position:absolute;
@@ -78,22 +79,34 @@
     z-index:-1;
     filter:blur(3px);
     transform:scale(1.1);
-    animation: gradientMove2 5s infinite linear;
+  }
+  & span{
+    display: inline-block;
+    position:absolute;
+    content:'';
+    width: 10px;
+    height: 100%;
+    margin:2px;
+    left:-100%;
+    bottom:0;
+    background:linear-gradient(45deg,#ff6232,#ff2b7c,#fff12f,#27ffcc);
+    filter:blur(12px);
+    animation: moveSpans 1s infinite ;
   }
 }
 
-@keyframes gradientMove2 {
+@keyframes moveSpans{
   0% {
-opacity: 0.5;
-
-  }
-  50% {
     opacity: 1;
+    left: 0%;
   }
+  
   100% {
-    opacity: 0.5;
+    left: 130%;
   }
 }
+
+
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;

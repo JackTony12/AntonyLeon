@@ -77,7 +77,9 @@ const Blog = () => {
           </div>
           <div>
             <small>36%</small>
-            <button className="blog-button">Construyendo...</button>
+            <button type="button" aria-label="blog" className="blog-button">Construyendo...
+              <span></span>
+            </button>
           </div>
         </div>
         <div className='blog-img-container'>
