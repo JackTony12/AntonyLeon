@@ -16,7 +16,7 @@ const AudioVisualizer = () => {
   const sectionRef = useRef(null)
   const audioMotionRef = useRef(null)
   const [songIndex, setSongIndex] = useState(0)
-  const [energy, setEnergy] = useState(0) //energia del audio
+  const [energy, setEnergy] = useState(0)
   const [generalVolume, setGeneralVolume] = useState(1)
   const [uploadSong, setUploadSong] = useState(null)
   const [seekTime, setSeekTime] = useState(0)
@@ -262,6 +262,7 @@ const AudioVisualizer = () => {
 
                 <div className='b-controls-container'>
                   <button
+                    title="Anterior"
                     aria-label='PrevSong'
                     className='m-button'
                     onClick={() => handleNextSong("prev")}
@@ -270,6 +271,7 @@ const AudioVisualizer = () => {
                   </button>
 
                   <button
+                    title="Reproducir"
                     aria-label='PlaySong'
                     className='m-button'
                     onClick={handlePlay}
@@ -279,6 +281,7 @@ const AudioVisualizer = () => {
                       : visualizerIcons[0].play}
                   </button>
                   <button
+                    title="Siguiente"
                     aria-label='NextSong'
                     className='m-button'
                     onClick={() => handleNextSong("next")}
@@ -289,7 +292,7 @@ const AudioVisualizer = () => {
               </div>
               <div>
                 <div>
-                  <span className='m-button'>{generalVolume * 10}% </span>
+                  <span title='Volumen Porcentaje' className='m-button'>{generalVolume * 10}% </span>
                   <label className='slider'>
                     <input
                       aria-label='volRange'
@@ -303,6 +306,7 @@ const AudioVisualizer = () => {
                   </label>
 
                   <button
+                  title="Mutear"
                     aria-label='MuteSong'
                     onClick={() =>
                       handleMute(booleanState.isMute ? "unmute" : "mute")
@@ -328,6 +332,7 @@ const AudioVisualizer = () => {
                   </div>
                   <div className='tooltip-container'>
                     <button
+                      title="Modo de volumen"
                       aria-label='VolSong'
                       className='m-button volume-mode '
                       onClick={() => handleChangeStates("volumeMode")}
@@ -366,6 +371,7 @@ const AudioVisualizer = () => {
               <div className='upload-music-title'>
                 <h3>Sube tu música</h3>
                 <button
+                  title="Acerca de"
                   type='button'
                   className='m-button'
                   aria-label='aboutSection'
@@ -391,14 +397,16 @@ const AudioVisualizer = () => {
                       id='file-upload'
                       accept='audio/*'
                       onChange={handleFileUpload}
-                    />
+                      />
                     <label
+                      title="Subir canción"
                       className='m-button label-upload'
                       htmlFor='file-upload'
                     >
                       Subir&nbsp;{visualizerIcons[8].upload}
                     </label>
                     <button
+                      title="Eliminar canción"
                       aria-label='DeleteSong'
                       className='m-button delete-upload'
                       onClick={handleDeleteFile}
