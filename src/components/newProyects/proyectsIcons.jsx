@@ -19,7 +19,7 @@ const ProyectIcons = () => {
       description: "Landing sobre devs frontends, humor, memes, recursos para devs, hacks y más.",
       date: "2025",
       ready: false,
-      tecnologyes: ["Astro", "JavaScript ", "HTML", "CSS" , "Typescript"],
+      tecnologyes: ["Astro", "JavaScript ", "HTML", "CSS" , "Typescript","Tailwind"],
       url: "#",
     },
     {

@@ -349,6 +349,11 @@ canvas {
 }
 .duration-input {
   width: 100%;
+  cursor:grab;
+  width: 100%;
+  &:active{
+    cursor:grabbing;
+  }
 }
 .upload-status {
   font-size: 0.6em;

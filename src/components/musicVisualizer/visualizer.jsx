@@ -341,7 +341,6 @@ const AudioVisualizer = () => {
               <div>
                 <input
                   aria-label='DurationSong'
-                  style={{ width: "100%", cursor: "pointer" }}
                   className='duration-input'
                   type='range'
                   step='1'
