@@ -14,7 +14,7 @@ const DelAcosta = () => {
       <div className='d-title-container'>
         <img src={delacosta} alt='delacosta' />
         <p>
-          Microempresa distribuidora de Chile habanero y salsa picante de
+          Esta es mi Microempresa distribuidora de Chile habanero y salsa picante de
           excelente calidad.
         </p>
       </div>
