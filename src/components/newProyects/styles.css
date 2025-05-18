@@ -72,8 +72,12 @@
   box-shadow: 0 0 10px #ff5100;
 }
 .p-container .p-card:nth-child(6)::after {
-  background: #800d5d;
-  box-shadow: 0 0 10px #ff00ff;
+  background: #c7c7c7;
+  box-shadow: 0 0 10px #ffffff;
+}
+.p-container .p-card:nth-child(7)::after {
+  background: #ce2d9e;
+  box-shadow: 0 0 10px #ff0bff;
 }
 .p-card {
   width: 300px;

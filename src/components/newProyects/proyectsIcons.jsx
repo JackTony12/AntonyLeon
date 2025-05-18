@@ -16,7 +16,7 @@ const ProyectIcons = () => {
       icon: (
         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 3H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h4v2h8v-2h4c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2zm0 14H4V5h16v12z"></path><path d="M6.5 7.5H9V6H5v4h1.5zM19 12h-1.5v2.5H15V16h4z"></path></svg>
       ),
-      description: "Landing sobre devs frontends, humor, memes, recursos para devs, hacks y más.",
+      description: "Landing sobre devs frontends, humor, memes, recursos para fronts, hacks y más.",
       date: "2025",
       ready: false,
       tecnologyes: ["Astro", "JavaScript ", "HTML", "CSS" , "Typescript","Tailwind"],
