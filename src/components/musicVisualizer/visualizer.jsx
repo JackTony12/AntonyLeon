@@ -224,10 +224,12 @@ const AudioVisualizer = () => {
                 {uploadSong ? "Desconocido" : musicData[songIndex].artist}
               </span>
             </div>
-
+              <div>
+              <span className={`speaker ${booleanState.isPlaying ? 'speaker-active':''}`}  >{visualizerIcons[11].speaker}</span>
             <span className='music-counter '>
               {songIndex + 1}/{musicData.length}
             </span>
+              </div>
           </div>
           {uploadSong ? (
             <img

@@ -370,3 +370,23 @@ canvas {
   font-size: 0.6em;
   font-weight: 100;
 }
+.speaker{
+  margin:5px 10px;
+
+}
+.speaker-active{
+  
+& svg{
+  animation: beat .6s infinite;
+  animation-timing-function: ease-in-out;
+}
+}
+@keyframes beat {
+  0% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
