@@ -294,7 +294,7 @@ const AudioVisualizer = () => {
               </div>
               <div>
                 <div>
-                  <span title='Volumen Porcentaje' className='m-button'>{generalVolume * 10}% </span>
+                  <span title='Volumen Porcentaje' className='volume-porcentaje'>{generalVolume * 100}% </span>
                   <label className='slider'>
                     <input
                       aria-label='volRange'

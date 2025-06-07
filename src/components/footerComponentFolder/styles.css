@@ -1,6 +1,6 @@
 .main-footer {
   position: relative;
-  padding: 0 1em;
+  padding: 0 1em 3em 1em;
   color: var(--white);
 }
 .footer-text-contenedor {

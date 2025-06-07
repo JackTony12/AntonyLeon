@@ -383,10 +383,13 @@ canvas {
 }
 @keyframes beat {
   0% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 
   100% {
     transform: scale(1);
   }
+}
+.volume-porcentaje{
+  width: 35px;
 }

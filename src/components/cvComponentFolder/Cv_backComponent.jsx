@@ -33,7 +33,7 @@ const CvBackComponent = () => {
             <span>
               <span>+</span>2
             </span>
-            <strong>Años de experiencia</strong>
+            <strong> Años de experiencia</strong>
           </p>
 
           <div className={`btn-cv ${about ? "flash" : "noflash"}`}>
