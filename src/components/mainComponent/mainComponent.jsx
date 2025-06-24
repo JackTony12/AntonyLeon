@@ -8,11 +8,13 @@ import CvBackComponent from "../cvComponentFolder/Cv_backComponent"
 import FooterComponent from "../footerComponentFolder/footerComponent"
 import ServicesComponent from "../ServicesComponentFolder/servicesComponent"
 import Models3d from "../3dmodelsFolder/models"
+import Tools from "../toolsFolder/tools"
 import DelAcosta from "../delAcosta/delAcostaComponent"
 import ProyectsNew from "../newProyects/proyectsNew"
 import Blog from "../../components/blogCodigo/blog"
 const Visualizer = lazy(() => import("../musicVisualizer/visualizer"))
 export function MainComponent() {
+  
   return (
     <>
       <Header />
@@ -25,6 +27,7 @@ export function MainComponent() {
       <DelAcosta />
       <Blog />
       <ServicesComponent />
+      <Tools/>
       <FooterComponent />
     </>
   )

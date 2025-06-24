@@ -1,0 +1,52 @@
+.tools-title{
+    color:var(--white);
+    font-family: 'Poppins';
+    margin-bottom:1em;
+}
+
+
+.tools-section{
+    width: 100%;
+    height: 200px;
+    background-color:black;
+    border:1px solid var(--gray);
+    border-radius:5px;
+    color:var(--white);
+    display:flex;
+    flex-direction:column;
+    font-family: 'Poppins';
+    padding:1em;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap:5px;
+    & a{
+        width: 30px;
+        height: 30px;
+        border:1px solid gray;
+       color:white;
+       position:absolute;
+       right:10px;
+       bottom:10px;
+       border-radius: 50%;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       &:hover{
+        background-color:white;
+        color:black;
+       }
+    }
+}
+.tool-card{
+    position:relative;
+    padding:1em;
+    border-radius:3px;
+    border:1px solid var(--gray);
+    height: 300px;
+
+    transition:.2s;
+    &:hover{
+        background-color:var(--almostblack)
+    }
+}
