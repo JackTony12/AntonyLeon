@@ -1,4 +1,4 @@
-import{j as t,r as fe}from"./index-DdiPFpnG.js";/**!
+import{j as t,r as fe}from"./index-BsxDzn2j.js";/**!
  * audioMotion-analyzer
  * High-resolution real-time graphic audio spectrum analyzer JS module
  *
