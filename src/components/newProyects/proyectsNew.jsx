@@ -57,17 +57,7 @@ const ProyectsNew = () => {
     if (isDragging) e.preventDefault()
   }
 
-  const handleScrollLeft = () => {
-    if (containerRef.current) {
-      containerRef.current.scrollBy({ left: -scroll, behavior: "smooth" })
-    }
-  }
-  const handleScrollright = () => {
-    if (containerRef.current) {
-      containerRef.current.scrollBy({ left: scroll, behavior: "smooth" })
-    }
-  }
-
+ 
   return (
     <section className='proyects-section'>
       <h2 className='h-title' id='proyects'>
@@ -128,14 +118,14 @@ const ProyectsNew = () => {
         <button
           aria-label='LeftCard'
           className='scroll-button'
-          onClick={handleScrollLeft}
+          onClick={()=>containerRef.current.scrollBy({ left: -scroll, behavior: "smooth" })}
         >
           {icon[2]}
         </button>
         <button
           aria-label='RightCard'
           className='scroll-button'
-          onClick={handleScrollright}
+          onClick={()=>containerRef.current.scrollBy({ left: scroll, behavior: "smooth" })}
         >
           {icon[3]}
          
