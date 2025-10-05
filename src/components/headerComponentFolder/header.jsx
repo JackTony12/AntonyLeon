@@ -81,6 +81,16 @@ function Header() {
               Contacto
             </a>
           </div>
+           <div className='btn-contenedor'>
+            <a
+              onClick={handleMenu}
+              className='Btn'
+              href='#pricing'
+              data-text='Contacto'
+            >
+              Planes
+            </a>
+          </div>
           <div className='btn-contenedor'>
             <a onClick={handleMenu} href='#' className='Btn btn-cerrar-menu'>
               Cerrar

@@ -12,6 +12,7 @@ import Tools from "../toolsFolder/tools"
 import DelAcosta from "../delAcosta/delAcostaComponent"
 import ProyectsNew from "../newProyects/proyectsNew"
 import Blog from "../../components/blogCodigo/blog"
+import Pricing from "../../components/pricingFolder/Pricing"
 const Visualizer = lazy(() => import("../musicVisualizer/visualizer"))
 export function MainComponent() {
   
@@ -27,6 +28,7 @@ export function MainComponent() {
       <DelAcosta />
       <Blog />
       <ServicesComponent />
+      <Pricing />
       <Tools/>
       <FooterComponent />
     </>

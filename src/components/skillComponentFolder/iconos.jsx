@@ -45,11 +45,7 @@ const Skills = ({power,musicData,songIndex}) => {
                     e.currentTarget.style.backgroundColor = colores()
                   }
                 }}
-                onMouseLeave={(e) => {
-                  if (e.target === e.currentTarget) {
-                    e.currentTarget.style.backgroundColor = "black"
-                  }
-                }}
+                
                 className='icon-skill'
                 key={index}
               >
