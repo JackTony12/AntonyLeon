@@ -3,7 +3,7 @@ import './styles.css'
 const Pricing = () => {
 
     const icono = (
-        <svg stroke="currentColor" fill="#1bcf93ff" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+        <svg stroke="currentColor" fill="#1bcf93ff" strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
     )
 
 
@@ -18,7 +18,7 @@ const Pricing = () => {
                 <p>Landing page económica</p>
             </div>
             <div className='price'>
-                <strong>$99</strong><span>USD / 2600 Lps</span> 
+                <strong>$160</strong><span>USD / 4200 Lps</span> 
             </div>
             <div className='p-c-description'>
                 <p>Ideal para usuarios individuales / Muestra quién eres</p>
@@ -37,7 +37,7 @@ const Pricing = () => {
             <div>
                 <a href="https://wa.me/50499550232?text=Más información sobre el plan Básico🥉" target='_blank'>Solicitar</a>
             </div>
-        <p className='p-timeout'>Entrega en 3-5 días hábiles</p>
+        <p className='p-timeout'>Entrega en 1-2 semanas </p>
         </div>
         {/* {====================} */}
         <div className='pricing-card p-card-2'>
@@ -47,7 +47,7 @@ const Pricing = () => {
                 <p>Sitio informativo / Negocio estándar</p>
             </div>
             <div className='price'>
-                <strong>$199</strong><span>USD / 5200 Lps</span> 
+                <strong>$249</strong><span>USD / 6500 Lps</span> 
             </div>
             <div className='p-c-description'>
                 <p>Para negocios que quieren explicar sus servicios.</p>
@@ -60,16 +60,17 @@ const Pricing = () => {
                     <li>{icono} Diseño más trabajado (tipografías, paleta de colores personalizada)</li>
                     <li>{icono} Formulario de contacto avanzado (con validación).</li>
                     <li>{icono} Dominio gratis por 1 año </li>
+                    <li>{icono} Sección de testimonios y galería de proyectos</li>
                     <li>{icono} Soporte por 1 mes </li>
                     <li>{icono} SEO y optimización de contenido</li>
-                    
+                    <li>{icono} Botón de WhatsApp flotante</li>
                     <li>{icono} Integración básica (Google Maps, WhatsApp)</li>
                 </ul>
             </div>
             <div>
                 <a href="https://wa.me/50499550232?text=Más información sobre el plan Intermedio🥈" target='_blank'>Solicitar</a>
             </div>
-        <p className='p-timeout'>Entrega en 5-8 días hábiles</p>
+        <p className='p-timeout'>Entrega en 2-3 semanas</p>
 
         </div>
         {/* {====================} */}
@@ -79,7 +80,7 @@ const Pricing = () => {
                 <p>Sitio personalizado / Profesional</p>
             </div>
             <div className='price'>
-                <strong>$299</strong><span>USD / 7800 Lps</span> 
+                <strong>$399</strong><span>USD / 10,400 Lps</span> 
             </div>
             <div className='p-c-description'>
                 <p>Para clientes que quieren algo más completo</p>
@@ -101,7 +102,7 @@ const Pricing = () => {
             <div>
                 <a href="https://wa.me/50499550232?text=Más información sobre el plan Avanzado🥇" target='_blank'>Solicitar</a>
             </div>
-        <p className='p-timeout'>Entrega en 8-12 días hábiles</p>
+        <p className='p-timeout'>Entrega en 1 mes</p>
 
         </div>
     </div>

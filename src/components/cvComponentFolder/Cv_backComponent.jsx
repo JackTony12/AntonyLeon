@@ -31,7 +31,7 @@ const CvBackComponent = () => {
         <div className='capsula-ex-cv'>
           <p className='experience'>
             <span>
-              <span>+</span>2
+              <span>+</span>3
             </span>
             <strong> Años de experiencia</strong>
           </p>
