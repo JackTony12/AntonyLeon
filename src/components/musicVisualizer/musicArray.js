@@ -1,21 +1,21 @@
 import valentineImg from "../../assets/images/astronauta.webp"
 import valentineSong from "../../../public/music/valentineKotori.mp3"
-import aikaImg from "../../assets/images/aikaimage2.webp"
-import aikaKotoriSong from "../../../public/music/AikaKotoriStarscream.mp3"
 import kotoriImg from "../../assets/images/kotori.webp"
 import kotoriSong from "../../../public/music/kotori.mp3"
+import locosSong from "../../../public/music/Locos.mp3"
+import locosImg from "../../assets/images/locosgif.gif"
 const musicData = [
   {
-    songName: "Starscream",
-    artist: "Kotori & Aika",
-    duration: "4:08",
-    date: "2018",
-    type: "Dubstep",
+    songName: "Locos",
+    artist: "Leon Larregui",
+    duration: "2:55",
+    date: "2016",
+    type: "pop",
     color: "#ffcd6fa8",
-    copyRight: "Libre",
-    downloadUrl: "/music/AikaKotoriStarscream.mp3",
-    image: aikaImg,
-    song: aikaKotoriSong,
+    copyRight: "Copyrighted",
+    downloadUrl: "/music/Locos.mp3",
+    image: locosImg,
+    song: locosSong,
   },
   {
     songName: "VALENTINE & 4AM",
@@ -41,6 +41,7 @@ const musicData = [
     image: kotoriImg,
     song: kotoriSong,
   },
+
 ]
 
 export default musicData
