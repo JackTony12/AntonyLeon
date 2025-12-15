@@ -6,6 +6,11 @@
 .footer-text-contenedor {
   margin-bottom: 2em;
 }
+.h-title span {
+  display: block;
+  font-size: .5em;
+  font-weight: 100;
+}
 
 .form-contact-contenedor {
   display: flex;

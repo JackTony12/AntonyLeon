@@ -90,10 +90,11 @@ color:rgb(104, 104, 104);
   margin-bottom:2em;  
 }
 .price{
-    font-size:2em;
-
     & span{
-        font-size: .6em;
+        color:var(--gray-thin)
+    }
+    & strong{
+        font-size: 2em
     }
 }
 .features{
