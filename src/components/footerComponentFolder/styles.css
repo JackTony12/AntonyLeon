@@ -53,36 +53,42 @@
     list-style: none;
     margin: 5px 0;
   }
-  li:nth-child(2) {
-    display: flex;
-    align-items: center;
-  }
-  li:nth-child(1) a {
-    display:flex
-  }
   
-  li a{
-    color: var(--blue);
-    display:inline;
-    
-
-  }
+  
+ 
 }
+
 .about-me a {
   text-decoration: none;
   color: gray;
-  display: block;
-  border-radius: 5px;
-  display: flex;
   align-items: center;
   gap: 5px;
   transition: 0.6s ease;
-
-  &:hover {
-    color: greenyellow;
-    text-decoration: underline;
+  &:hover{
+    color: #027ed3;
   }
+  
 }
-.midu-color {
-  color: #027ed3;
+.socails-links-box{
+  display: flex;
+  gap: 1em;
+  padding:1em 0 ;
+}
+.socials-links {
+width:2.5em;
+height:2.5em;
+border-radius:50%;
+border:1px solid var(--gray);
+display: flex;
+align-items: center;
+justify-content: center;
+&:hover{
+  background:white;
+}
+}
+.socials-links a {
+  &:hover {
+    text-decoration: underline;
+    color: black;
+  }
 }
