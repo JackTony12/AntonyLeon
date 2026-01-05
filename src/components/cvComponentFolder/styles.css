@@ -7,6 +7,11 @@
     aspect-ratio: 7/8;
     position:relative;
     z-index: 2;
+    filter: saturate(.3);
+    transition: 0.3s ease-in-out;
+    &:hover {
+      filter: saturate(.9);
+    }
   }
 }
 .section-profile {

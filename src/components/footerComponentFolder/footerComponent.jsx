@@ -18,7 +18,7 @@ const FooterComponent = () => {
         {/* Footer Info ============================== :p*/}
         <div className='logoAl-contenedor'>
           <div>
-            <img loading='lazy' src={logoAl} alt='logoAl' />
+            <img className='logo-al-footer' loading='lazy' src={logoAl} alt='logoAl' />
             <span>2025 Antony Leonel Website</span>
           </div>
           <div className='about-me'>
