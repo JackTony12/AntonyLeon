@@ -187,3 +187,7 @@
     background-color: var(--gray-low-100);
   }
 }
+.completed-proyects {
+  color: var(--gray-low);
+  margin-left: 2em;
+}

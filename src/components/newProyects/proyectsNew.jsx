@@ -5,7 +5,8 @@ import { useRef, useState } from "react"
 const ProyectsNew = () => {
   const proyects = ProyectsIcons()
   const containerRef = useRef(null)
-  const scroll = 300
+  const [proyectsCount, setProyectsCount] = useState(proyects.length)
+  const scroll = 800
   const icon = [
     <svg
       stroke='currentColor'
@@ -61,9 +62,11 @@ const ProyectsNew = () => {
   return (
     <section className='proyects-section'>
       <h2 className='h-title' id='proyects'>
-        {" "}
-        {icon[0]} Proyectos
+   
+        {icon[0]} Proyectos 
+        <span className="completed-proyects"> Trabajos que me ayudaron a mejorar</span>
       </h2>
+
       <div ref={containerRef} className='p-container'>
         {proyects.map((proyect, index) => (
           <div className='p-card' key={index}>
