@@ -2,7 +2,18 @@ import React from "react"
 import FormContact from "../ContactComponentFolder/formcontact"
 import "./styles.css"
 import logoAl from "../../assets/images/ALv20.webp"
+import logomc from "../../assets/minecraftImg/ALv21.png"
+import dflogo from "../../assets/darkfantasyImg/dflogo.png"
+import { useContext } from "react"
+import { MyContext } from "../../contexts/mainContext"
+
 const FooterComponent = () => {
+
+  const { theme } = useContext(MyContext)
+  const themeFooterImg = {
+    'minecraft': logomc,
+    'darkfantasy': dflogo
+  }
   return (
     <footer id='footer' className='main-footer'>
       <div className='footer-text-contenedor'>
@@ -18,7 +29,7 @@ const FooterComponent = () => {
         {/* Footer Info ============================== :p*/}
         <div className='logoAl-contenedor'>
           <div>
-            <img className='logo-al-footer' loading='lazy' src={logoAl} alt='logoAl' />
+            <img className='logo-al-footer' loading='lazy' src={themeFooterImg[theme] || logoAl} alt='logoAl' />
             <span>2025 Antony Leonel Website</span>
           </div>
           <div className='about-me'>

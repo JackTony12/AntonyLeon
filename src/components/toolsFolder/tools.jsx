@@ -2,7 +2,7 @@ import './styles.css'
 
 const Tools = () => {
   return (
-    <div className="tools-container">
+    <section className="tools-section">
       <div className="tools-wrapper">
         {/* Header */}
         <div className="tools-header">
@@ -65,7 +65,7 @@ const Tools = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

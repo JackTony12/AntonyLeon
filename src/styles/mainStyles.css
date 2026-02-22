@@ -3,14 +3,81 @@
   src: url(../assets/font/Poppins-Regular.woff2) format("woff");
 }
 @font-face {
+  font-family: "minecraft";
+  src: url(../assets/font/Minecraft.ttf) format("truetype");
+}
+@font-face {
   font-family: "Acosta";
   src: url(../assets/font/JejuHallasan-Regular.woff2) format("woff");
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url(../assets/font/Cinzel.otf) format("opentype");
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+
+
+html[data-theme="minecraft"] {
+
+  --white: #ffffff;
+  --black: #ffffff;
+  --background: #331304;
+  --almostblack: #000000;
+  --blacktonone:transparent;
+  --white100: #44ff00;
+  --black: #4b2d1b;
+  --black100: #51fe0db0;
+  --gray: #ffffff;
+  --gray-low: #ffffff;
+  --gray-thin: #acacac;
+  --gray-target: #0d54f9;
+  --gray-target-100: #333b48;
+  --gray-low-100: #272727;
+  --gray-high: #ffffff;
+  --gray-high100: #027e06;
+  --blurblue: #ff0000;
+  --red: red;
+  --blurblue200: #21aeff;
+  --font-main: "minecraft", sans-serif;
+  /*Botones del nav*/
+  --btnHbr:0px;
+  --btnHafter:transparent;
+  --btnHbg:#555555;
+  /*Botones del nav*/
+
+  /*Cards de los proyectos*/
+  --pcbg: #4b2d1b;
+  --pcbr:0px;
+  --pchbg:linear-gradient(20deg, rgb(0, 0, 0), #55FF55);
+  --pcb: 5px solid #189c04;
+  --pcttbg: #555555;
+  --pcttbr: 0px;
+  --pcttb: 2px solid #ffffff;
+  --pcbi: url(../assets/minecraftImg/mctextures/dirt.png);
+  /*Cards de los proyectos*/
+
+
+
+  --background-image: url('/src/assets/minecraftImg/fondoRoca.png');
+  --background-hero-image: none;
+  --cursor: url(../assets/minecraftImg/swordcursor.png), auto;
+}
+
+
+html[data-theme="darkfantasy"]{
+
+  --font-main: "Cinzel", sans-serif;
+
+}
+
+
+
+
 
 header,
 .section-profile,
@@ -22,18 +89,27 @@ header,
 .services-section,
 .models-section,
 .pricing-section,
+.tools-section,
 footer {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-main);
 }
 .d-section {
   font-family: "Acosta", sans-serif;
 }
 html {
-  background:black;
+  background: var(--background);
+  background-image: var(--background-image);
+  background-size: cover;
   scroll-behavior: smooth;
   height: 100%;
- 
+  
 }
+html {
+  cursor:var(--cursor);
+  /* cursor: url(../assets/images/puntero.png), auto; */
+
+}
+
 html::-webkit-scrollbar:vertical {
   width: 5px;
 }

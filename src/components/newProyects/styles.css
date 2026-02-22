@@ -44,11 +44,11 @@
 }
 .proyects-section::before {
   left: 0;
-  background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  background: linear-gradient(to right, var(--blacktonone), transparent);
 }
 .proyects-section::after {
   right: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.979), transparent);
+  background: linear-gradient(to left, var(--blacktonone), transparent);
 }
 
 .p-container .p-card:nth-child(1)::after {
@@ -84,17 +84,19 @@
   color: var(--white);
   scroll-snap-align: center;
   flex-shrink: 0;
-  background: linear-gradient(20deg, rgb(0, 0, 0), rgb(27, 27, 27));
+  background: var(--pcbg);
+  background-image: var(--pcbi);
+  background-size: cover;
   position: relative;
   padding: 1em;
   transition: 0.5s ease;
-  border: 1px solid var(--gray-low-100);
-  border-radius: 1em;
+  border: var(--pcb);
+  border-radius: var(--pcbr);
   transition: .2s ease;
   &:hover{
     transform: translateY(-10px);
     box-shadow: 0 0 10px var(--blurblue200);
-    background: linear-gradient(20deg, rgb(0, 0, 0), rgba(30, 104, 104, 0.541));
+    background: var(--pchbg);
     border:1px solid var(--white);
   }
 
@@ -154,11 +156,11 @@
   margin: 1em 0;
 }
 .t-tecnology {
+  background-color: var(--pcttbg);
   padding: 0.1em 0.6em;
   transition: 0.3s ease;
-  /* background-color: var(--gray-target-100); */
-  border-radius: 0.4em;
-  border:1px solid var(--gray-low-100);
+  border-radius: var(--pcttbr);
+  border: var(--pcttb);
   box-shadow: 2px 3px 4px var(--black);
 }
 .p-svg-icon {

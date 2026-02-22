@@ -1,12 +1,12 @@
 .snap-contenedor {
-  color: white;
+  color: var(--white);
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   max-width: 1200px; /* Resta espacio para los botones */
   display: flex;
   margin: 3em 0;
-  box-shadow: inset 10px 0 20px black, inset 0 0 0 transparent,
-    inset -20px 0 20px black, inset 0 0px 0px transparent;
+  box-shadow: inset 10px 0 20px var(--blacktonone), inset 0 0 0 transparent,
+    inset -20px 0 20px var(--blacktonone), inset 0 0px 0px transparent;
   padding: 0;
 }
 .h-title-3d {

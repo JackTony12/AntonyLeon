@@ -5,6 +5,8 @@ const MyContext = createContext()
 const MyContextFunction = ({ children }) => {
   const [interruptor, setInterruptor] = useState(false)
   const [about, setAbout] = useState(false)
+  const [theme, setTheme] = useState("galaxia")
+
 
   return (
     <MyContext.Provider
@@ -13,6 +15,8 @@ const MyContextFunction = ({ children }) => {
         interruptor,
         about,
         setAbout,
+        theme,
+        setTheme,
       }}
     >
       {children}

@@ -1,6 +1,9 @@
 import './particles.css'
-
+import { useContext } from 'react';
+import {MyContext} from '../../contexts/mainContext';
 const Particles = () => {
+
+  const {theme } = useContext(MyContext)
     const crearParticulas = Array.from({ length: 50 }, (_, i) => {
      const randomTop = Math.random() * 100;
      const randomDelay = Math.random() * 5;
@@ -16,6 +19,7 @@ const Particles = () => {
            animationDelay: `${randomDelay}s`,
            animationDuration: `${randomDuration}s`,
            width: `${randomWidth}px`,
+            height: `${theme == 'minecraft'? randomWidth - 10 : 1}px`,
          }}
        />
      );

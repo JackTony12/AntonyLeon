@@ -1,5 +1,7 @@
 import React from "react"
 import AL_Background from "../../assets/images/posteryo.webp"
+import portraitMC from "../../assets/images/posterMc.png"
+import darkfantasyportrait from "../../assets/darkfantasyImg/portraitDarkFantasy.png"
 import cvEs from "../../assets/Cv/AntonyCv.pdf"
 import cvEn from "../../assets/Cv/AntonyNewCvEnglish.pdf"
 import "./styles.css"
@@ -7,7 +9,9 @@ import Particles from "./particles"
 import { useEffect, useContext } from "react"
 import { MyContext } from "../../contexts/mainContext"
 const CvBackComponent = () => {
-  const { about, setAbout } = useContext(MyContext)
+  const { about, setAbout, theme } = useContext(MyContext)
+  const currentTheme = window.localStorage.getItem("theme")
+  console.log(currentTheme)
   useEffect(() => {
     if (about) {
       const timer = setTimeout(() => {
@@ -17,6 +21,11 @@ const CvBackComponent = () => {
       return () => clearTimeout(timer)
     }
   }, [about])
+  const themeImage = {
+    'galaxia': AL_Background,
+    'minecraft': portraitMC,
+    'darkfantasy': darkfantasyportrait
+  }
   return (
     <section id='sobre' className='section-profile'>
       <Particles/>
@@ -29,12 +38,33 @@ const CvBackComponent = () => {
           <p>Desarrollador Frontend hondureño enfocado en diseño, funcionalidad, velocidad y experiencias responsive que se adaptan a cualquier dispositivo</p>
         </div>
         <div className='capsula-ex-cv'>
-          <p className='experience'>
+          {currentTheme === "minecraft" ? (
+            <div className="xp-bar">
+              <span>1146</span>
+              <div className="track">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          ) : (
+            
+              <p className='experience'>
             <span>
               <span>+</span>3
             </span>
             <strong> Años de experiencia</strong>
           </p>
+          )}
 
           <div className={`btn-cv ${about ? "flash" : "noflash"}`}>
             <div className='download-text'>
@@ -54,8 +84,10 @@ const CvBackComponent = () => {
         </div>
       </div>
       <div className='al-profile-img-container'>
-        <img loading='lazy' src={AL_Background} alt='AntonyLeon' />
+        <img loading='lazy' src={themeImage[theme] || AL_Background} alt='AntonyLeon' />
+
       </div>
+
     </section>
   )
 }

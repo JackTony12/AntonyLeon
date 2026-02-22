@@ -64,7 +64,7 @@ const ProyectsNew = () => {
       <h2 className='h-title' id='proyects'>
    
         {icon[0]} Proyectos 
-        <span className="completed-proyects"> Trabajos que me ayudaron a mejorar</span>
+        <span className="completed-proyects">Que me ayudaron a mejorar</span>
       </h2>
 
       <div ref={containerRef} className='p-container'>

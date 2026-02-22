@@ -1,6 +1,8 @@
 :root {
   --white: #ffffff;
   --black: black;
+  --blacktonone:black;
+  --background: black;
   --almostblack: #1a1a1a;
   --white100: #cccccc;
   --black: black;
@@ -16,18 +18,38 @@
   --blurblue: #47daff69;
   --red: red;
   --blurblue200: #21aeff;
+  /*Botones del nav*/
+  --btnHbr:5px;
+  --btnHbg:transparent;
+  --btnHafter: linear-gradient(45deg,#ff6232,#ff2b7c,#fff12f,#27ffcc);
+   /*Botones del nav */
+  /*Cards de los proyectos*/
+    --pcbg:linear-gradient(20deg, #000000, #1b1b1b);
+    --pcbr:1em;
+    --pchbg:linear-gradient(20deg, rgb(0, 0, 0), rgba(30, 104, 104, 0.541));
+    --pcb: 1px solid var(--gray-low-100);
+    --pcbi: none;
+    --pcttbg:transparent;
+    --pcttbr: 0.4em;
+    --pcttb: 1px solid var(--gray-low-100);
+  /*Cards de los proyectos*/
+
+
+  --font-main: "Poppins", sans-serif;
+  --background-hero-image: url('/src/assets/images/logotrazo.webp');
+  --cursor: url(../assets/images/puntero.png), auto;
+
+
 }
+
+
+
 .h-title {
   text-align: left;
   margin-left: 0.5em;
   color:white;
   font-size: clamp(1.5em, 2.5vw, 36px);
-  /* background: linear-gradient(#ffffff, #ffffffd8, #000000); */
-  /* -webkit-background-clip: text; */
-  /* background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
   margin: 3em 0 1em 0;
-
 }
 
 @media (width < 700px) {

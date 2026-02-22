@@ -14,10 +14,22 @@ import ProyectsNew from "../newProyects/proyectsNew"
 import Blog from "../../components/blogCodigo/blog"
 import Pricing from "../../components/pricingFolder/Pricing"
 const Visualizer = lazy(() => import("../musicVisualizer/visualizer"))
+
+
+
+
 export function MainComponent() {
   
+
+
+
+
+
+
   return (
     <>
+      
+
       <Header />
       <CvBackComponent />
       <ProyectsNew />

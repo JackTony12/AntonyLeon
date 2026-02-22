@@ -43,9 +43,9 @@
   width: 100%;
   padding: 12px 16px;
   border-radius: 8px;
-  color: #fff;
+  color: var(--white);
   font-family: inherit;
-  background-color: #151515;
+  background-color: var(--almostblack);
   border:none;
   /* border: 1px solid var(--gray); */
 
@@ -56,10 +56,10 @@
   padding: 12px 16px;
   border-radius: 8px;
   resize: none;
-  color: #fff;
+  color: var(--white);
   height: 96px;
   /* border: 1px solid var(--gray); */
-  background-color:#151515 ;
+  background-color: var(--almostblack);
   border:none;
   font-family: inherit;
 }
@@ -83,9 +83,8 @@
   color: var(--white);
   font-weight: 600;
   width: 100%;
-  background-color:#151515 ;
+  background-color: var(--almostblack);
   border:none;
-  /* border: 1px solid var(--gray); */
   padding: 12px 16px;
   gap: 8px;
   margin-top: 8px;
