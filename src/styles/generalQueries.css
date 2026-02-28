@@ -246,10 +246,8 @@
     height: 500px;
   }
 
-  .btn-padre-contenedor {
-    & img {
-      display: none;
-    }
+  .logoAlMenu{
+    display: none;
   }
   .blog-img-container {
     width: 50%;
@@ -259,6 +257,7 @@
   }
   
 }
+
 @media (width < 900px) {
   .delacosta-section {
     flex-direction: column;

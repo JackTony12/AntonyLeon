@@ -51,6 +51,7 @@ canvas {
 }
 
 .music-controls {
+  background: var(--pcbi);
   .m-title {
     color: var(--gray-thin);
   }

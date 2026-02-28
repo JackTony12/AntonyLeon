@@ -1,40 +1,26 @@
 import { MyContext } from "../../contexts/mainContext"
 import { useContext, useState, useEffect } from "react"
+import ThemeSelector from './ThemeSelector'
 import logo from "../../assets/images/ALv20.webp"
-import minelogo from '../../assets/minecraftImg/minecraftLogo.png'
+import mineClick from '../../assets/minecraft/sounds/mineClick.mp3'
 import "./styles.css"
 function Header() {
-  const { setInterruptor, interruptor, setAbout, setTheme, theme } = useContext(MyContext)
   const [menuSwich, setMenuSwich] = useState(false)
-  const handleMenu = () => {
+    const minecraftClick = new Audio(mineClick)
+    const handleMenu = () => {
+    const currentTheme = window.localStorage.getItem("theme")
     setMenuSwich(!menuSwich)
+    if(currentTheme === "minecraft"){
+      minecraftClick.play()
+    }
   }
+
+
   if (window.innerWidth < 668 && menuSwich == true) {
     document.body.style.overflow = "hidden"
   } else {
     document.body.style.overflow = "auto"
   }
-  const currentTheme = window.localStorage.getItem("theme")
-
-  useEffect(()=>{
-    if(currentTheme){
-      document.documentElement.setAttribute("data-theme", currentTheme)
-      setTheme(currentTheme) 
-    }
-  })
-
-
-    const changeTheme = (e)=> {
-      const param = e.target.value
-      window.localStorage.setItem("theme", param)
-      setTimeout(()=>{
-        document.documentElement.setAttribute("data-theme", param)
-        setTheme(param)
-      },1000)
-
-    }
-
-    console.log(theme)
 
   return (
     <header className='main-header'>
@@ -48,21 +34,9 @@ function Header() {
         <div
           className={`btn-padre-contenedor${menuSwich ? " menu-active" : ""}`}
         >
-          <img src={logo} alt='logoAL' />
+          <img className="logoAlMenu" src={logo} alt='logoAL' />
           <div>
-            <div className='btn-contenedor'>
-            <a
-              className='Btn'
-              onClick={() => {
-                setInterruptor(!interruptor)
-                setMenuSwich(!menuSwich)
-                setAbout(true)
-              }}
-              href='#about'
-            >
-              Sobre
-            </a>
-          </div>
+             
 
           <div className='btn-contenedor'>
             <a
@@ -110,13 +84,7 @@ function Header() {
             </a>
           </div>
           </div>
-          <div className="">
-              <select onChange={changeTheme} value={currentTheme} className="select-theme">
-                <option value="default">Por defecto</option>
-                <option value="minecraft">Minecraft</option>
-                <option value="darkfantasy">Dark Fantasy</option>
-              </select>
-          </div>
+         <ThemeSelector/>
         </div>
       </div>
     </header>

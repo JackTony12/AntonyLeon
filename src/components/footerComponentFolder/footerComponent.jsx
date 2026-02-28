@@ -2,7 +2,7 @@ import React from "react"
 import FormContact from "../ContactComponentFolder/formcontact"
 import "./styles.css"
 import logoAl from "../../assets/images/ALv20.webp"
-import logomc from "../../assets/minecraftImg/ALv21.png"
+import logomc from "../../assets/minecraft/images/Alv21.png"
 import dflogo from "../../assets/darkfantasyImg/dflogo.png"
 import { useContext } from "react"
 import { MyContext } from "../../contexts/mainContext"
@@ -52,7 +52,7 @@ const FooterComponent = () => {
               
               <li>
                 Agradecimiento especial a Deily Bejarano por su contribución en
-                UI/UX.
+                UX.
               </li>
               <li>
                 Mentor profesional: Miguel Ángel Durán

@@ -3,7 +3,6 @@ import { createContext, useState } from "react"
 const MyContext = createContext()
 
 const MyContextFunction = ({ children }) => {
-  const [interruptor, setInterruptor] = useState(false)
   const [about, setAbout] = useState(false)
   const [theme, setTheme] = useState("galaxia")
 
@@ -11,8 +10,6 @@ const MyContextFunction = ({ children }) => {
   return (
     <MyContext.Provider
       value={{
-        setInterruptor,
-        interruptor,
         about,
         setAbout,
         theme,

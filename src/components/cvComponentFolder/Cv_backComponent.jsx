@@ -11,7 +11,6 @@ import { MyContext } from "../../contexts/mainContext"
 const CvBackComponent = () => {
   const { about, setAbout, theme } = useContext(MyContext)
   const currentTheme = window.localStorage.getItem("theme")
-  console.log(currentTheme)
   useEffect(() => {
     if (about) {
       const timer = setTimeout(() => {

@@ -1,23 +1,23 @@
-import React, { useState } from "react" // ── MODIFICADO: agrega useState
+import React, { useState, useEffect } from "react" 
 import "./styles.css"
 import svgIcons from "./iconsSvg"
+import achivementSound from '../../assets/minecraft/sounds/logro_de_minecraft.mp3'
+import dirt      from "../../assets/minecraft/textures/dirt.png"
+import stone     from "../../assets/minecraft/textures/stone.png"
+import deepslate from "../../assets/minecraft/textures/deepstone.png"
+import bedrock   from "../../assets/minecraft/textures/bedrock.png"
+import grass   from "../../assets/minecraft/textures/grass.jpg"
 
-import dirt      from "../../assets/minecraftImg/mctextures/dirt.png"
-import stone     from "../../assets/minecraftImg/mctextures/stone.png"
-import deepslate from "../../assets/minecraftImg/mctextures/deepstone.png"
-import bedrock   from "../../assets/minecraftImg/mctextures/bedrock.png"
-import grass   from "../../assets/minecraftImg/mctextures/grass.jpg"
 
-const mcTextures = [dirt, stone, deepslate, bedrock, grass]
-
+const Textures = [dirt, stone, deepslate, bedrock, grass]
 const Skills = ({power, musicData, songIndex}) => {
+  const sound  = new Audio(achivementSound)
+  
 
 
-  // ── NUEVO: estado para rastrear texturas activas y logro ────
   const [texturasActivas, setTexturasActivas] = useState({})
   const [logroVisible,    setLogroVisible]    = useState(false)
   const [logroConseguido, setLogroConseguido] = useState(false)
-  // ────────────────────────────────────────────────────────────
 
   const colores = () => {
     const letras = "0123456789ABCDEF"
@@ -28,9 +28,8 @@ const Skills = ({power, musicData, songIndex}) => {
     return color + "50"
   }
 
-  const textura = () => mcTextures[Math.floor(Math.random() * mcTextures.length)]
+  const textura = () => Textures[Math.floor(Math.random() * Textures.length)]
 
-  // ── NUEVO: verifica si todas las cajas tienen la misma textura
   const verificarLogro = (nuevoEstado) => {
     if (logroConseguido) return
     const valores = Object.values(nuevoEstado)
@@ -38,10 +37,10 @@ const Skills = ({power, musicData, songIndex}) => {
     if (new Set(valores).size === 1) {
       setLogroConseguido(true)
       setLogroVisible(true)
-      setTimeout(() => setLogroVisible(false), 4000)
+      setTimeout(() => setLogroVisible(false), 8000)
+      sound.play()
     }
   }
-  // ────────────────────────────────────────────────────────────
 
   const icon = (
     <svg
@@ -63,7 +62,11 @@ const Skills = ({power, musicData, songIndex}) => {
   return (
     <section className='skills-section'>
       <h2 className='h-title'>{icon} Habilidades y tecnologías</h2>
-      <section id='section-skills' className='section-skills'>
+       <div style={{display:"flex", justifyContent:'space-around'}}>
+      <p className="" >El caos tiene su encanto... pero dicen que el universo prefiere el orden.</p>
+      <span>logro{ logroConseguido ? " 1" : " 0" }/1</span>
+      </div>
+      <div id='section-skills' className='section-skills'>
         <div className='skills-container'>
           {svgIcons.map((item, index) => {
             const maxPower = Math.min(Math.max(power, 0), 1)
@@ -77,7 +80,6 @@ const Skills = ({power, musicData, songIndex}) => {
                 data-swapy-item='icon'
                 onMouseEnter={(e) => {
                   const isMinecraft = localStorage.getItem('theme') === 'minecraft'
-
                   if (e.target === e.currentTarget) {
                     if (isMinecraft) {
                       const nuevaTextura = textura()
@@ -86,11 +88,9 @@ const Skills = ({power, musicData, songIndex}) => {
                       e.currentTarget.style.backgroundSize   = "32px 32px"
                       e.currentTarget.style.backgroundRepeat = "repeat"
 
-                      // ── NUEVO: registra y verifica ─────────────────
                       const nuevoEstado = { ...texturasActivas, [index]: nuevaTextura }
                       setTexturasActivas(nuevoEstado)
                       verificarLogro(nuevoEstado)
-                      // ──────────────────────────────────────────────
                     } else {
                       e.currentTarget.style.backgroundImage = ""
                       e.currentTarget.style.backgroundColor = colores()
@@ -100,7 +100,7 @@ const Skills = ({power, musicData, songIndex}) => {
                 className='icon-skill'
                 key={index}
               >
-                <span>
+                <span style={{pointerEvents: "none", userSelect: "none"}}>
                   {item.icon}
                   <span>{item.name}</span>
                 </span>
@@ -108,9 +108,8 @@ const Skills = ({power, musicData, songIndex}) => {
             )
           })}
         </div>
-      </section>
+      </div>
 
-      {/* ── NUEVO: toast del logro ─────────────────────────────── */}
       {logroVisible && (
         <div style={{
           position:        "fixed",
@@ -126,25 +125,22 @@ const Skills = ({power, musicData, songIndex}) => {
           animation:       "mcSlideIn .3s ease",
           fontFamily:      "'Press Start 2P', monospace",
         }}>
-          <img src={dirt} alt="logro" style={{ width: 32, height: 32, imageRendering: "pixelated" }} />
+          <img src={dirt} alt="logro" style={{ width: 52, height: 52, imageRendering: "pixelated" }} />
           <div>
-            <p style={{ color: "#7fff21", fontSize: "8px", margin: 0 }}>Logro conseguido</p>
-            <p style={{ color: "#fff",    fontSize: "7px", margin: "4px 0 0" }}>
+            <p style={{ color: "#7fff21", fontSize: "14px", margin: 0 }}>Logro conseguido</p>
+            <p style={{ color: "#fff",    fontSize: "12px", margin: "4px 0 0" }}>
               Perfectamente equilibrado,<br/>como todo debe estar
             </p>
           </div>
         </div>
       )}
-      {/* ────────────────────────────────────────────────────────── */}
 
-      {/* ── NUEVO: animación del toast ─────────────────────────── */}
       <style>{`
         @keyframes mcSlideIn {
           from { opacity: 0; transform: translateX(60px); }
           to   { opacity: 1; transform: translateX(0);    }
         }
       `}</style>
-      {/* ────────────────────────────────────────────────────────── */}
 
     </section>
   )

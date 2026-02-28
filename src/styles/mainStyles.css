@@ -58,20 +58,23 @@ html[data-theme="minecraft"] {
   --pcttbg: #555555;
   --pcttbr: 0px;
   --pcttb: 2px solid #ffffff;
-  --pcbi: url(../assets/minecraftImg/mctextures/dirt.png);
+  --pcbi: url(../assets/minecraft/textures/dirt.png);
   /*Cards de los proyectos*/
 
 
 
-  --background-image: url('/src/assets/minecraftImg/fondoRoca.png');
+  --background-image: url('/src/assets/minecraft/images/fondoRoca.png');
   --background-hero-image: none;
-  --cursor: url(../assets/minecraftImg/swordcursor.png), auto;
+  --cursor: url(../assets/minecraft/images/swordcursor.png), auto;
 }
 
 
 html[data-theme="darkfantasy"]{
 
   --font-main: "Cinzel", sans-serif;
+  --btnHbrImg:url(../assets/darkfantasyImg/tabla.png);
+  --btnHwidth: 130px;
+
 
 }
 
@@ -102,13 +105,10 @@ html {
   background-size: cover;
   scroll-behavior: smooth;
   height: 100%;
+  cursor:var(--cursor);
   
 }
-html {
-  cursor:var(--cursor);
-  /* cursor: url(../assets/images/puntero.png), auto; */
 
-}
 
 html::-webkit-scrollbar:vertical {
   width: 5px;

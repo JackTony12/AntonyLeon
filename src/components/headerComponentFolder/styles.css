@@ -48,12 +48,16 @@
 
 .Btn {
   display: flex;
+  width: var(--btnHwidth);
   text-decoration: none;
   position: relative;
   font-weight: 400;
   padding: 0.5vw 1vw;
   color: var(--gray);
   background-color: var(--btnHbg);
+  background-image: var(--btnHbrImg);
+  background-repeat:no-repeat;
+  background-size: cover;
   transition: 0.5s;
   border-radius:var(--btnHbr);
   margin-right: 4px;

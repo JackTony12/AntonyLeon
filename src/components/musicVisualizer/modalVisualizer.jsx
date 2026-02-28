@@ -3,9 +3,8 @@ const ModalVisualizer = () => {
   return (
     <article className='modal-visualizer-container'>
       <p style={{ fontSize: ".8em" }}>
-      Esta sección es algo muy especial. Siempre quise juntar la música electrónica y la programación, dos cosas que me fascinan. Poder hacerlo en este proyecto me hace mucha ilusion. Espero la disfrutes tanto como yo disfrute crearla.
+      Esta sección es un proyecto personal. Desde los 12 años escucho este tipo de música, y quise incluirla en mi portafolio como algo más que un simple “me gusta la música electrónica”. Es parte de mí, de lo que me inspira y de lo que ha influido en mi forma de crear.
       </p>
-      <p>Demo | Version full con 500 canciones proximamente</p>
     </article>
   )
 }
