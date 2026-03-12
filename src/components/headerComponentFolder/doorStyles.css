@@ -1,0 +1,203 @@
+/* ============================================
+   DOOR TRANSITION — Art Deco / Luxury Minimal
+   ============================================ */
+
+/* ---- Overlay ---- */
+.door-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;          /* evita que puertas off-screen sean visibles */
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.door-overlay.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ---- Shared door panel ---- */
+.door {
+  width: 50vw;
+  min-width: 50vw;            /* evita colapso en flex mobile */
+  height: 100%;               /* hereda el alto del overlay (inset: 0) */
+  min-height: -webkit-fill-available; /* Safari iOS */
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.012) 0px,
+      rgba(255, 255, 255, 0.012) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    linear-gradient(160deg, #111111 0%, #0d0d0d 40%, #161616 70%, #0a0a0a 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  will-change: transform;
+  transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* ---- Left door positions ---- */
+.door--left.door--idle     { transform: translateX(-100%); }
+.door--left.door--closing  { transform: translateX(0%); }
+.door--left.door--closed   { transform: translateX(0%); }
+.door--left.door--opening  { transform: translateX(-100%); }
+
+/* ---- Right door positions ---- */
+.door--right.door--idle    { transform: translateX(100%); }
+.door--right.door--closing { transform: translateX(0%); }
+.door--right.door--closed  { transform: translateX(0%); }
+.door--right.door--opening { transform: translateX(100%); }
+
+/* ---- Inner panel (the visible decorative area) ---- */
+.door__panel {
+  width: calc(100% - 40px);
+  height: calc(100% - 48px);
+  border: 1px solid rgba(180, 155, 90, 0.22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Subtle inner glow on panel border */
+.door__panel::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border: 1px solid rgba(180, 155, 90, 0.08);
+  pointer-events: none;
+}
+
+/* ---- Rectangular inset panels ---- */
+.door__inset {
+  width: 100%;
+  flex: 1;
+  border: 1px solid rgba(180, 155, 90, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-height: 30%;
+}
+
+.door__inset-inner {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border: 1px solid rgba(180, 155, 90, 0.09);
+}
+
+/* ---- Center ornament ---- */
+.door__ornament {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.door__ornament-line {
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(180, 155, 90, 0.5) 30%,
+    rgba(200, 175, 110, 0.7) 50%,
+    rgba(180, 155, 90, 0.5) 70%,
+    transparent 100%
+  );
+}
+
+.door__ornament-diamond {
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(200, 175, 110, 0.7);
+  transform: rotate(45deg);
+  background: rgba(180, 155, 90, 0.15);
+  box-shadow: 0 0 8px rgba(180, 155, 90, 0.3);
+}
+
+/* ---- Edge trim (where doors meet) ---- */
+.door__edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(180, 155, 90, 0.4) 15%,
+    rgba(210, 185, 120, 0.65) 50%,
+    rgba(180, 155, 90, 0.4) 85%,
+    transparent 100%
+  );
+}
+
+.door__edge--right { right: 0; }
+.door__edge--left  { left: 0; }
+
+/* ---- Center seam glow (appears when closed) ---- */
+.door-seam {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 10001;
+  transition: opacity 0.3s ease 0.5s;
+  opacity: 0;
+}
+
+.door-seam--closing,
+.door-seam--closed {
+  opacity: 1;
+}
+
+.door-seam--opening {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.door-seam__glow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(210, 185, 120, 0.12) 0%,
+    rgba(180, 155, 90, 0.06) 40%,
+    transparent 70%
+  );
+  filter: blur(4px);
+}
+
+/* ---- Noise texture overlay ---- */
+.door::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.4;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
