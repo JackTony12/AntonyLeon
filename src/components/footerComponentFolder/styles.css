@@ -92,6 +92,18 @@ justify-content: center;
     color: black;
   }
 }
+
+.creeper-footer {
+  position:absolute;
+  width: 150px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+
+}
+
 /* .logo-al-footer{
   mask-image: linear-gradient(#000000,transparent);
 } */

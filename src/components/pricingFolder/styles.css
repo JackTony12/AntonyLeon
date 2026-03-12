@@ -167,3 +167,22 @@ color:rgb(104, 104, 104);
     bottom:5px;
     right: 10px;
 }
+.price-variant{
+    display:flex;
+    align-items: center;
+ 
+    
+}
+.price-max{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:1em;
+    border:1px solid gray;
+    background-color:rgba(15, 31, 74, 0.71);
+    padding: .2em .5em;
+    border-radius: .3em;
+    & span{
+        font-size:.7em;
+    }
+}

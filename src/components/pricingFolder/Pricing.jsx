@@ -22,7 +22,10 @@ const Pricing = () => {
                 <p>Landing page económica</p>
             </div>
             <div className='price'>
-                <strong>$160</strong>USD<span> / 4,200 Lps</span> 
+                <div className='price-variant'>
+                <div><strong>$160</strong> <span>USD</span></div> <div className='price-max'><span>Hasta</span>$300</div>
+                </div>
+                <span>4,200 / 8,000 Lps</span> 
             </div>
             <div className='p-c-description'>
                 <p>Ideal para usuarios individuales / Muestra quién eres</p>
@@ -51,7 +54,10 @@ const Pricing = () => {
                 <p>Sitio informativo / Negocio estándar</p>
             </div>
             <div className='price'>
-                <strong>$249</strong>USD<span> / 6,500 Lps</span> 
+                <div className='price-variant'>
+                <div><strong>$249</strong> <span>USD</span></div> <div className='price-max'><span>Hasta</span>$500</div>
+                </div>
+                <span>6,500 / 13,000 Lps</span> 
             </div>
             <div className='p-c-description'>
                 <p>Para negocios que quieren explicar sus servicios</p>
@@ -83,7 +89,10 @@ const Pricing = () => {
                 <p>Sitio personalizado / Profesional</p>
             </div>
             <div className='price'>
-                <strong>$399</strong>USD<span> / 10,400 Lps</span> 
+              <div className='price-variant'>
+                <div><strong>$399</strong> <span>USD</span></div> <div className='price-max'><span>Hasta</span>$700</div>
+                </div>
+                <span>10,400 / 18,000 Lps</span> 
             </div>
             <div className='p-c-description'>
                 <p>Para clientes que quieren algo más completo</p>

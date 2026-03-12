@@ -2,10 +2,17 @@ import { MyContext } from "../../contexts/mainContext"
 import { useContext, useState, useEffect } from "react"
 import ThemeSelector from './ThemeSelector'
 import logo from "../../assets/images/ALv20.webp"
+import logoMc from '../../assets/minecraft/images/ALv21.webp'
 import mineClick from '../../assets/minecraft/sounds/mineClick.mp3'
 import "./styles.css"
+
+
+
+
 function Header() {
   const [menuSwich, setMenuSwich] = useState(false)
+  const { theme } = useContext(MyContext)
+
     const minecraftClick = new Audio(mineClick)
     const handleMenu = () => {
     const currentTheme = window.localStorage.getItem("theme")
@@ -34,7 +41,11 @@ function Header() {
         <div
           className={`btn-padre-contenedor${menuSwich ? " menu-active" : ""}`}
         >
-          <img className="logoAlMenu" src={logo} alt='logoAL' />
+          {theme === "minecraft" ? (
+            <img className='logoAlMenu' src={logoMc} alt='logoMinecraft' />
+          ) : (
+            <img className='logoAlMenu' src={logo} alt='logoAntonyLeonel' />
+          )}
           <div>
              
 
