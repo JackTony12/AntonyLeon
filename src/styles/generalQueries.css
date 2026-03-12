@@ -34,10 +34,16 @@
     --pcttb: 1px solid var(--gray-low-100);
   /*Cards de los proyectos*/
 
+  /*Visualizaodor*/
+  /*Visualizaodor*/
+  /*seccion del acosta*/
+
+  --dapibg: #1e1e1e;
+
 
   --font-main: "Poppins", sans-serif;
   --background-hero-image: url('/src/assets/images/logotrazo.webp');
-  --cursor: url(../assets/images/puntero.png), auto;
+  --cursor: url(../assets/images/puntero.webp), auto;
 
 
 }

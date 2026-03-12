@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import "./styles.css"
 import FirebaseApp from "../../firebase/config"
 import { getFirestore, collection, addDoc } from "firebase/firestore"
-import { Toaster, toast } from "sonner"
+import { sileo, Toaster } from "sileo";
 
 const FormContact = () => {
   const [token, setToken] = useState(true)
@@ -27,13 +27,15 @@ const FormContact = () => {
         } catch (error) {
           console.log(error)
         } finally {
-          toast.success("Mensaje enviado correctamente")
+          sileo.success({ title: "Mensaje enviado correctamente" });
           setUserData({ email: "", mensaje: "" })
         }
       }
       sendDatos()
     } else {
-      toast.error("Ya has enviado un mensaje")
+      sileo.error({
+      title: "Ya has enviado un mensaje",
+        });
     }
   }
 
@@ -76,7 +78,7 @@ const FormContact = () => {
           Enviar
         </button>
       </form>
-      <Toaster />
+      <Toaster position="top-center" />
     </div>
   )
 }

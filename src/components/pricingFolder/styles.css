@@ -18,7 +18,9 @@ margin:2em 0;
     color:var(--gray-thin);
     
 }
-    & a{
+   
+}
+.pricing-link{
     text-decoration:none;
     background:var(--almostblack);
     color:var(--white);
@@ -35,7 +37,6 @@ margin:2em 0;
     }
 }
 
-}
 .pricing-contenedor{
     display: flex;
     flex-direction: column;
@@ -43,7 +44,7 @@ margin:2em 0;
     gap:20px;
     width: 100%;
     justify-content: center;
-    padding:4em 0;
+    padding:4em 0 2em 0;
 
 }
 .pricing-card{
@@ -143,6 +144,14 @@ color:rgb(104, 104, 104);
     }
 }
 
+.pricing-terms{
+    text-align:center;
+   & a {
+    color: whitesmoke;
+    font-size: .5em;
+   }
+
+}
 
 @media (width > 768px){
    .pricing-section{

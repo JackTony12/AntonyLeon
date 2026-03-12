@@ -29,10 +29,14 @@ canvas {
   grid-area: 1 / 1 / 2 / 2;
 }
 .music-visualizer {
+  background: var(--vscbg);/*visualizer background*/
   grid-area: 4 / 1 / 5 / 2;
 }
 .music-info {
   display: flex;
+  background: var(--vscbg);/*visualizer controls side background*/
+   
+
   flex-direction: column;
   gap: 10px;
   grid-area: 2 / 1 / 4 / 2;
@@ -130,7 +134,6 @@ canvas {
 
 .wrapper {
   display: flex;
-  background: var(--black);
   color: var(--white);
 }
 .words {

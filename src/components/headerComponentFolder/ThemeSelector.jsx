@@ -1,8 +1,9 @@
 import {useState, useEffect, useContext } from "react"
 import { MyContext } from "../../contexts/mainContext"
 import "./themeSelectorStyles.css"
-import minecraftLogo from '../../assets/minecraft/images/minecraftLogo.png'
+import minecraftLogo from '../../assets/minecraft/images/minecraftLogo.webp'
 import eldenRinglogo from '../../assets/darkfantasyImg/eldenRingLogo.webp'
+import { sileo} from "sileo"
 
 const ThemeSelector = () => {
  
@@ -29,20 +30,28 @@ const themes = [
 
 
 const handleSelect = (value) => {
-  window.localStorage.setItem("theme", value);
-  setTimeout(() => {
-    document.documentElement.setAttribute("data-theme", value);
-    setTheme(value);
-    setCurrentTheme(value); 
-    setOpen(false);
-  }, 1000);
+  if(value === "darkfantasy"){
+    sileo.warning({
+      title: "Tema en desarrollo",
+      description: "Este tema está en desarrollo y estará disponible pronto."
+    });
+  } else{
+
+    window.localStorage.setItem("theme", value);
+    setTimeout(() => {
+      document.documentElement.setAttribute("data-theme", value);
+      setTheme(value);
+      setCurrentTheme(value); 
+      setOpen(false);
+    }, 1000);
+  }
 };
 
 const current = themes.find(t => t.value === currentTheme);
 
 return (
   <div className="custom-select" onBlur={() => setOpen(false)} tabIndex={0}>
-    <span className="theme-tag">Elegir tema</span>
+    <span className="theme-tag">Tema</span>
     <div className="custom-select__selected" onClick={() => setOpen(o => !o)}>
         {/* <span className={`custom-select__arrow ${open ? "open" : ""}`}> Tema</span> */}
       {current?.isText

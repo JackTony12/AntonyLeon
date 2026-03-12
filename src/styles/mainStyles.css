@@ -29,9 +29,9 @@ html[data-theme="minecraft"] {
   --background: #331304;
   --almostblack: #000000;
   --blacktonone:transparent;
-  --white100: #44ff00;
+  --white100: #36cc00;
   --black: #4b2d1b;
-  --black100: #51fe0db0;
+  --black100: #093f10;
   --gray: #ffffff;
   --gray-low: #ffffff;
   --gray-thin: #acacac;
@@ -58,21 +58,30 @@ html[data-theme="minecraft"] {
   --pcttbg: #555555;
   --pcttbr: 0px;
   --pcttb: 2px solid #ffffff;
-  --pcbi: url(../assets/minecraft/textures/dirt.png);
+  --pcbi: url(../assets/minecraft/textures/dirt.webp);
   /*Cards de los proyectos*/
 
+  /*Visualizador*/
+  --vscbg: url(../assets/minecraft/textures/deepstone.webp);
+  /*Visualizador*/
+
+  /*seccion 3d */
+  --card3dbg: url(../assets/minecraft/textures/grass2.webp);
+  /*seccion del acosta  */
+  --dapbg: url(../assets/minecraft/textures/grass2.webp);
+  --dapibg: url(../assets/minecraft/textures/deepstone.webp);
 
 
-  --background-image: url('/src/assets/minecraft/images/fondoRoca.png');
+  --background-image: url('/src/assets/minecraft/images/fondoRoca.webp');
   --background-hero-image: none;
-  --cursor: url(../assets/minecraft/images/swordcursor.png), auto;
+  --cursor: url(../assets/minecraft/images/swordcursor.webp), auto;
 }
 
 
 html[data-theme="darkfantasy"]{
 
   --font-main: "Cinzel", sans-serif;
-  --btnHbrImg:url(../assets/darkfantasyImg/tabla.png);
+  --btnHbrImg:url(../assets/darkfantasyImg/tabla.webp);
   --btnHwidth: 130px;
 
 

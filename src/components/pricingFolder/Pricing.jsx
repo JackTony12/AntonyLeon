@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.css'
+import terms from '../../assets/Cv/Terminos_y_Condiciones_Planes_AntonyLeonel.pdf'
 const Pricing = () => {
 
     const icono = (
@@ -12,8 +13,8 @@ const Pricing = () => {
 
   return (
     <section className='pricing-section' id='pricing'>
-    <h2>Planes diseñados para cada necesidad</h2>
-    <p>Encuentra el equilibrio entre precio, funcionalidad y crecimiento</p>
+        <h2>Planes diseñados para cada necesidad</h2>
+        <p>Encuentra el equilibrio entre precio, funcionalidad y crecimiento</p>
     <div className='pricing-contenedor'>
         <div className='pricing-card p-card-1'>
             <div>
@@ -29,17 +30,18 @@ const Pricing = () => {
             <hr />
             <div className='features'>
                 <ul>
-                    <li>{icono} Una página (Home, Contacto, Sobre nosotros)</li>
+                    <li>{icono} 1 a 5 secciones en una sola página (o hasta 3-4 páginas separadas)</li>
                     <li>{icono} Diseño responsivo</li>
+                    <li>{icono} Animaciones básicas</li>
                     <li>{icono} Enlaces a redes sociales</li>
                     <li>{icono} Formulario de contacto</li>
                     <li>{icono} Dominio gratis por 1 año </li>
-                    <li>{icono2} Hoisting incluido</li>
-                    <li>{icono} SEO básico</li>
+                    <li>{icono} Hoisting incluido</li>
                 </ul>
             </div>
-                <a href="https://wa.me/50499550232?text=Más información sobre el plan Básico🥉" target='_blank'>Más información</a>
-        <p className='p-timeout'>Entrega en 1-2 semanas </p>
+                <a className='pricing-link' href="https://wa.me/50499550232?text=Más información sobre el plan Básico🥉" target='_blank'>Más información</a>
+        <p className='p-timeout'>Entrega en 1 semana </p>
+        
         </div>
         {/* {====================} */}
         <div className='pricing-card p-card-2'>
@@ -57,21 +59,21 @@ const Pricing = () => {
             <hr />
             <div className='features'>
                 <ul>
-                    <li>{icono} 3-5 páginas (Home, Contacto, Servicios, Sobre nosotros)</li>
-                    <li>{icono} Enlaces a redes sociales</li>
                     <li>{icono} Diseño más trabajado (tipografías, paleta de colores personalizada)</li>
-                    <li>{icono} Formulario de contacto avanzado (con validación).</li>
-                    <li>{icono} Dominio gratis por 1 año </li>
-                    <li>{icono} Hoisting incluido</li>
-                    <li>{icono } Sección de testimonios y galería de proyectos</li>
-                    <li>{icono} Soporte por 1 mes </li>
+                    <li>{icono} Integración básica (Google Maps, WhatsApp)</li>
+                    <li>{icono} Galería de imágenes o portafolio</li>
                     <li>{icono} SEO y optimización de contenido</li>
                     <li>{icono} Botón de WhatsApp flotante</li>
-                    <li>{icono} Integración básica (Google Maps, WhatsApp)</li>
+                    <li>{icono} Dominio gratis por 1 año </li>
+                    <li>{icono} Diseño semi-personalizado</li>
+                    <li>{icono} Enlaces a redes sociales</li>
+                    <li>{icono} Sección de testimonios</li>
+                    <li>{icono} Formulario de contacto</li>
+                    <li>{icono} Hoisting incluido</li>
                 </ul>
             </div>
-                <a href="https://wa.me/50499550232?text=Más información sobre el plan Intermedio🥈" target='_blank'>Más información</a>
-        <p className='p-timeout'>Entrega en 2-3 semanas</p>
+                <a className='pricing-link' href="https://wa.me/50499550232?text=Más información sobre el plan Intermedio🥈" target='_blank'>Más información</a>
+        <p className='p-timeout'>Entrega en 2 semanas</p>
 
         </div>
         {/* {====================} */}
@@ -89,24 +91,28 @@ const Pricing = () => {
             <hr />
             <div className='features'>
                 <ul>
-                    <li>{icono} 5-10 páginas (Home, Blog, Tienda, Servicios, Contacto)</li>
-                    <li>{icono} Animaciones y secciones interactivas</li>
+                    <li>{icono} Diseño 100% personalizado desde cero, identidad visual única</li>
                     <li>{icono} Diseño más premium con efectos modernos (parallax, glassmorphism, dark mode).</li>
-                    <li>{icono} Formulario de contacto avanzado (con validación).</li>
+                    <li>{icono} Animaciones avanzadas (GSAP, transiciones, efectos scroll)</li>
+                    <li>{icono} Rendimiento optimizado (Core Web Vitals)</li>
                     <li>{icono} Soporte por 2 meses (corrección de bugs y asesoría técnica)</li>
                     <li>{icono} Integración con Google Analytics o Search Console</li>
+                    <li>{icono} Integración con APIs externas</li>
                     <li>{icono} Dominio gratis por 2 años </li>
-                    <li>{icono} Hoisting incluido</li>
                     <li>{icono} Enlaces a redes sociales</li>
+                    <li>{icono} Formulario de contacto </li>
+                    <li>{icono} Múltiples idiomas (si aplica)</li>
+                    <li>{icono} Hoisting incluido</li>
                     <li>{icono} SEO avanzado</li>
                 </ul>
             </div>
-                <a href="https://wa.me/50499550232?text=Más información sobre el plan Avanzado🥇" target='_blank'>Más información  </a>
-        <p className='p-timeout'>Entrega en 1 mes</p>
+                <a className='pricing-link' href="https://wa.me/50499550232?text=Más información sobre el plan Avanzado🥇" target='_blank'>Más información  </a>
+        <p className='p-timeout'>Entrega en 3 semanas</p>
 
         </div>
     </div>
-
+    <div className='pricing-terms'><a href={terms} target='_blank' className='terms-link'>Términos y condiciones</a>
+    </div>
 </section>
 
   )

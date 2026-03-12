@@ -1,7 +1,7 @@
 import React from "react"
 import AL_Background from "../../assets/images/posteryo.webp"
-import portraitMC from "../../assets/images/posterMc.png"
-import darkfantasyportrait from "../../assets/darkfantasyImg/portraitDarkFantasy.png"
+import portraitMC from "../../assets/images/posterMc.webp"
+import darkfantasyportrait from "../../assets/darkfantasyImg/portraitDarkFantasy.webp"
 import cvEs from "../../assets/Cv/AntonyCv.pdf"
 import cvEn from "../../assets/Cv/AntonyNewCvEnglish.pdf"
 import "./styles.css"
@@ -39,7 +39,7 @@ const CvBackComponent = () => {
         <div className='capsula-ex-cv'>
           {currentTheme === "minecraft" ? (
             <div className="xp-bar">
-              <span>1146</span>
+              <span>1186</span>
               <div className="track">
                 <span></span>
                 <span></span>

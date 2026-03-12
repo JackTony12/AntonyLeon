@@ -2,20 +2,32 @@ import valentineImg from "../../assets/images/astronauta.webp"
 import valentineSong from "../../../public/music/valentineKotori.mp3"
 import kotoriImg from "../../assets/images/kotori.webp"
 import kotoriSong from "../../../public/music/kotori.mp3"
-import locosSong from "../../../public/music/Locos.mp3"
-import locosImg from "../../assets/images/locosgif.gif"
+import boundSong from "../../../public/music/Bound.mp3"
+import boundImg from "../../assets/images/kokushivo.webp"
 const musicData = [
   {
-    songName: "Locos",
-    artist: "Leon Larregui",
-    duration: "2:55",
+    songName: "Kudere",
+    artist: "Kotori",
+    duration: "3:25",
+    date: "2017",
+    type: "Dubstep",
+    color: "#d606ff59",
+    copyRight: "Libre",
+    downloadUrl: "/music/kotori.mp3",
+    image: kotoriImg,
+    song: kotoriSong,
+  },
+  {
+    songName: "Bound",
+    artist: "Nanomake",
+    duration: "4:28",
     date: "2016",
-    type: "pop",
-    color: "#ffcd6fa8",
-    copyRight: "Copyrighted",
-    downloadUrl: "/music/Locos.mp3",
-    image: locosImg,
-    song: locosSong,
+    type: "Dubstep",
+    color: "#ff2e2eb2",
+    copyRight: "Libre",
+    downloadUrl: "/music/Bound.mp3",
+    image: boundImg,
+    song: boundSong,
   },
   {
     songName: "VALENTINE & 4AM",
@@ -28,18 +40,6 @@ const musicData = [
     copyRight: "Libre",
     image: valentineImg,
     song: valentineSong,
-  },
-  {
-    songName: "Kudere",
-    artist: "Kotori",
-    duration: "3:25",
-    date: "2017",
-    type: "Dubstep",
-    color: "#d606ff59",
-    copyRight: "Libre",
-    downloadUrl: "/music/kotori.mp3",
-    image: kotoriImg,
-    song: kotoriSong,
   },
 
 ]

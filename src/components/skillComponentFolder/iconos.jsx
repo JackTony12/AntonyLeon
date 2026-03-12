@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react"
 import "./styles.css"
 import svgIcons from "./iconsSvg"
 import achivementSound from '../../assets/minecraft/sounds/logro_de_minecraft.mp3'
-import dirt      from "../../assets/minecraft/textures/dirt.png"
-import stone     from "../../assets/minecraft/textures/stone.png"
-import deepslate from "../../assets/minecraft/textures/deepstone.png"
-import bedrock   from "../../assets/minecraft/textures/bedrock.png"
-import grass   from "../../assets/minecraft/textures/grass.jpg"
+import dirt      from "../../assets/minecraft/textures/dirt.webp"
+import stone     from "../../assets/minecraft/textures/stone.webp"
+import deepslate from "../../assets/minecraft/textures/deepstone.webp"
+import bedrock   from "../../assets/minecraft/textures/bedrock.webp"
+import grass   from "../../assets/minecraft/textures/grass2.webp"
 
 
 const Textures = [dirt, stone, deepslate, bedrock, grass]

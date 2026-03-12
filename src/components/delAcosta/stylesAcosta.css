@@ -34,6 +34,7 @@
   position: relative;
   height: 500px;
   flex-direction: column;
+  background:var(--dapbg); /*del acosta product bg*/
 
   & button {
     position: absolute;
@@ -64,8 +65,9 @@
   width: 65%;
   border-radius: 1em;
   flex-direction: column;
-  background-color: var(--gray-high100);
+  background: var(--dapibg);
   justify-content: space-between;
+
 }
 .d-product-subtitle {
   color: orangered;
