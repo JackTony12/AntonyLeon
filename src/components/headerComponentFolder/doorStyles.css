@@ -11,7 +11,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
-  overflow: hidden;          /* evita que puertas off-screen sean visibles */
+  overflow: hidden;         
   opacity: 0;
   transition: opacity 0.15s ease;
 }
@@ -21,12 +21,11 @@
   pointer-events: all;
 }
 
-/* ---- Shared door panel ---- */
 .door {
   width: 50vw;
-  min-width: 50vw;            /* evita colapso en flex mobile */
-  height: 100%;               /* hereda el alto del overlay (inset: 0) */
-  min-height: -webkit-fill-available; /* Safari iOS */
+  min-width: 50vw;            
+  height: 100%;               
+  min-height: -webkit-fill-available;
   background:
     repeating-linear-gradient(
       90deg,
@@ -57,7 +56,6 @@
 .door--right.door--closed  { transform: translateX(0%); }
 .door--right.door--opening { transform: translateX(100%); }
 
-/* ---- Inner panel (the visible decorative area) ---- */
 .door__panel {
   width: calc(100% - 40px);
   height: calc(100% - 48px);
@@ -71,7 +69,6 @@
   box-sizing: border-box;
 }
 
-/* Subtle inner glow on panel border */
 .door__panel::before {
   content: '';
   position: absolute;
@@ -80,7 +77,6 @@
   pointer-events: none;
 }
 
-/* ---- Rectangular inset panels ---- */
 .door__inset {
   width: 100%;
   flex: 1;
@@ -98,7 +94,6 @@
   border: 1px solid rgba(180, 155, 90, 0.09);
 }
 
-/* ---- Center ornament ---- */
 .door__ornament {
   display: flex;
   flex-direction: column;
@@ -130,7 +125,6 @@
   box-shadow: 0 0 8px rgba(180, 155, 90, 0.3);
 }
 
-/* ---- Edge trim (where doors meet) ---- */
 .door__edge {
   position: absolute;
   top: 0;
@@ -149,7 +143,6 @@
 .door__edge--right { right: 0; }
 .door__edge--left  { left: 0; }
 
-/* ---- Center seam glow (appears when closed) ---- */
 .door-seam {
   position: absolute;
   top: 0;
@@ -190,7 +183,6 @@
   filter: blur(4px);
 }
 
-/* ---- Noise texture overlay ---- */
 .door::after {
   content: '';
   position: absolute;

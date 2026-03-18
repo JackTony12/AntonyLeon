@@ -76,8 +76,7 @@ const Blog = () => {
             <span className='animated-text'> Especial para principiantes</span>
           </div>
           <div>
-            <small>36%</small>
-            <button type="button" aria-label="blog" className="blog-button">Construyendo...
+            <button type="button" aria-label="blog" className="blog-button">En desarrollo...
               <span></span>
             </button>
           </div>

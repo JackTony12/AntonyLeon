@@ -43,6 +43,7 @@
   z-index: 10;
 }
 .proyects-section::before {
+  top:50px;
   left: 0;
   background: linear-gradient(to right, var(--blacktonone), transparent);
 }
