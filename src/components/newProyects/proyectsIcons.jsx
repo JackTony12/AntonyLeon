@@ -1,12 +1,12 @@
 import React from "react"
-import pixabay from "../../assets/pimges/pixabay.webp"
-import tres from "../../assets/pimges/tresenraya.webp"
-import todo from "../../assets/pimges/todolist.webp"
-import ecomerce from "../../assets/pimges/ecommerce.webp"
-import color from "../../assets/pimges/color.webp"
-import catweb from '../../assets/images/catsweblanding.webp'
-import frontends from '../../assets/images/frontends.webp'
-import space from '../../assets/pimges/spacerocks.webp'
+import pixabay from "../../assets/pimages/pixabay.webp"
+import tres from "../../assets/pimages/tresenraya.webp"
+import ecomerce from "../../assets/pimages/ecommerce.webp"
+import color from "../../assets/pimages/color.webp"
+import catweb from '../../assets/pimages/catsweblanding.webp'
+import frontends from '../../assets/pimages/frontends.webp'
+import space from '../../assets/pimages/spacerocks.webp'
+import snippets from '../../assets/pimages/QuikSnippets.webp'
 
 const ProyectIcons = () => {
   return [
@@ -35,6 +35,18 @@ const ProyectIcons = () => {
       ready: true,
       tecnologyes: ["Astro", "JavaScript ", "HTML", "CSS" , "Typescript"],
       url: "https://space-rocks-git-main-jacktony12s-projects.vercel.app/",
+    },{
+      name: "Quik Snippets",
+      color: "#e63d00",
+      image: snippets,
+      icon: ( 
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" stroke="currentColor" stroke-width="0" viewBox="0 0 512 512"><path stroke="none" d="M160 389a20.9 20.9 0 0 1-13.82-5.2l-128-112a21 21 0 0 1 0-31.6l128-112a21 21 0 0 1 27.66 31.61L63.89 256l109.94 96.19A21 21 0 0 1 160 389m192 0a21 21 0 0 1-13.84-36.81L448.11 256l-109.94-96.19a21 21 0 0 1 27.66-31.61l128 112a21 21 0 0 1 0 31.6l-128 112A20.9 20.9 0 0 1 352 389m-144 48a21 21 0 0 1-20.12-27l96-320a21 21 0 1 1 40.23 12l-96 320A21 21 0 0 1 208 437"/></svg>
+      ),
+      description: "Web para guardar tus snippets de código favoritos, organizalos y accede a ellos cuando quieras.",
+      date: "2025",
+      ready: true,
+      tecnologyes: ["React", "JavaScript ", "HTML", "CSS" , "Typescript"],
+      url: "https://quik-snippets.vercel.app/",
     },
    
     {
