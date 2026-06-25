@@ -7,6 +7,8 @@ import catweb from '../../assets/pimages/catsweblanding.webp'
 import frontends from '../../assets/pimages/frontends.webp'
 import space from '../../assets/pimages/spacerocks.webp'
 import snippets from '../../assets/pimages/QuikSnippets.webp'
+import dictador from '../../assets/pimages/TextSpech.png'
+
 
 const ProyectIcons = () => {
   return [
@@ -18,10 +20,23 @@ const ProyectIcons = () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" stroke="currentColor" strokeWidth="0" viewBox="0 0 24 24"><path fill="none" stroke="none" d="M0 0h24v24H0z"/><path stroke="none" d="M20 3H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h4v2h8v-2h4c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m0 14H4V5h16z"/><path stroke="none" d="M6.5 7.5H9V6H5v4h1.5zM19 12h-1.5v2.5H15V16h4z"/></svg>
       ),
       description: "Recursos, librerias, consejos por devs con experiencia, hacks y mucho mas.",
-      date: "2025",
+      date: "2026",
       ready: false,
       tecnologyes: ["Astro", "JavaScript ", "HTML", "CSS" , "Typescript","Tailwind"],
       url: "#",
+    },
+     {
+      name: "Dictador de texto v2",
+      color: "#ffffff",
+      image: dictador,
+      icon: (
+        <svg  width="1em" height="1em" fill="currentColor" stroke="currentColor" strokeWidth="0" viewBox="0 0 24 24"><path stroke="none" d="M9 2a8 8 0 0 1 7.934 6.965l2.25 3.539c.148.233.118.58-.225.728L17 14.07V17a2 2 0 0 1-2 2h-1.999L13 22H4v-3.694c0-1.18-.436-2.297-1.244-3.305A8 8 0 0 1 9 2m12.154 16.102-1.665-1.11A8.96 8.96 0 0 0 21 12a8.96 8.96 0 0 0-1.51-4.993l1.664-1.11A10.95 10.95 0 0 1 23 12c0 2.258-.68 4.356-1.846 6.102"/></svg>
+      ),
+      description: "Escribe a la velocidad de la luz con este dictador de texto.",
+      date: "2026",
+      ready: true,
+      tecnologyes: ["React", "JavaScript ", "HTML", "CSS" ],
+      url: "https://dictadorv3.vercel.app/",
     },
     {
       name: "Space Rocks",
