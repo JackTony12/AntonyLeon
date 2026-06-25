@@ -7,7 +7,7 @@ import catweb from '../../assets/pimages/catsweblanding.webp'
 import frontends from '../../assets/pimages/frontends.webp'
 import space from '../../assets/pimages/spacerocks.webp'
 import snippets from '../../assets/pimages/QuikSnippets.webp'
-import dictador from '../../assets/pimages/TextSpech.png'
+import dictador from '../../assets/pimages/TextSpech.webp'
 
 
 const ProyectIcons = () => {
